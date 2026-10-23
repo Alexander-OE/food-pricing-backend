@@ -1,0 +1,177 @@
+{
+  "rice-local": {
+    "fx": 0.3,
+    "diesel": 0.5,
+    "seasonality": 0.5,
+    "supply": 0.6,
+    "inflation": 0.5
+  },
+  "rice-imported": {
+    "fx": 0.9,
+    "diesel": 0.3,
+    "seasonality": 0.1,
+    "supply": 0.2,
+    "inflation": 0.5
+  },
+  "maize-white": {
+    "fx": 0.1,
+    "diesel": 0.5,
+    "seasonality": 0.7,
+    "supply": 0.8,
+    "inflation": 0.4
+  },
+  "sliced-bread": {
+    "fx": 0.85,
+    "diesel": 0.4,
+    "seasonality": 0.05,
+    "supply": 0.1,
+    "inflation": 0.6
+  },
+  "spaghetti": {
+    "fx": 0.85,
+    "diesel": 0.4,
+    "seasonality": 0.05,
+    "supply": 0.1,
+    "inflation": 0.6
+  },
+  "beans-brown": {
+    "fx": 0.2,
+    "diesel": 0.6,
+    "seasonality": 0.6,
+    "supply": 0.8,
+    "inflation": 0.4
+  },
+  "beans-white": {
+    "fx": 0.2,
+    "diesel": 0.6,
+    "seasonality": 0.6,
+    "supply": 0.8,
+    "inflation": 0.4
+  },
+  "yam": {
+    "fx": 0.1,
+    "diesel": 0.5,
+    "seasonality": 0.8,
+    "supply": 0.9,
+    "inflation": 0.4
+  },
+  "irish-potato": {
+    "fx": 0.2,
+    "diesel": 0.6,
+    "seasonality": 0.4,
+    "supply": 0.7,
+    "inflation": 0.4
+  },
+  "sweet-potato": {
+    "fx": 0.05,
+    "diesel": 0.5,
+    "seasonality": 0.4,
+    "supply": 0.7,
+    "inflation": 0.4
+  },
+  "garri-white": {
+    "fx": 0.1,
+    "diesel": 0.4,
+    "seasonality": 0.4,
+    "supply": 0.85,
+    "inflation": 0.4
+  },
+  "garri-yellow": {
+    "fx": 0.1,
+    "diesel": 0.4,
+    "seasonality": 0.4,
+    "supply": 0.85,
+    "inflation": 0.4
+  },
+  "tomato": {
+    "fx": 0.1,
+    "diesel": 0.85,
+    "seasonality": 0.9,
+    "supply": 0.8,
+    "inflation": 0.3
+  },
+  "onion": {
+    "fx": 0.1,
+    "diesel": 0.75,
+    "seasonality": 0.7,
+    "supply": 0.7,
+    "inflation": 0.3
+  },
+  "fresh-pepper": {
+    "fx": 0.1,
+    "diesel": 0.8,
+    "seasonality": 0.9,
+    "supply": 0.8,
+    "inflation": 0.3
+  },
+  "carrot": {
+    "fx": 0.1,
+    "diesel": 0.7,
+    "seasonality": 0.5,
+    "supply": 0.6,
+    "inflation": 0.3
+  },
+  "plantain": {
+    "fx": 0.05,
+    "diesel": 0.5,
+    "seasonality": 0.4,
+    "supply": 0.6,
+    "inflation": 0.4
+  },
+  "beef": {
+    "fx": 0.2,
+    "diesel": 0.5,
+    "seasonality": 0.1,
+    "supply": 0.4,
+    "inflation": 0.7
+  },
+  "chicken": {
+    "fx": 0.6,
+    "diesel": 0.4,
+    "seasonality": 0.3,
+    "supply": 0.3,
+    "inflation": 0.6
+  },
+  "frozen-fish": {
+    "fx": 0.8,
+    "diesel": 0.3,
+    "seasonality": 0.1,
+    "supply": 0.2,
+    "inflation": 0.5
+  },
+  "eggs": {
+    "fx": 0.6,
+    "diesel": 0.4,
+    "seasonality": 0.3,
+    "supply": 0.3,
+    "inflation": 0.6
+  },
+  "vegetable-oil": {
+    "fx": 0.85,
+    "diesel": 0.35,
+    "seasonality": 0.05,
+    "supply": 0.2,
+    "inflation": 0.6
+  },
+  "palm-oil": {
+    "fx": 0.2,
+    "diesel": 0.5,
+    "seasonality": 0.4,
+    "supply": 0.7,
+    "inflation": 0.5
+  },
+  "sugar": {
+    "fx": 0.85,
+    "diesel": 0.35,
+    "seasonality": 0.05,
+    "supply": 0.15,
+    "inflation": 0.6
+  },
+  "powdered-milk": {
+    "fx": 0.95,
+    "diesel": 0.25,
+    "seasonality": 0.02,
+    "supply": 0.1,
+    "inflation": 0.6
+  }
+}
