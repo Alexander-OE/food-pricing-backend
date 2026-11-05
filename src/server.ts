@@ -10,7 +10,6 @@ const server = app.listen(env.PORT, () => {
   if (env.ENABLE_CRON) startScheduler();
 });
 
-
 function shutdown(signal: string): void {
   logger.info(`${signal} received, shutting down`);
   server.close(async () => {

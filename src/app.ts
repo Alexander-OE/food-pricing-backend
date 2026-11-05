@@ -1,4 +1,3 @@
-// Builds the Express app, kept apart from server.ts so tests can use it.
 import compression from 'compression';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
@@ -51,7 +50,7 @@ app.use(
 app.use(
   '/images',
   helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }),
-  cors({ origin: env.CORS_ORIGIN }), // lets the frontend read credits.json
+  cors({ origin: env.CORS_ORIGIN }),
   express.static(path.resolve(process.cwd(), 'public/images'), { maxAge: '7d' }),
 );
 
