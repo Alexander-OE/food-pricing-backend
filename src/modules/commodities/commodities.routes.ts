@@ -21,24 +21,32 @@ commoditiesRouter.get(
 
 // GET /commodities/categories: list the food categories.
 commoditiesRouter.get('/categories', asyncHandler(controller.listCategories));
+
+
 // GET /commodities/:slug: get one commodity with its forecast.
 commoditiesRouter.get(
   '/:slug',
   validate({ params: slugParamsSchema }),
   asyncHandler(controller.getDetail),
 );
+
+
 // GET /commodities/:slug/history: get past monthly prices.
 commoditiesRouter.get(
   '/:slug/history',
   validate({ params: slugParamsSchema, query: historyQuerySchema }),
   asyncHandler(controller.getHistory),
 );
+
+
 // GET /commodities/:slug/accuracy: get how close past forecasts were.
 commoditiesRouter.get(
   '/:slug/accuracy',
   validate({ params: slugParamsSchema, query: accuracyQuerySchema }),
   asyncHandler(controller.getAccuracy),
 );
+
+
 // GET /commodities/:slug/related: get similar commodities.
 commoditiesRouter.get(
   '/:slug/related',
