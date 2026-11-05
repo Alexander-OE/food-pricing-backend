@@ -1,4 +1,3 @@
-// Business logic for commodities: fetching, filtering and building price cards.
 import type { Commodity, Prediction, Prisma } from '@prisma/client';
 import { env } from '../../config/env';
 import { RELATED_COMMODITIES_COUNT, CARD_PRICE_MONTHS } from '../../constants';
