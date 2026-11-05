@@ -8,8 +8,13 @@ const envSchema = z.object({
   PORT: z.coerce.number().int().positive().default(DEFAULT_PORT),
   DATABASE_URL: z.string().min(1, 'DATABASE_URL is required'),
   CORS_ORIGIN: z.string().default('http://localhost:3000'),
-  // Public address of this API, used to build image URLs.
-  PUBLIC_URL: z.string().default('http://localhost:5000'),
+  // Public address of this API, used to build image URLs. Images sit at /images, not under /api/v1,
+  // so any path or trailing slash on the value is dropped and only the origin is kept.
+  PUBLIC_URL: z
+    .string()
+    .url('PUBLIC_URL must be a full URL such as https://your-api.onrender.com')
+    .default('http://localhost:5000')
+    .transform((value) => new URL(value).origin),
 
   JWT_SECRET: z.string().min(16, 'JWT_SECRET must be at least 16 characters'),
   JWT_EXPIRES_IN: z.string().default('1d'),
