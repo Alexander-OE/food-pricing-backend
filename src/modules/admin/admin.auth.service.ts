@@ -17,7 +17,7 @@ function toPublicAdmin(admin: {
 
 export async function login(email: string, password: string) {
   const admin = await prisma.admin.findUnique({ where: { email: email.toLowerCase() } });
-  // Same message for both failures so attackers cannot tell which one it was.
+  
   const passwordMatches = admin ? await bcrypt.compare(password, admin.passwordHash) : false;
   if (!admin || !passwordMatches) throw ApiError.unauthorized('Invalid email or password');
 
