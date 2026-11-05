@@ -1,4 +1,3 @@
-// Handles requests for commodity lists, details and price history.
 import type { Request, Response } from 'express';
 import { ok } from '../../utils/response';
 import { getValid } from '../../middleware/validate';
@@ -7,6 +6,7 @@ import * as service from './commodities.service';
 
 type SlugParams = { slug: string };
 
+// Handles requests for commodity lists, details and price history.
 export async function listCommodities(_req: Request, res: Response) {
   const { query } = getValid<unknown, ListQuery>(res);
   const { items, total } = await service.listCommodities(query);
