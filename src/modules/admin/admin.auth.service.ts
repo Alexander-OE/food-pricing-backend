@@ -1,11 +1,10 @@
-// Business logic for admin login and token creation.
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { env } from '../../config/env';
 import { prisma } from '../../lib/prisma';
 import { ApiError } from '../../utils/ApiError';
 
-/** Leaves out the password hash. */
+
 function toPublicAdmin(admin: {
   id: number;
   email: string;
