@@ -26,7 +26,6 @@ import { healthRouter, metaRouter } from './modules/meta/meta.routes';
 
 export const app = express();
 
-// Trust one proxy hop so rate limits see the real client IP.
 app.set('trust proxy', 1);
 
 app.use(helmet());
@@ -41,16 +40,14 @@ app.use(express.json({ limit: JSON_BODY_LIMIT }));
 app.use(cookieParser());
 app.use(pinoHttp({ logger }));
 
-// Docs sit outside the rate limiter and session tracking.
+// Documentation
 app.use(
   '/api/docs',
-  // Swagger UI needs inline scripts, which helmet's default CSP blocks.
   helmet({ contentSecurityPolicy: false }),
   swaggerUi.serve,
   swaggerUi.setup(swaggerDocument, { swaggerOptions: { persistAuthorization: true } }),
 );
 
-// Photos load from another origin, so relax helmet's same-origin rule here.
 app.use(
   '/images',
   helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }),

@@ -1,6 +1,6 @@
-# Lagos Food Price Forecast API (`food-pricing-backend`)
+# FoodCast: Lagos Food Price Forecast (`food-pricing-backend`)
 
-A REST API that forecasts **next month's prices for 25 common foods in Lagos, Nigeria** (rice, yam, tomato, garri, eggs, palm oil and more). For each food it returns a predicted price, a likely price range, a confidence score, whether the price is going **up, down or staying stable**, and a plain-English explanation of why. It is built for shoppers, traders and anyone budgeting for food in Lagos, and it powers a separate web frontend and an admin dashboard.
+> This README covers the **whole FoodCast product** (website, API, database and forecasting), not only this backend folder. The website lives in a separate repository, [`food-pricing-frontend`](https://github.com/Alexander-OE/food-pricing-frontend) (the local folder is often named `food-price-frontend`).
 
 > **Heads up:** the price data in this repo is a snapshot of Lagos prices (January 2018 to May 2026) built mostly from National Bureau of Statistics (NBS) figures, with some months estimated. See [ml-data/SOURCES.md](ml-data/SOURCES.md) for exactly what is real and what is estimated.
 
@@ -8,64 +8,208 @@ A REST API that forecasts **next month's prices for 25 common foods in Lagos, Ni
 
 ## Table of contents
 
-1. [Features](#1-features)
-2. [Tech stack](#2-tech-stack)
-3. [Architecture](#3-architecture)
-4. [How the forecasting works](#4-how-the-forecasting-works)
-5. [Getting started](#5-getting-started)
-6. [Environment variables](#6-environment-variables)
-7. [npm scripts](#7-npm-scripts)
-8. [API overview](#8-api-overview)
-9. [Database](#9-database)
-10. [Testing, linting and formatting](#10-testing-linting-and-formatting)
-11. [Deployment (Neon + Render)](#11-deployment-neon--render)
-12. [Troubleshooting](#12-troubleshooting)
-13. [Frontend, contributing and license](#13-frontend-contributing-and-license)
+1. [What FoodCast is](#1-what-foodcast-is)
+2. [How the whole system fits together](#2-how-the-whole-system-fits-together)
+3. [Features](#3-features)
+4. [Tech stack](#4-tech-stack)
+5. [Frontend overview](#5-frontend-overview)
+6. [Backend overview](#6-backend-overview)
+7. [Getting started (run both projects locally)](#7-getting-started-run-both-projects-locally)
+8. [Environment variables](#8-environment-variables)
+9. [Scripts](#9-scripts)
+10. [Deployment (Neon, Render, Vercel)](#10-deployment-neon-render-vercel)
+11. [How the forecasting works, in depth](#11-how-the-forecasting-works-in-depth)
+12. [API reference and examples](#12-api-reference-and-examples)
+13. [Database](#13-database)
+14. [Testing, linting and formatting](#14-testing-linting-and-formatting)
+15. [Troubleshooting](#15-troubleshooting)
+16. [Contributing, credits and license](#16-contributing-credits-and-license)
 
 ---
 
-## 1. Features
+## 1. What FoodCast is
+
+FoodCast tells people in Lagos, Nigeria **where food prices are heading next month**. It covers **25 common foods** (rice, yam, tomato, garri, eggs, palm oil and more). For each food it shows today's price, a predicted price for next month, a likely price range, how confident the forecast is, whether the price is **rising, falling or steady**, and a plain-English explanation of why.
+
+It is built for **shoppers, market traders and anyone budgeting for food**. Food prices in Nigeria can jump from one month to the next because of the dollar rate, fuel costs, the season and supply. That makes household budgeting hard. FoodCast gives you an early, easy-to-read warning, so you can decide what to buy now, what to wait on, and how much to set aside. It also checks its own work: once the real price is known, it scores the earlier forecast and shows you how close it was.
+
+---
+
+## 2. How the whole system fits together
+
+```mermaid
+flowchart LR
+    U["Shopper or admin<br/>(web browser)"] --> FE["Frontend<br/>Next.js on Vercel"]
+    FE -- "HTTPS requests to /api/v1" --> BE["Backend API<br/>Express on Render"]
+    BE -- "Prisma" --> DB[("PostgreSQL<br/>on Neon")]
+    BE -- "chat questions" --> LLM["Google Gemini<br/>(LLM)"]
+    CRON["Monthly forecasting pipeline<br/>(node-cron inside the backend)"] -- "reads data files, writes forecasts" --> DB
+    BE --- CRON
+    ML["ml-data/ files<br/>(prices and indicators)"] --> CRON
+```
+
+How to read the diagram:
+
+| Part | Where it runs | What it does |
+|---|---|---|
+| **Frontend** | Vercel | The website people see. It holds no data of its own. It asks the backend for everything. |
+| **Backend API** | Render | Receives requests, checks them, reads and writes the database, and answers in a standard JSON format. |
+| **PostgreSQL** | Neon | Stores commodities, prices, forecasts, accuracy scores, visitors, chats, feedback and the admin account. |
+| **Gemini LLM** | Google | Writes the answers in the per-commodity chat. If no API key is set, or Gemini fails, the backend uses a built-in rule-based answerer instead, so chat always replies. |
+| **Monthly pipeline** | Inside the backend process | On the 16th of each month at 07:00 (Lagos time): load new data, score old forecasts, make new forecasts. A lighter indicator refresh runs every day at 06:00. Admins can also trigger it by hand. |
+
+---
+
+## 3. Features
+
+### What a shopper can do (public site)
+
+| Feature | What you see |
+|---|---|
+| **Browse prices** | Every food in a grid, with search, category, direction and sort filters, and paging. |
+| **Next-month forecasts** | A predicted price, a likely price range (an 80% range) and a **confidence** score for each food. |
+| **Rising or falling indicators** | Each food is marked **Rising ↑** (red), **Falling ↓** (green) or **Steady →** (grey). A forecast change within ±2% counts as steady. |
+| **Commodity detail pages** | One page per food with price now, the forecast, and the reasons behind it. |
+| **What moves prices** | A list of factors (trend, season, diesel, exchange rate, supply), each with its direction, size and a plain sentence. |
+| **Price history** | A chart of past monthly prices plus the forecast point, with a choice of time range. |
+| **Forecast accuracy** | A chart and table of what we predicted against the real price for past months. |
+| **Market overview** | The home page shows how many foods are rising, falling or steady, the biggest expected rises, and market drivers (dollar rate, diesel, petrol, food inflation). |
+| **AI chat explanations** | On each commodity page you can ask the FoodCast bot why a price is moving. Answers come from Google Gemini, or from a rule-based fallback using the real forecast data. |
+| **How it works page** | A short explanation, a "how to read a forecast" guide, shopping tips, live data status and service health. |
+| **Feedback** | A form to send a message (general, bug, prediction accuracy or feature request). |
+| **Dark mode** | A light and dark theme toggle that remembers your choice. |
+
+### What an admin can do (`/admin`, sign-in required)
+
+| Feature | What you see |
+|---|---|
+| **Admin access** | Email and password sign-in. The admin site is not linked from the public site; you open `/admin` by typing it. |
+| **Overview** | Headline cards (visitors, views, chats, feedback, accuracy) and the latest data refreshes. |
+| **Usage analytics** | A daily usage chart and the most viewed commodities. |
+| **Data health** | How fresh each data step is, a button to run a refresh by hand, and the refresh history. |
+| **Forecast accuracy** | Forecast error and direction hit rate over time, plus the best and worst foods. |
+| **Feedback inbox** | Read feedback and mark each message `NEW`, `REVIEWED` or `RESOLVED`. |
+| **Commodities** | A list of all commodities. |
+
+### Behind the scenes (backend)
 
 | Feature | What it does |
 |---|---|
-| **Price forecasts** | A predicted price for next month for each of the 25 foods, with a lower and upper bound (an 80% range). |
 | **Confidence scores** | A number from 0.55 to 0.92 for every forecast. A tighter price range means higher confidence. |
-| **Direction** | `UP`, `DOWN` or `STABLE`. A forecast change within ±2% counts as `STABLE`. |
-| **Price history** | Monthly price history for each food, plus the forecast point. |
 | **Accuracy tracking** | Past forecasts are scored against the real price once it is known (percent error and whether the direction was right). |
 | **Market indicators** | Latest USD/NGN exchange rate, diesel, petrol and food inflation, with the monthly change. |
 | **Usage analytics** | Anonymous page views, commodity views and searches, recorded against a visitor-chosen session ID (no IP addresses stored). |
-| **Feedback** | Visitors can send feedback; admins can review it and mark it `NEW`, `REVIEWED` or `RESOLVED`. |
-| **AI chat explanations** | A chat per commodity, answered by Google Gemini. If no API key is set, or Gemini fails, a rule-based responder answers from the real forecast data instead. |
-| **Admin login** | Email and password login that returns a JWT. Admin routes cover an overview, analytics, data freshness, accuracy, feedback and manual data refreshes. |
-| **Monthly cron pipeline** | On the 16th of each month at 07:00 (Lagos time) the API loads new data, scores old forecasts and makes new ones. A lighter indicator refresh runs daily at 06:00. |
+| **Monthly cron pipeline** | Loads new data, scores old forecasts and makes new ones, on a schedule. |
 | **Rate limiting** | Separate limits for general traffic, chat, feedback, analytics and admin login. |
-| **Swagger docs** | Interactive API docs served by the app itself. |
+| **Swagger docs** | Interactive API docs served by the app itself at `/api/docs`. |
 
 ---
 
-## 2. Tech stack
+## 4. Tech stack
 
-| Area | Technology |
+| Area | Frontend (`food-pricing-frontend`) | Backend (`food-pricing-backend`) |
+|---|---|---|
+| Language | TypeScript | TypeScript |
+| Framework | Next.js 16 (App Router) with React 19 | Express 5 on Node.js |
+| Styling | Tailwind CSS 4 (via PostCSS) | not applicable |
+| Data fetching | Axios with small custom hooks (`useState` and `useEffect`, no React Query) | not applicable |
+| Charts | Recharts | not applicable |
+| Fonts | Bricolage Grotesque and Plus Jakarta Sans (`next/font`) | not applicable |
+| Database access | not applicable | Prisma 7 with the `@prisma/adapter-pg` driver adapter |
+| Database | not applicable | PostgreSQL (Neon in production) |
+| Validation | not applicable | Zod |
+| Auth | Admin token kept in `localStorage` | JSON Web Tokens (`jsonwebtoken`) and `bcryptjs` password hashes |
+| LLM (chat) | not applicable | Google Gemini via `@google/generative-ai` (default model `gemini-2.5-flash`) |
+| Forecasting | not applicable | A **local, in-process model** (default), with an **optional remote model server** over HTTP |
+| Scheduling | not applicable | `node-cron` |
+| Security and ops | not applicable | `helmet`, `cors`, `compression`, `express-rate-limit`, `pino` logging |
+| API docs | not applicable | `swagger-ui-express` |
+| Tests | none yet | Vitest and Supertest |
+| Code quality | ESLint | ESLint and Prettier |
+| Hosting | Vercel | Render (app) and Neon (database) |
+
+---
+
+## 5. Frontend overview
+
+The frontend is a Next.js app with a **public site** and a separate **admin site**. It shows only data from this API; nothing is hardcoded. Repository: <https://github.com/Alexander-OE/food-pricing-frontend>.
+
+### Pages and routes
+
+**Public site** (the navbar links only to these)
+
+| Route | What it shows |
 |---|---|
-| Runtime | Node.js |
-| Web framework | Express 5 |
-| Language | TypeScript |
-| ORM | Prisma 7 (using the `@prisma/adapter-pg` driver adapter) |
-| Database | PostgreSQL |
-| Validation | Zod |
-| Auth | JSON Web Tokens (`jsonwebtoken`) and `bcryptjs` for password hashes |
-| LLM (chat) | Google Gemini via `@google/generative-ai` (default model `gemini-2.5-flash`) |
-| Forecasting | A **local, in-process model** (default), with an **optional remote model server** you point to over HTTP |
-| Scheduling | `node-cron` |
-| Security and ops | `helmet`, `cors`, `compression`, `express-rate-limit`, `pino` logging |
-| API docs | `swagger-ui-express` |
-| Tests | Vitest and Supertest |
-| Code quality | ESLint and Prettier |
+| `/` | Welcome banner, market overview (rising, falling and steady counts), market drivers, biggest expected rises, category links |
+| `/commodities` | Every commodity, with search, category, direction and sort filters, and paging |
+| `/commodities/[slug]` | Price now, next month's forecast with range and confidence, reasons, price history chart, forecast accuracy, chat with the FoodCast bot, related commodities |
+| `/how-it-works` | How a forecast is made, how to read one, shopping tips, live data status and service health |
+| `/feedback` | Feedback form |
+
+**Admin site** (not linked from the public site)
+
+| Route | What it shows |
+|---|---|
+| `/admin/login` | Email and password sign-in |
+| `/admin` | Headline cards and the latest data refreshes |
+| `/admin/analytics` | Daily usage chart and most viewed commodities |
+| `/admin/data` | Freshness of each data step, run a refresh (asks to confirm), refresh history |
+| `/admin/accuracy` | Forecast error and direction hit rate over time, best and worst commodities |
+| `/admin/feedback` | Feedback inbox; change a message's status (asks to confirm) |
+| `/admin/commodities` | List of all commodities |
+
+### Main components
+
+All of these are under `src/components/` in the frontend.
+
+| Folder | What is in it |
+|---|---|
+| `ui/` | Reusable pieces: buttons, cards, skeleton loaders, error and empty states (`AsyncView`), dialogs, badges, pagination, the dark mode toggle |
+| `commodity/` | Commodity tiles and grid, category chips, the forecast panel, the factor list ("what moves prices"), the accuracy table |
+| `charts/` | Recharts charts: price history, line trends, rankings |
+| `home/` | Home page hero, market pulse and indicator strip |
+| `info/` | The "how to read a forecast" guide, shopping tips, health card |
+| `chat/` | The chat box on commodity pages |
+| `layout/` | Navbar, footer, and the invisible page view tracker |
+| `admin/` | Admin sidebar and badges |
+
+### How it calls the API
+
+```
+page  ->  hook (src/lib/hooks)  ->  API function (src/lib/api)  ->  one Axios client  ->  backend /api/v1
+```
+
+- `src/lib/api/client.ts` holds the **one Axios instance**. Its base URL comes from `NEXT_PUBLIC_API_URL`. Before each request it adds a header:
+  - visitor requests get `X-Session-Id`, a random UUID created once per browser and saved in `localStorage` (the backend needs it for chat and analytics);
+  - admin requests (anything under `/admin`) get `Authorization: Bearer <token>`.
+- If an admin request comes back `401`, the token is cleared and the browser goes to `/admin/login`.
+- `src/lib/api/*.ts` has one function per endpoint. `src/lib/hooks/*.ts` has one small hook per data need, each returning `{ data, loading, error, refetch }`.
+- Every data section shows a loading skeleton, a friendly empty message, or an error with a "Try again" button.
+- The admin token is stored in `localStorage`. The admin layout redirects to the login page if there is no token or the backend rejects it.
+- Page views, commodity views and searches are reported to `POST /analytics/events`.
+- Commodity photos are loaded from the backend at `/images/commodities/...`. The frontend works out the backend's origin by dropping the path from `NEXT_PUBLIC_API_URL`.
+
+### Which environment variable sets the API URL
+
+`NEXT_PUBLIC_API_URL`. It must include `/api/v1`, for example `http://localhost:5000/api/v1`. See [Environment variables](#8-environment-variables).
+
+### Run the frontend locally
+
+You need Node.js 20.9 or newer (Next.js 16 requires it) and the backend running (see [Getting started](#7-getting-started-run-both-projects-locally)).
+
+```bash
+git clone https://github.com/Alexander-OE/food-pricing-frontend.git
+cd food-pricing-frontend
+npm install
+echo "NEXT_PUBLIC_API_URL=http://localhost:5000/api/v1" > .env.local
+npm run dev
+```
+
+On Windows PowerShell, create the env file with `Set-Content .env.local "NEXT_PUBLIC_API_URL=http://localhost:5000/api/v1"` instead of `echo`. Then open <http://localhost:3000>.
 
 ---
 
-## 3. Architecture
+## 6. Backend overview
 
 ### How a request flows
 
@@ -87,19 +231,6 @@ Frontend / client
 ```
 
 Admin routes add one more step: `requireAdmin` checks the `Authorization: Bearer <token>` header before the controller runs.
-
-### How forecasts get into the database
-
-```
-node-cron (or POST /admin/data/refresh, or npm run pipeline:run)
-       |
-       v
-  Monthly pipeline:  1. ingest prices  ->  2. ingest indicators  ->  3. score old forecasts  ->  4. generate new forecasts
-                                                                                                          |
-                                                                                    MODEL_PROVIDER=local  |  MODEL_PROVIDER=remote
-                                                                                    (built-in model)      |  (HTTP call to MODEL_SERVER_URL)
-                                                                                                          |  if it fails -> local model
-```
 
 ### Folder structure
 
@@ -145,9 +276,311 @@ food-pricing-backend/
 
 Each module follows the same pattern: **routes** (URLs) → **schemas** (Zod validation) → **controller** (HTTP in/out) → **service** (the real logic and database calls).
 
+### How forecasting works (the short version)
+
+1. **Collect.** Monthly Lagos prices for each food, plus indicators such as the dollar rate and diesel price, are loaded from files in `ml-data/`.
+2. **Predict.** For each food the model looks at the last few years of prices. It adds up the recent trend, the usual seasonal pattern, and the effect of diesel, the exchange rate and supply. That gives a predicted price and a likely range.
+3. **Explain.** The backend works out the percent change, labels it up, down or steady, and writes a plain-English reason from the biggest factors.
+4. **Check.** When the real price arrives, the earlier forecast is scored. These scores power the accuracy charts.
+
+This runs automatically on the 16th of each month. The full detail is in [section 11](#11-how-the-forecasting-works-in-depth).
+
+### API groups under `/api/v1`
+
+| Group | Endpoints | Access |
+|---|---|---|
+| **Meta** | `GET /health`, `GET /meta/data-status` | Public |
+| **Dashboard** | `GET /dashboard/summary`, `GET /indicators/latest` | Public |
+| **Commodities** | `GET /commodities` (filters: `search`, `category`, `direction`, `sort`, `page`, `limit`; `sort` is `name`, `price`, `change` for biggest predicted drop first, or `-change` for biggest rise first), `GET /commodities/categories`, `GET /commodities/:slug`, `GET /commodities/:slug/history?months=`, `GET /commodities/:slug/accuracy?months=`, `GET /commodities/:slug/related` | Public |
+| **Analytics** | `POST /analytics/events` | Session ID |
+| **Chat** | `POST /chat/conversations`, `POST /chat/conversations/:id/messages`, `GET /chat/conversations/:id` | Session ID |
+| **Feedback** | `POST /feedback` | Public (session optional) |
+| **Admin auth** | `POST /admin/auth/login`, `GET /admin/auth/me` | Login is public; `me` needs a token |
+| **Admin** | `GET /admin/overview`, `GET /admin/analytics/usage`, `GET /admin/analytics/commodities`, `GET /admin/data/status`, `GET /admin/data/refresh-logs`, `POST /admin/data/refresh`, `GET /admin/accuracy`, `GET /admin/feedback`, `PATCH /admin/feedback/:id`, `GET /admin/commodities` | Admin token |
+
+Interactive docs: `/api/docs` (Swagger). Photos are served at `/images/commodities/<slug>.jpg`, which is **not** under `/api/v1`.
+
+### How auth works
+
+| Type | Who it is for | How to use it |
+|---|---|---|
+| **Public** | Browsing forecasts | No header needed. |
+| **Session ID** | Chat and analytics events | Send an `X-Session-Id` header containing any **UUID** your frontend generates once per visitor and stores. Without a valid UUID, these endpoints return `400`. |
+| **Admin token (JWT)** | Everything under `/admin` except login | `POST /admin/auth/login` returns a `token`. Send it as `Authorization: Bearer <token>`. |
+
+Any request that sends a valid `X-Session-Id` also records the visitor (the ID and browser user-agent, no IP address). Feedback works with or without the header.
+
+The admin account is created by the seed script from `ADMIN_EMAIL`, `ADMIN_PASSWORD` and `ADMIN_NAME`. Passwords are stored as bcrypt hashes. There is one login route and no sign-up.
+
 ---
 
-## 4. How the forecasting works
+## 7. Getting started (run both projects locally)
+
+Do the steps **in this order**: database, backend, then frontend. The frontend needs a running backend to show anything.
+
+### Prerequisites
+
+- **Node.js** and **npm**. Use **Node 20.19 or newer**. Prisma 7 and the TypeScript tooling need a recent version, and Next.js 16 needs at least 20.9. *TODO: neither `package.json` has an `engines` field, so no exact version is enforced.*
+- **PostgreSQL** installed and running (or a free [Neon](https://neon.tech) database).
+- **Git**.
+- *Optional:* a Google Gemini API key for AI chat. Without it, chat still works using the rule-based responder.
+
+### Part A: the backend
+
+**1. Clone and install**
+
+```bash
+git clone https://github.com/Alexander-OE/food-pricing-backend.git
+cd food-pricing-backend
+npm install
+```
+
+**2. Create your `.env` file**
+
+```bash
+# macOS / Linux / Git Bash
+cp .env.example .env
+
+# Windows PowerShell
+Copy-Item .env.example .env
+```
+
+Open `.env` and set at least `DATABASE_URL` (your Postgres password), `JWT_SECRET` (any random string of 16+ characters) and `ADMIN_PASSWORD` (8+ characters). The sample admin email and password in `.env.example` are for local use only, so change them before deploying. See [Environment variables](#8-environment-variables).
+
+> `.env` is in `.gitignore`. Never commit it.
+
+**3. Create the database**
+
+The default `DATABASE_URL` expects a database called `food_price_forecast`. Create it in pgAdmin (right-click *Databases* → *Create* → *Database*), or from a terminal:
+
+```bash
+psql -U postgres -c "CREATE DATABASE food_price_forecast;"
+```
+
+**4. Run the migrations** (creates the tables)
+
+```bash
+npm run db:migrate
+```
+
+**5. Seed the database** (loads prices, indicators, 25 commodities, the admin account, 12 months of back-tested forecasts, and mock visitor data)
+
+```bash
+npm run db:seed
+```
+
+> ⚠️ The seed script **deletes every row in every table first**, then re-creates demo data. Never run it against a database holding data you want to keep.
+
+**6. Start the dev server**
+
+```bash
+npm run dev
+```
+
+You should see `API running on http://localhost:5000 (docs at /api/docs)`. Check it:
+
+```bash
+curl http://localhost:5000/api/v1/health
+```
+
+Then open the interactive docs at <http://localhost:5000/api/docs>. Leave this terminal running.
+
+The admin account comes from `ADMIN_EMAIL`, `ADMIN_PASSWORD` and `ADMIN_NAME` in your `.env` at seed time. If you change them later, run `npm run db:seed` again.
+
+### Part B: the frontend
+
+Open a **second terminal**.
+
+**7. Clone and install**
+
+```bash
+git clone https://github.com/Alexander-OE/food-pricing-frontend.git
+cd food-pricing-frontend
+npm install
+```
+
+**8. Point it at the backend**
+
+The frontend reads one setting, `NEXT_PUBLIC_API_URL`. Put it in a file called `.env.local`:
+
+```bash
+# macOS / Linux / Git Bash
+echo "NEXT_PUBLIC_API_URL=http://localhost:5000/api/v1" > .env.local
+
+# Windows PowerShell
+Set-Content .env.local "NEXT_PUBLIC_API_URL=http://localhost:5000/api/v1"
+```
+
+(The frontend repo's `.gitignore` ignores every `.env*` file, so a fresh clone has no `.env.example`. Creating `.env.local` by hand is the reliable way.)
+
+**9. Start the frontend**
+
+```bash
+npm run dev
+```
+
+**10. Open the site**
+
+- Public site: <http://localhost:3000>
+- Admin site: <http://localhost:3000/admin> (sign in with the `ADMIN_EMAIL` and `ADMIN_PASSWORD` from the backend `.env`)
+
+The backend already allows requests from `http://localhost:3000` (that is the default `CORS_ORIGIN`). If you run the frontend on another port, change `CORS_ORIGIN` in the backend `.env` and restart the backend.
+
+---
+
+## 8. Environment variables
+
+All values below are **placeholders**. Never put real passwords or API keys in this README, in `.env.example`, or in commits.
+
+### Backend (`food-pricing-backend`)
+
+Variables are checked when the server starts (see [src/config/env.ts](src/config/env.ts)). If any are wrong, the server prints what is wrong and exits.
+
+| Name | Required? | Default | Description | Example |
+|---|---|---|---|---|
+| `NODE_ENV` | Optional | `development` | `development`, `test` or `production`. In production, error messages are generic. | `production` |
+| `PORT` | Optional | `5000` | Port the server listens on. Render sets this for you. | `5000` |
+| `DATABASE_URL` | **Required** | none | PostgreSQL connection string. | `postgresql://postgres:YOUR_PASSWORD@localhost:5432/food_price_forecast` |
+| `CORS_ORIGIN` | Optional (set it in production) | `http://localhost:3000` | The one frontend URL allowed to call the API. Must match exactly, with no trailing slash. | `https://your-frontend.vercel.app` |
+| `PUBLIC_URL` | Optional (set it in production) | `http://localhost:5000` | Public address of **this API**, used to build image URLs. Use the bare origin only, no `/api/v1`. | `https://your-api.onrender.com` |
+| `JWT_SECRET` | **Required** | none | Secret used to sign admin tokens. At least 16 characters. | `a-long-random-string-here` |
+| `JWT_EXPIRES_IN` | Optional | `1d` | How long an admin token lasts. | `1d` |
+| `ADMIN_EMAIL` | **Required** | none | Email for the admin account created by the seed script. | `admin@example.com` |
+| `ADMIN_PASSWORD` | **Required** | none | Password for that admin. At least 8 characters. | `your-strong-password` |
+| `ADMIN_NAME` | Optional | `Admin` | Display name for the admin. | `Site Admin` |
+| `MODEL_PROVIDER` | Optional | `local` | `local` uses the built-in model; `remote` calls `MODEL_SERVER_URL`. | `local` |
+| `MODEL_SERVER_URL` | Optional | `http://localhost:8000` | Base URL of the remote model server (only used if `MODEL_PROVIDER=remote`). | `http://localhost:8000` |
+| `MODEL_TIMEOUT_MS` | Optional | `15000` | How long to wait for the remote model, in milliseconds. | `15000` |
+| `DATA_SOURCE` | Optional | `mock` | `mock` reads the files in `ml-data/`. `nbs` is reserved and not connected yet. | `mock` |
+| `LLM_API_KEY` | Optional | empty | Google Gemini API key. If empty, chat uses the rule-based responder. | `your-gemini-api-key` |
+| `LLM_MODEL` | Optional | `gemini-2.5-flash` | Gemini model name. | `gemini-2.5-flash` |
+| `LLM_MAX_TOKENS` | Optional | `1024` | Maximum length of a chat reply. | `1024` |
+| `ENABLE_CRON` | Optional | `true` | Set to `false` to turn off the scheduled jobs. | `true` |
+
+### Frontend (`food-pricing-frontend`)
+
+| Name | Required? | Default | Description | Example |
+|---|---|---|---|---|
+| `NEXT_PUBLIC_API_URL` | **Required** | none | Address of the backend API, **including `/api/v1`**. The frontend also uses it to find the photos, by dropping the path. Local file: `.env.local`. On Vercel: Project Settings → Environment Variables. | `https://your-api.onrender.com/api/v1` |
+
+Any variable starting with `NEXT_PUBLIC_` is baked into the frontend's JavaScript at **build time** and is visible to anyone using the site. Never put a secret in one.
+
+---
+
+## 9. Scripts
+
+### Backend (`food-pricing-backend`)
+
+| Script | Command it runs | What it does |
+|---|---|---|
+| `npm run dev` | `tsx watch src/server.ts` | Starts the server with auto-restart when files change. |
+| `npm run build` | `prisma generate && tsc` | Generates the Prisma client, then compiles TypeScript into `dist/`. |
+| `npm start` | `node dist/src/server.js` | Runs the compiled server (run `build` first). |
+| `npm run data:generate` | `tsx scripts/build-ml-data.ts` | Rebuilds the price and indicator files in `ml-data/` from `ml-data/sources/`. |
+| `npm run db:migrate` | `prisma migrate dev` | Applies migrations to your **development** database (and creates new ones if the schema changed). |
+| `npm run db:seed` | `tsx prisma/seed.ts` | Wipes the database and fills it with demo data. |
+| `npm run db:reset` | `prisma migrate reset --force` | Drops the database, re-applies all migrations and runs the seed command, **without asking**. |
+| `npm run pipeline:run` | `tsx src/ml-services/pipeline/runMonthlyPipeline.ts` | Runs the full monthly pipeline once, by hand. |
+| `npm test` | `vitest run` | Runs the API tests once. |
+| `npm run lint` | `eslint .` | Checks the code for problems. |
+| `npm run format` | `prettier --write .` | Reformats all files. |
+
+### Frontend (`food-pricing-frontend`)
+
+| Script | Command it runs | What it does |
+|---|---|---|
+| `npm run dev` | `next dev` | Starts the site at <http://localhost:3000> with live reload. |
+| `npm run build` | `next build` | Makes the optimised production build. |
+| `npm start` | `next start` | Serves the production build (run `build` first). |
+| `npm run lint` | `eslint` | Checks the code for problems. |
+
+---
+
+## 10. Deployment (Neon, Render, Vercel)
+
+Deploy in this order: **Neon (database) → Render (backend) → Vercel (frontend)**. The backend needs the database address, and the frontend needs the backend address. After Vercel gives you the frontend URL, you go back to Render once to set `CORS_ORIGIN`.
+
+### 1. Create the database on Neon
+
+1. Create a Neon project and copy its connection string. It looks like `postgresql://USER:PASSWORD@HOST/DBNAME?sslmode=require`.
+2. From your own computer, point `DATABASE_URL` at it (in `.env`) and create the tables:
+
+   ```bash
+   npx prisma migrate deploy
+   ```
+
+   (`migrate deploy` is Prisma's command for applying existing migrations to a non-development database. `npm run db:migrate` is for local development.)
+3. Seed it:
+
+   ```bash
+   npm run db:seed
+   ```
+
+   The seed uses `ADMIN_EMAIL` and `ADMIN_PASSWORD` from the `.env` on your computer to create the admin account, so set the values you want to use in production first.
+
+   ⚠️ Seeding **wipes the database first**. Only do this on a new, empty database.
+
+### 2. Create the web service on Render
+
+| Setting | Value |
+|---|---|
+| Environment | Node |
+| **Build command** | `npm install --include=dev && npm run build` |
+| **Start command** | `npm start` |
+| Health check path (optional) | `/api/v1/health` |
+
+Add these environment variables in the Render dashboard:
+
+| Variable | Value |
+|---|---|
+| `NODE_ENV` | `production` |
+| `DATABASE_URL` | Your Neon connection string |
+| `CORS_ORIGIN` | Your production frontend URL, e.g. `https://your-frontend.vercel.app` |
+| `PUBLIC_URL` | Your Render URL, e.g. `https://your-api.onrender.com` |
+| `JWT_SECRET` | A long random string (16+ characters) |
+| `ADMIN_EMAIL` | The admin email (must be a valid email) |
+| `ADMIN_PASSWORD` | A strong password (8+ characters) |
+
+Optional: `LLM_API_KEY` (enables Gemini chat), `ADMIN_NAME`, `MODEL_PROVIDER`, `MODEL_SERVER_URL`, `ENABLE_CRON`, and the others in the [table above](#8-environment-variables). Render sets `PORT` for you.
+
+When it is live, check `https://your-api.onrender.com/api/v1/health`.
+
+### 3. Deploy the frontend on Vercel
+
+1. Import the `food-pricing-frontend` repository into Vercel. Vercel detects Next.js by itself.
+2. Use these settings (they are the defaults for Next.js):
+
+   | Setting | Value |
+   |---|---|
+   | Framework preset | Next.js |
+   | Install command | `npm install` |
+   | **Build command** | `npm run build` |
+   | Start | Handled by Vercel (locally the equivalent is `npm start`) |
+   | Node.js version | 20.9 or newer |
+
+3. Add one environment variable (Project Settings → Environment Variables):
+
+   | Variable | Value |
+   |---|---|
+   | `NEXT_PUBLIC_API_URL` | `https://your-api.onrender.com/api/v1` |
+
+4. Deploy, then copy the production URL (for example `https://your-frontend.vercel.app`).
+5. Go back to Render, set `CORS_ORIGIN` to that exact URL, and let the service redeploy.
+
+### Gotchas
+
+- **Render build needs dev dependencies.** Use `npm install --include=dev`. TypeScript and all the `@types/*` packages are `devDependencies`, and `npm run build` needs them. With a plain production install, the build fails.
+- **`PUBLIC_URL` is the bare origin**, for example `https://your-api.onrender.com`, with **no `/api/v1`** and no trailing slash. Images are served from `/images`, not from under `/api/v1`. (`src/config/env.ts` also trims any path down to the origin, and rejects a value that is not a full URL.)
+- **`CORS_ORIGIN` must exactly match the production frontend URL**: same `https`, same host, no trailing slash. Only one origin is allowed. Vercel also makes preview URLs for each branch; those are different origins and will be blocked.
+- **Free Render instances sleep after inactivity.** The first request after a quiet period can take **up to about 50 seconds**, so the site may look broken for a moment. Cron jobs run inside the server process, so they cannot fire while the instance is asleep.
+- **The frontend only picks up env changes after a new build.** `NEXT_PUBLIC_API_URL` is baked in when Next.js builds the site. After you change it in Vercel, **redeploy** (Deployments → Redeploy). Editing the value alone changes nothing on the live site. The same applies locally: restart `npm run dev` after editing `.env.local`.
+- **`NEXT_PUBLIC_API_URL` includes `/api/v1`**, unlike `PUBLIC_URL`. Mixing these two up is the most common setup mistake.
+- **Seeding a remote database from far away is slow.** The seed makes many writes, so run it once and be patient. The code already allows long database transactions for this reason (see [P2028](#15-troubleshooting)).
+- Start the server from the project root. It reads `public/images` and `ml-data/` relative to the working directory.
+
+---
+
+## 11. How the forecasting works, in depth
 
 ### Where the data comes from
 
@@ -193,6 +626,19 @@ Run on the 16th of each month at 07:00 Africa/Lagos time (shortly after the NBS 
 
 Every step writes a row to the `DataRefreshLog` table, which admins can read.
 
+You can also start it by hand with `npm run pipeline:run`, or from the admin site's **Data health** page (`POST /admin/data/refresh`).
+
+```
+node-cron (or POST /admin/data/refresh, or npm run pipeline:run)
+       |
+       v
+  Monthly pipeline:  1. ingest prices  ->  2. ingest indicators  ->  3. score old forecasts  ->  4. generate new forecasts
+                                                                                                          |
+                                                                                    MODEL_PROVIDER=local  |  MODEL_PROVIDER=remote
+                                                                                    (built-in model)      |  (HTTP call to MODEL_SERVER_URL)
+                                                                                                          |  if it fails -> local model
+```
+
 > **Note:** with `DATA_SOURCE=mock`, steps 1 and 2 only read the files already in `ml-data/`. They do not download anything. New months appear only after the files are updated and the pipeline runs.
 
 ### Remote model and the fallback
@@ -205,133 +651,14 @@ Set `MODEL_PROVIDER=remote` and `MODEL_SERVER_URL` to use your own model server.
 
 ---
 
-## 5. Getting started
-
-### Prerequisites
-
-- **Node.js** and **npm**. A recent version is needed because of Prisma 7 and the TypeScript tooling (Node 20.19 or newer is a safe choice). *TODO: `package.json` has no `engines` field, so no exact version is enforced.*
-- **PostgreSQL** installed and running (or a free [Neon](https://neon.tech) database).
-- **Git**.
-- *Optional:* a Google Gemini API key for AI chat. Without it, chat still works using the rule-based responder.
-
-### Steps
-
-**1. Clone and install**
-
-```bash
-git clone https://github.com/Alexander-OE/food-pricing-backend.git
-cd food-pricing-backend
-npm install
-```
-
-**2. Create your `.env` file**
-
-```bash
-# macOS / Linux / Git Bash
-cp .env.example .env
-
-# Windows PowerShell
-Copy-Item .env.example .env
-```
-
-Open `.env` and set at least `DATABASE_URL` (your Postgres password), `JWT_SECRET` (any random string of 16+ characters) and `ADMIN_PASSWORD` (8+ characters). See [Environment variables](#6-environment-variables).
-
-> `.env` is in `.gitignore`. Never commit it.
-
-**3. Create the database**
-
-The default `DATABASE_URL` expects a database called `food_price_forecast`. Create it in pgAdmin (right-click *Databases* → *Create* → *Database*), or from a terminal:
-
-```bash
-psql -U postgres -c "CREATE DATABASE food_price_forecast;"
-```
-
-**4. Run the migrations** (creates the tables)
-
-```bash
-npm run db:migrate
-```
-
-**5. Seed the database** (loads prices, indicators, 25 commodities, the admin account, 12 months of back-tested forecasts, and mock visitor data)
-
-```bash
-npm run db:seed
-```
-
-> ⚠️ The seed script **deletes every row in every table first**, then re-creates demo data. Never run it against a database holding data you want to keep.
-
-**6. Start the dev server**
-
-```bash
-npm run dev
-```
-
-You should see `API running on http://localhost:5000 (docs at /api/docs)`. Check it:
-
-```bash
-curl http://localhost:5000/api/v1/health
-```
-
-Then open the interactive docs at <http://localhost:5000/api/docs>.
-
-The admin account is created from `ADMIN_EMAIL`, `ADMIN_PASSWORD` and `ADMIN_NAME` in your `.env` at seed time. If you change them later, run `npm run db:seed` again.
-
----
-
-## 6. Environment variables
-
-Variables are checked when the server starts (see [src/config/env.ts](src/config/env.ts)). If any are wrong, the server prints what is wrong and exits. All values below are **placeholders**.
-
-| Name | Required? | Default | Description | Example |
-|---|---|---|---|---|
-| `NODE_ENV` | Optional | `development` | `development`, `test` or `production`. In production, error messages are generic. | `production` |
-| `PORT` | Optional | `5000` | Port the server listens on. | `5000` |
-| `DATABASE_URL` | **Required** | none | PostgreSQL connection string. | `postgresql://postgres:YOUR_PASSWORD@localhost:5432/food_price_forecast` |
-| `CORS_ORIGIN` | Optional | `http://localhost:3000` | The one frontend URL allowed to call the API. Must match exactly (no trailing slash). | `https://your-frontend.example.com` |
-| `PUBLIC_URL` | Optional | `http://localhost:5000` | Public address of **this API**, used to build image URLs. Use the bare origin only, no `/api/v1`. | `https://your-api.onrender.com` |
-| `JWT_SECRET` | **Required** | none | Secret used to sign admin tokens. At least 16 characters. | `a-long-random-string-here` |
-| `JWT_EXPIRES_IN` | Optional | `1d` | How long an admin token lasts. | `1d` |
-| `ADMIN_EMAIL` | **Required** | none | Email for the admin account created by the seed script. | `admin@example.com` |
-| `ADMIN_PASSWORD` | **Required** | none | Password for that admin. At least 8 characters. | `ChangeMe-Please-123` |
-| `ADMIN_NAME` | Optional | `Admin` | Display name for the admin. | `Site Admin` |
-| `MODEL_PROVIDER` | Optional | `local` | `local` uses the built-in model; `remote` calls `MODEL_SERVER_URL`. | `local` |
-| `MODEL_SERVER_URL` | Optional | `http://localhost:8000` | Base URL of the remote model server (only used if `MODEL_PROVIDER=remote`). | `http://localhost:8000` |
-| `MODEL_TIMEOUT_MS` | Optional | `15000` | How long to wait for the remote model, in milliseconds. | `15000` |
-| `DATA_SOURCE` | Optional | `mock` | `mock` reads the files in `ml-data/`. `nbs` is reserved and not connected yet. | `mock` |
-| `LLM_API_KEY` | Optional | empty | Google Gemini API key. If empty, chat uses the rule-based responder. | `your-gemini-api-key` |
-| `LLM_MODEL` | Optional | `gemini-2.5-flash` | Gemini model name. | `gemini-2.5-flash` |
-| `LLM_MAX_TOKENS` | Optional | `1024` | Maximum length of a chat reply. | `1024` |
-| `ENABLE_CRON` | Optional | `true` | Set to `false` to turn off the scheduled jobs. | `true` |
-
-> **Never put real passwords or API keys in this README, in `.env.example`, or in commits.**
-
----
-
-## 7. npm scripts
-
-| Script | Command it runs | What it does |
-|---|---|---|
-| `npm run dev` | `tsx watch src/server.ts` | Starts the server with auto-restart when files change. |
-| `npm run build` | `prisma generate && tsc` | Generates the Prisma client, then compiles TypeScript into `dist/`. |
-| `npm start` | `node dist/src/server.js` | Runs the compiled server (run `build` first). |
-| `npm run data:generate` | `tsx scripts/build-ml-data.ts` | Rebuilds the price and indicator files in `ml-data/` from `ml-data/sources/`. |
-| `npm run db:migrate` | `prisma migrate dev` | Applies migrations to your **development** database (and creates new ones if the schema changed). |
-| `npm run db:seed` | `tsx prisma/seed.ts` | Wipes the database and fills it with demo data. |
-| `npm run db:reset` | `prisma migrate reset --force` | Drops the database, re-applies all migrations and runs the seed command, **without asking**. |
-| `npm run pipeline:run` | `tsx src/ml-services/pipeline/runMonthlyPipeline.ts` | Runs the full monthly pipeline once, by hand. |
-| `npm test` | `vitest run` | Runs the API tests once. |
-| `npm run lint` | `eslint .` | Checks the code for problems. |
-| `npm run format` | `prettier --write .` | Reformats all files. |
-
----
-
-## 8. API overview
+## 12. API reference and examples
 
 - **Base path:** `/api/v1` (for example `http://localhost:5000/api/v1/health`)
 - **Swagger UI:** `/api/docs` (for example <http://localhost:5000/api/docs>)
 - **Static images:** `/images/commodities/<slug>.jpg` (note: **not** under `/api/v1`)
-- **Detailed contract:** [API_CONTRACT.md](API_CONTRACT.md)
-  > **TODO:** `API_CONTRACT.md` does not exist in this repository yet, so this link is broken. Until it is added, the Swagger docs at `/api/docs` are the most complete reference.
+- **Detailed contract:** `API_CONTRACT.md`. It sits in the workspace folder next to both projects (one level above this one), not inside this repository, so it has no link here. A longer design brief, `food-pricing-build-spec.md`, is kept in the same place. The Swagger docs at `/api/docs` always match the running code.
+
+The endpoint list is in [API groups under `/api/v1`](#api-groups-under-apiv1) and the auth rules are in [How auth works](#how-auth-works).
 
 ### Response format
 
@@ -349,30 +676,9 @@ Success:
 
 Error codes used in the code include `VALIDATION_ERROR`, `BAD_REQUEST`, `UNAUTHORIZED`, `NOT_FOUND`, `CONFLICT`, `RATE_LIMITED` and `INTERNAL_ERROR`.
 
-### How auth works
+### Rate limits
 
-| Type | Who it is for | How to use it |
-|---|---|---|
-| **Public** | Browsing forecasts | No header needed. |
-| **Session ID** | Chat and analytics events | Send an `X-Session-Id` header containing any **UUID** your frontend generates once per visitor and stores. Without a valid UUID, these endpoints return `400`. |
-| **Admin token (JWT)** | Everything under `/admin` except login | `POST /admin/auth/login` returns a `token`. Send it as `Authorization: Bearer <token>`. |
-
-Any request that sends a valid `X-Session-Id` also records the visitor (the ID and browser user-agent, no IP address). Feedback works with or without the header.
-
-### Endpoint groups
-
-| Group | Endpoints | Access |
-|---|---|---|
-| **Meta** | `GET /health`, `GET /meta/data-status` | Public |
-| **Dashboard** | `GET /dashboard/summary`, `GET /indicators/latest` | Public |
-| **Commodities** | `GET /commodities` (filters: `search`, `category`, `direction`, `sort`, `page`, `limit`; `sort` is `name`, `price`, `change` for biggest predicted drop first, or `-change` for biggest rise first), `GET /commodities/categories`, `GET /commodities/:slug`, `GET /commodities/:slug/history?months=`, `GET /commodities/:slug/accuracy?months=`, `GET /commodities/:slug/related` | Public |
-| **Analytics** | `POST /analytics/events` | Session ID |
-| **Chat** | `POST /chat/conversations`, `POST /chat/conversations/:id/messages`, `GET /chat/conversations/:id` | Session ID |
-| **Feedback** | `POST /feedback` | Public (session optional) |
-| **Admin auth** | `POST /admin/auth/login`, `GET /admin/auth/me` | Login is public; `me` needs a token |
-| **Admin** | `GET /admin/overview`, `GET /admin/analytics/usage`, `GET /admin/analytics/commodities`, `GET /admin/data/status`, `GET /admin/data/refresh-logs`, `POST /admin/data/refresh`, `GET /admin/accuracy`, `GET /admin/feedback`, `PATCH /admin/feedback/:id`, `GET /admin/commodities` | Admin token |
-
-**Rate limits** (from [src/constants.ts](src/constants.ts)): 300 requests per 15 minutes per client overall; chat messages 20 per minute and 200 per day; feedback 5 per hour; analytics events 120 per minute; admin login 5 attempts per 15 minutes. Exceeding a limit returns `429` with code `RATE_LIMITED`.
+From [src/constants.ts](src/constants.ts): 300 requests per 15 minutes per client overall; chat messages 20 per minute and 200 per day; feedback 5 per hour; analytics events 120 per minute; admin login 5 attempts per 15 minutes. Exceeding a limit returns `429` with code `RATE_LIMITED`.
 
 ### Example requests
 
@@ -435,7 +741,7 @@ curl -X POST http://localhost:5000/api/v1/chat/conversations/CONVERSATION_ID/mes
 
 Messages are limited to 500 characters. Use the **same** session ID for the whole conversation; other sessions get a `404`.
 
-**Send feedback** (message must be 10 to 1000 characters)
+**Send feedback** (message must be 10 to 1000 characters; `category` is `GENERAL`, `BUG`, `PREDICTION_ACCURACY` or `FEATURE_REQUEST`)
 
 ```bash
 curl -X POST http://localhost:5000/api/v1/feedback \
@@ -465,7 +771,7 @@ curl -X POST http://localhost:5000/api/v1/admin/data/refresh \
 
 ---
 
-## 9. Database
+## 13. Database
 
 The schema is in [prisma/schema.prisma](prisma/schema.prisma). Main models:
 
@@ -512,7 +818,7 @@ npx prisma studio
 
 ---
 
-## 10. Testing, linting and formatting
+## 14. Testing, linting and formatting
 
 ```bash
 npm test          # run the API tests
@@ -524,65 +830,11 @@ The tests in [tests/api.test.ts](tests/api.test.ts) call the real app with Super
 
 > The tests use whatever `DATABASE_URL` is in your `.env`, so point it at a development database, not production.
 
----
-
-## 11. Deployment (Neon + Render)
-
-This setup uses **Neon** for PostgreSQL and **Render** for the Node backend.
-
-### 1. Create the database on Neon
-
-1. Create a Neon project and copy its connection string. It looks like `postgresql://USER:PASSWORD@HOST/DBNAME?sslmode=require`.
-2. From your own computer, point `DATABASE_URL` at it (in `.env`) and create the tables:
-
-   ```bash
-   npx prisma migrate deploy
-   ```
-
-   (`migrate deploy` is Prisma's command for applying existing migrations to a non-development database. `npm run db:migrate` is for local development.)
-3. Seed it:
-
-   ```bash
-   npm run db:seed
-   ```
-
-   ⚠️ Seeding **wipes the database first**. Only do this on a new, empty database.
-
-### 2. Create the web service on Render
-
-| Setting | Value |
-|---|---|
-| Environment | Node |
-| **Build command** | `npm install --include=dev && npm run build` |
-| **Start command** | `npm start` |
-| Health check path (optional) | `/api/v1/health` |
-
-Add these environment variables in the Render dashboard:
-
-| Variable | Value |
-|---|---|
-| `NODE_ENV` | `production` |
-| `DATABASE_URL` | Your Neon connection string |
-| `CORS_ORIGIN` | Your frontend URL, e.g. `https://your-frontend.example.com` |
-| `PUBLIC_URL` | Your Render URL, e.g. `https://your-api.onrender.com` |
-| `JWT_SECRET` | A long random string (16+ characters) |
-| `ADMIN_EMAIL` | The admin email (must be a valid email) |
-| `ADMIN_PASSWORD` | A strong password (8+ characters) |
-
-Optional: `LLM_API_KEY` (enables Gemini chat), `ADMIN_NAME`, `MODEL_PROVIDER`, `MODEL_SERVER_URL`, `ENABLE_CRON`, and the others in the [table above](#6-environment-variables). Render sets `PORT` for you.
-
-### Gotchas
-
-- **Build needs dev dependencies.** Use `npm install --include=dev`. TypeScript and all the `@types/*` packages are `devDependencies`, and `npm run build` needs them. With a plain production install, the build fails.
-- **`PUBLIC_URL` must be the bare origin**, for example `https://your-api.onrender.com`, with **no `/api/v1`** and no trailing slash. Images are served from `/images`, not from under `/api/v1`. (The working copy of `src/config/env.ts` also trims any path to the origin, and rejects a value that is not a full URL.)
-- **`CORS_ORIGIN` must match the frontend URL exactly**: same `https`, same host, no trailing slash. Only one origin is allowed.
-- **Free Render instances sleep after inactivity.** The first request after a quiet period can take **up to about 50 seconds**. Cron jobs run inside the server process, so they cannot fire while the instance is asleep.
-- **Seeding a remote database from far away is slow.** The seed makes many writes, so run it once and be patient. The code already allows long database transactions for this reason (see [P2028](#12-troubleshooting)).
-- Start the server from the project root. It reads `public/images` and `ml-data/` relative to the working directory.
+The frontend has no automated tests yet. Use `npm run lint` there.
 
 ---
 
-## 12. Troubleshooting
+## 15. Troubleshooting
 
 | Problem | Likely cause and fix |
 |---|---|
@@ -590,10 +842,12 @@ Optional: `LLM_API_KEY` (enables Gemini chat), `ADMIN_NAME`, `MODEL_PROVIDER`, `
 | **`Can't reach database server`, `ECONNREFUSED`, or authentication errors** | Wrong host, **port** or password in `DATABASE_URL`. PostgreSQL normally listens on `5432`, but some installs use another port (such as `5433`). Check the port in pgAdmin under *Server → Properties → Connection*, and make sure Postgres is running. Special characters in the password must be URL-encoded. |
 | **`Invalid environment configuration` when starting** | A required variable is missing or invalid. The message lists each one (for example `JWT_SECRET` shorter than 16 characters, or `ADMIN_EMAIL` not an email). |
 | **`P2028` transaction error / "Transaction API error: Transaction already closed"** | A database transaction ran longer than Prisma's default 5 seconds, which happens on slow remote databases. The prediction step saves in small batches with a 120-second timeout (see `DB_TRANSACTION_TIMEOUT_MS` in [src/constants.ts](src/constants.ts)). If you still see it, check your connection to the database, re-run the step, or lower `PREDICTION_SAVE_BATCH_SIZE`. |
-| **CORS errors in the browser** | `CORS_ORIGIN` does not exactly match the frontend's origin (scheme, host, port, no trailing slash). Fix it and restart or redeploy. Also make sure the frontend sends only the allowed headers: `Content-Type`, `Authorization` and `X-Session-Id`. |
+| **CORS errors in the browser** | `CORS_ORIGIN` does not exactly match the frontend's origin (scheme, host, port, no trailing slash). Fix it and restart or redeploy the backend. Also make sure the frontend sends only the allowed headers: `Content-Type`, `Authorization` and `X-Session-Id`. |
+| **The deployed site shows no data, or requests go to the wrong address** | `NEXT_PUBLIC_API_URL` is missing, wrong, or was changed without a redeploy. It must end in `/api/v1`. Fix it in Vercel and **redeploy**. |
+| **The first page load takes up to a minute** | The free Render instance was asleep. Wait for it to wake up; later requests are fast. |
 | **Images do not load** | Check `PUBLIC_URL`: it must be the API's public bare origin (no `/api/v1`). Image URLs are built as `PUBLIC_URL + /images/commodities/<slug>.jpg`. Open one in the browser to test. Also confirm the `public/images` folder was deployed, and that `CORS_ORIGIN` is right (the frontend reads `credits.json` from `/images`). |
 | **`400 A valid X-Session-Id header is required`** | Chat and analytics need an `X-Session-Id` header containing a valid UUID. |
-| **`429 RATE_LIMITED`** | You hit a rate limit (see [API overview](#8-api-overview)). Wait and retry. |
+| **`429 RATE_LIMITED`** | You hit a rate limit (see [Rate limits](#rate-limits)). Wait and retry. |
 | **Admin login fails after changing `.env`** | The admin account is created by the seed script. Re-run `npm run db:seed` (which wipes the database) after changing `ADMIN_EMAIL` or `ADMIN_PASSWORD`. |
 | **Pipeline fails with "The NBS data source is not connected yet"** | `DATA_SOURCE` is set to `nbs`. Set it to `mock`. |
 | **Build fails on Render with missing type errors** | Use `npm install --include=dev && npm run build` as the build command. |
@@ -601,9 +855,7 @@ Optional: `LLM_API_KEY` (enables Gemini chat), `ADMIN_NAME`, `MODEL_PROVIDER`, `
 
 ---
 
-## 13. Frontend, contributing and license
-
-**Frontend repository:** `TODO: add link, e.g. https://github.com/<your-username>/<frontend-repo>`
+## 16. Contributing, credits and license
 
 ### Contributing
 
