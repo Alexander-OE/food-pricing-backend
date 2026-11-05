@@ -34,7 +34,7 @@ export async function getDataStatus() {
     dataSource: env.DATA_SOURCE,
     dataSourceLabel:
       env.DATA_SOURCE === 'mock'
-        ? 'Simulated data modelled on the NBS monthly format'
+        ? 'Lagos prices from NBS and market surveys, with some months estimated'
         : 'National Bureau of Statistics',
   };
 }

@@ -4,8 +4,8 @@ import type { PredictionFactor } from '../../types';
 
 export interface ForecastInput {
   commoditySlug: string;
-  basePeriod: string; // "2024-12-01"
-  targetPeriod: string; // "2025-01-01"
+  basePeriod: string; // "2026-05-01"
+  targetPeriod: string; // "2026-06-01"
   priceHistory: { period: string; price: number }[]; // last 36 months, oldest first
   indicators: Record<IndicatorKey, { period: string; value: number }[]>; // oldest first
 }

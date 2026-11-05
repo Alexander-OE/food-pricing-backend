@@ -5,6 +5,12 @@
 export const STABLE_THRESHOLD_PERCENT = 2;
 /** How many months of price history are passed to the model. */
 export const MODEL_HISTORY_MONTHS = 36;
+/** Commodities saved per database transaction, so no single transaction stays open for long. */
+export const PREDICTION_SAVE_BATCH_SIZE = 5;
+/** A remote database can be slow, so saving a batch may take far longer than Prisma's 5s default. */
+export const DB_TRANSACTION_TIMEOUT_MS = 120_000;
+/** How long to wait for a free database connection before a transaction gives up. */
+export const DB_TRANSACTION_MAX_WAIT_MS = 30_000;
 /** Months used to fit the trend line. */
 export const TREND_WINDOW_MONTHS = 12;
 /** Months used to measure recent change in diesel, FX and supply. */

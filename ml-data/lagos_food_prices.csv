@@ -1,1501 +1,2526 @@
-period,commodity_slug,price,source
-2020-01-01,rice-local,550,MOCK
-2020-02-01,rice-local,570,MOCK
-2020-03-01,rice-local,590,MOCK
-2020-04-01,rice-local,600,MOCK
-2020-05-01,rice-local,610,MOCK
-2020-06-01,rice-local,650,MOCK
-2020-07-01,rice-local,670,MOCK
-2020-08-01,rice-local,680,MOCK
-2020-09-01,rice-local,680,MOCK
-2020-10-01,rice-local,650,MOCK
-2020-11-01,rice-local,640,MOCK
-2020-12-01,rice-local,630,MOCK
-2021-01-01,rice-local,650,MOCK
-2021-02-01,rice-local,660,MOCK
-2021-03-01,rice-local,700,MOCK
-2021-04-01,rice-local,750,MOCK
-2021-05-01,rice-local,720,MOCK
-2021-06-01,rice-local,790,MOCK
-2021-07-01,rice-local,780,MOCK
-2021-08-01,rice-local,790,MOCK
-2021-09-01,rice-local,820,MOCK
-2021-10-01,rice-local,740,MOCK
-2021-11-01,rice-local,710,MOCK
-2021-12-01,rice-local,690,MOCK
-2022-01-01,rice-local,750,MOCK
-2022-02-01,rice-local,720,MOCK
-2022-03-01,rice-local,820,MOCK
-2022-04-01,rice-local,790,MOCK
-2022-05-01,rice-local,890,MOCK
-2022-06-01,rice-local,900,MOCK
-2022-07-01,rice-local,970,MOCK
-2022-08-01,rice-local,970,MOCK
-2022-09-01,rice-local,970,MOCK
-2022-10-01,rice-local,910,MOCK
-2022-11-01,rice-local,900,MOCK
-2022-12-01,rice-local,880,MOCK
-2023-01-01,rice-local,880,MOCK
-2023-02-01,rice-local,890,MOCK
-2023-03-01,rice-local,970,MOCK
-2023-04-01,rice-local,1040,MOCK
-2023-05-01,rice-local,1080,MOCK
-2023-06-01,rice-local,1200,MOCK
-2023-07-01,rice-local,1310,MOCK
-2023-08-01,rice-local,1370,MOCK
-2023-09-01,rice-local,1410,MOCK
-2023-10-01,rice-local,1370,MOCK
-2023-11-01,rice-local,1320,MOCK
-2023-12-01,rice-local,1300,MOCK
-2024-01-01,rice-local,1390,MOCK
-2024-02-01,rice-local,1400,MOCK
-2024-03-01,rice-local,1440,MOCK
-2024-04-01,rice-local,1640,MOCK
-2024-05-01,rice-local,1630,MOCK
-2024-06-01,rice-local,1850,MOCK
-2024-07-01,rice-local,1950,MOCK
-2024-08-01,rice-local,2020,MOCK
-2024-09-01,rice-local,1910,MOCK
-2024-10-01,rice-local,1980,MOCK
-2024-11-01,rice-local,1870,MOCK
-2024-12-01,rice-local,1900,MOCK
-2020-01-01,rice-imported,690,MOCK
-2020-02-01,rice-imported,700,MOCK
-2020-03-01,rice-imported,730,MOCK
-2020-04-01,rice-imported,750,MOCK
-2020-05-01,rice-imported,750,MOCK
-2020-06-01,rice-imported,760,MOCK
-2020-07-01,rice-imported,780,MOCK
-2020-08-01,rice-imported,780,MOCK
-2020-09-01,rice-imported,750,MOCK
-2020-10-01,rice-imported,770,MOCK
-2020-11-01,rice-imported,780,MOCK
-2020-12-01,rice-imported,790,MOCK
-2021-01-01,rice-imported,800,MOCK
-2021-02-01,rice-imported,810,MOCK
-2021-03-01,rice-imported,800,MOCK
-2021-04-01,rice-imported,860,MOCK
-2021-05-01,rice-imported,880,MOCK
-2021-06-01,rice-imported,910,MOCK
-2021-07-01,rice-imported,920,MOCK
-2021-08-01,rice-imported,920,MOCK
-2021-09-01,rice-imported,890,MOCK
-2021-10-01,rice-imported,920,MOCK
-2021-11-01,rice-imported,910,MOCK
-2021-12-01,rice-imported,930,MOCK
-2022-01-01,rice-imported,950,MOCK
-2022-02-01,rice-imported,990,MOCK
-2022-03-01,rice-imported,980,MOCK
-2022-04-01,rice-imported,1010,MOCK
-2022-05-01,rice-imported,1000,MOCK
-2022-06-01,rice-imported,1080,MOCK
-2022-07-01,rice-imported,1090,MOCK
-2022-08-01,rice-imported,1140,MOCK
-2022-09-01,rice-imported,1100,MOCK
-2022-10-01,rice-imported,1110,MOCK
-2022-11-01,rice-imported,1170,MOCK
-2022-12-01,rice-imported,1110,MOCK
-2023-01-01,rice-imported,1160,MOCK
-2023-02-01,rice-imported,1180,MOCK
-2023-03-01,rice-imported,1250,MOCK
-2023-04-01,rice-imported,1250,MOCK
-2023-05-01,rice-imported,1320,MOCK
-2023-06-01,rice-imported,1370,MOCK
-2023-07-01,rice-imported,1460,MOCK
-2023-08-01,rice-imported,1590,MOCK
-2023-09-01,rice-imported,1630,MOCK
-2023-10-01,rice-imported,1740,MOCK
-2023-11-01,rice-imported,1670,MOCK
-2023-12-01,rice-imported,1670,MOCK
-2024-01-01,rice-imported,1770,MOCK
-2024-02-01,rice-imported,1810,MOCK
-2024-03-01,rice-imported,1870,MOCK
-2024-04-01,rice-imported,2010,MOCK
-2024-05-01,rice-imported,2060,MOCK
-2024-06-01,rice-imported,2140,MOCK
-2024-07-01,rice-imported,2220,MOCK
-2024-08-01,rice-imported,2260,MOCK
-2024-09-01,rice-imported,2270,MOCK
-2024-10-01,rice-imported,2350,MOCK
-2024-11-01,rice-imported,2310,MOCK
-2024-12-01,rice-imported,2400,MOCK
-2020-01-01,maize-white,250,MOCK
-2020-02-01,maize-white,260,MOCK
-2020-03-01,maize-white,260,MOCK
-2020-04-01,maize-white,300,MOCK
-2020-05-01,maize-white,310,MOCK
-2020-06-01,maize-white,300,MOCK
-2020-07-01,maize-white,320,MOCK
-2020-08-01,maize-white,310,MOCK
-2020-09-01,maize-white,310,MOCK
-2020-10-01,maize-white,320,MOCK
-2020-11-01,maize-white,300,MOCK
-2020-12-01,maize-white,300,MOCK
-2021-01-01,maize-white,290,MOCK
-2021-02-01,maize-white,310,MOCK
-2021-03-01,maize-white,330,MOCK
-2021-04-01,maize-white,330,MOCK
-2021-05-01,maize-white,340,MOCK
-2021-06-01,maize-white,350,MOCK
-2021-07-01,maize-white,390,MOCK
-2021-08-01,maize-white,360,MOCK
-2021-09-01,maize-white,380,MOCK
-2021-10-01,maize-white,370,MOCK
-2021-11-01,maize-white,360,MOCK
-2021-12-01,maize-white,360,MOCK
-2022-01-01,maize-white,360,MOCK
-2022-02-01,maize-white,370,MOCK
-2022-03-01,maize-white,370,MOCK
-2022-04-01,maize-white,400,MOCK
-2022-05-01,maize-white,410,MOCK
-2022-06-01,maize-white,450,MOCK
-2022-07-01,maize-white,440,MOCK
-2022-08-01,maize-white,430,MOCK
-2022-09-01,maize-white,440,MOCK
-2022-10-01,maize-white,440,MOCK
-2022-11-01,maize-white,410,MOCK
-2022-12-01,maize-white,410,MOCK
-2023-01-01,maize-white,410,MOCK
-2023-02-01,maize-white,440,MOCK
-2023-03-01,maize-white,480,MOCK
-2023-04-01,maize-white,470,MOCK
-2023-05-01,maize-white,480,MOCK
-2023-06-01,maize-white,550,MOCK
-2023-07-01,maize-white,580,MOCK
-2023-08-01,maize-white,670,MOCK
-2023-09-01,maize-white,690,MOCK
-2023-10-01,maize-white,660,MOCK
-2023-11-01,maize-white,660,MOCK
-2023-12-01,maize-white,610,MOCK
-2024-01-01,maize-white,660,MOCK
-2024-02-01,maize-white,680,MOCK
-2024-03-01,maize-white,690,MOCK
-2024-04-01,maize-white,800,MOCK
-2024-05-01,maize-white,780,MOCK
-2024-06-01,maize-white,840,MOCK
-2024-07-01,maize-white,890,MOCK
-2024-08-01,maize-white,930,MOCK
-2024-09-01,maize-white,880,MOCK
-2024-10-01,maize-white,880,MOCK
-2024-11-01,maize-white,960,MOCK
-2024-12-01,maize-white,900,MOCK
-2020-01-01,sliced-bread,450,MOCK
-2020-02-01,sliced-bread,480,MOCK
-2020-03-01,sliced-bread,480,MOCK
-2020-04-01,sliced-bread,490,MOCK
-2020-05-01,sliced-bread,500,MOCK
-2020-06-01,sliced-bread,490,MOCK
-2020-07-01,sliced-bread,540,MOCK
-2020-08-01,sliced-bread,530,MOCK
-2020-09-01,sliced-bread,520,MOCK
-2020-10-01,sliced-bread,520,MOCK
-2020-11-01,sliced-bread,520,MOCK
-2020-12-01,sliced-bread,520,MOCK
-2021-01-01,sliced-bread,530,MOCK
-2021-02-01,sliced-bread,560,MOCK
-2021-03-01,sliced-bread,570,MOCK
-2021-04-01,sliced-bread,580,MOCK
-2021-05-01,sliced-bread,580,MOCK
-2021-06-01,sliced-bread,580,MOCK
-2021-07-01,sliced-bread,590,MOCK
-2021-08-01,sliced-bread,610,MOCK
-2021-09-01,sliced-bread,610,MOCK
-2021-10-01,sliced-bread,600,MOCK
-2021-11-01,sliced-bread,630,MOCK
-2021-12-01,sliced-bread,620,MOCK
-2022-01-01,sliced-bread,660,MOCK
-2022-02-01,sliced-bread,660,MOCK
-2022-03-01,sliced-bread,680,MOCK
-2022-04-01,sliced-bread,720,MOCK
-2022-05-01,sliced-bread,690,MOCK
-2022-06-01,sliced-bread,720,MOCK
-2022-07-01,sliced-bread,690,MOCK
-2022-08-01,sliced-bread,720,MOCK
-2022-09-01,sliced-bread,720,MOCK
-2022-10-01,sliced-bread,680,MOCK
-2022-11-01,sliced-bread,730,MOCK
-2022-12-01,sliced-bread,720,MOCK
-2023-01-01,sliced-bread,770,MOCK
-2023-02-01,sliced-bread,800,MOCK
-2023-03-01,sliced-bread,840,MOCK
-2023-04-01,sliced-bread,850,MOCK
-2023-05-01,sliced-bread,870,MOCK
-2023-06-01,sliced-bread,940,MOCK
-2023-07-01,sliced-bread,1000,MOCK
-2023-08-01,sliced-bread,1080,MOCK
-2023-09-01,sliced-bread,1130,MOCK
-2023-10-01,sliced-bread,1130,MOCK
-2023-11-01,sliced-bread,1190,MOCK
-2023-12-01,sliced-bread,1200,MOCK
-2024-01-01,sliced-bread,1240,MOCK
-2024-02-01,sliced-bread,1230,MOCK
-2024-03-01,sliced-bread,1330,MOCK
-2024-04-01,sliced-bread,1370,MOCK
-2024-05-01,sliced-bread,1300,MOCK
-2024-06-01,sliced-bread,1370,MOCK
-2024-07-01,sliced-bread,1470,MOCK
-2024-08-01,sliced-bread,1500,MOCK
-2024-09-01,sliced-bread,1450,MOCK
-2024-10-01,sliced-bread,1490,MOCK
-2024-11-01,sliced-bread,1600,MOCK
-2024-12-01,sliced-bread,1600,MOCK
-2020-01-01,spaghetti,380,MOCK
-2020-02-01,spaghetti,380,MOCK
-2020-03-01,spaghetti,380,MOCK
-2020-04-01,spaghetti,410,MOCK
-2020-05-01,spaghetti,410,MOCK
-2020-06-01,spaghetti,420,MOCK
-2020-07-01,spaghetti,400,MOCK
-2020-08-01,spaghetti,430,MOCK
-2020-09-01,spaghetti,420,MOCK
-2020-10-01,spaghetti,420,MOCK
-2020-11-01,spaghetti,410,MOCK
-2020-12-01,spaghetti,440,MOCK
-2021-01-01,spaghetti,430,MOCK
-2021-02-01,spaghetti,440,MOCK
-2021-03-01,spaghetti,430,MOCK
-2021-04-01,spaghetti,440,MOCK
-2021-05-01,spaghetti,480,MOCK
-2021-06-01,spaghetti,470,MOCK
-2021-07-01,spaghetti,500,MOCK
-2021-08-01,spaghetti,480,MOCK
-2021-09-01,spaghetti,490,MOCK
-2021-10-01,spaghetti,500,MOCK
-2021-11-01,spaghetti,490,MOCK
-2021-12-01,spaghetti,490,MOCK
-2022-01-01,spaghetti,520,MOCK
-2022-02-01,spaghetti,510,MOCK
-2022-03-01,spaghetti,530,MOCK
-2022-04-01,spaghetti,540,MOCK
-2022-05-01,spaghetti,570,MOCK
-2022-06-01,spaghetti,570,MOCK
-2022-07-01,spaghetti,590,MOCK
-2022-08-01,spaghetti,610,MOCK
-2022-09-01,spaghetti,580,MOCK
-2022-10-01,spaghetti,600,MOCK
-2022-11-01,spaghetti,610,MOCK
-2022-12-01,spaghetti,620,MOCK
-2023-01-01,spaghetti,610,MOCK
-2023-02-01,spaghetti,640,MOCK
-2023-03-01,spaghetti,640,MOCK
-2023-04-01,spaghetti,640,MOCK
-2023-05-01,spaghetti,670,MOCK
-2023-06-01,spaghetti,760,MOCK
-2023-07-01,spaghetti,800,MOCK
-2023-08-01,spaghetti,840,MOCK
-2023-09-01,spaghetti,870,MOCK
-2023-10-01,spaghetti,890,MOCK
-2023-11-01,spaghetti,890,MOCK
-2023-12-01,spaghetti,910,MOCK
-2024-01-01,spaghetti,930,MOCK
-2024-02-01,spaghetti,1010,MOCK
-2024-03-01,spaghetti,1040,MOCK
-2024-04-01,spaghetti,1070,MOCK
-2024-05-01,spaghetti,1120,MOCK
-2024-06-01,spaghetti,1130,MOCK
-2024-07-01,spaghetti,1150,MOCK
-2024-08-01,spaghetti,1160,MOCK
-2024-09-01,spaghetti,1170,MOCK
-2024-10-01,spaghetti,1250,MOCK
-2024-11-01,spaghetti,1210,MOCK
-2024-12-01,spaghetti,1300,MOCK
-2020-01-01,beans-brown,730,MOCK
-2020-02-01,beans-brown,770,MOCK
-2020-03-01,beans-brown,730,MOCK
-2020-04-01,beans-brown,830,MOCK
-2020-05-01,beans-brown,860,MOCK
-2020-06-01,beans-brown,870,MOCK
-2020-07-01,beans-brown,930,MOCK
-2020-08-01,beans-brown,920,MOCK
-2020-09-01,beans-brown,870,MOCK
-2020-10-01,beans-brown,900,MOCK
-2020-11-01,beans-brown,860,MOCK
-2020-12-01,beans-brown,880,MOCK
-2021-01-01,beans-brown,810,MOCK
-2021-02-01,beans-brown,870,MOCK
-2021-03-01,beans-brown,930,MOCK
-2021-04-01,beans-brown,1010,MOCK
-2021-05-01,beans-brown,1020,MOCK
-2021-06-01,beans-brown,1110,MOCK
-2021-07-01,beans-brown,1060,MOCK
-2021-08-01,beans-brown,1090,MOCK
-2021-09-01,beans-brown,1090,MOCK
-2021-10-01,beans-brown,1080,MOCK
-2021-11-01,beans-brown,1040,MOCK
-2021-12-01,beans-brown,1010,MOCK
-2022-01-01,beans-brown,1000,MOCK
-2022-02-01,beans-brown,980,MOCK
-2022-03-01,beans-brown,1080,MOCK
-2022-04-01,beans-brown,1170,MOCK
-2022-05-01,beans-brown,1250,MOCK
-2022-06-01,beans-brown,1290,MOCK
-2022-07-01,beans-brown,1360,MOCK
-2022-08-01,beans-brown,1330,MOCK
-2022-09-01,beans-brown,1270,MOCK
-2022-10-01,beans-brown,1310,MOCK
-2022-11-01,beans-brown,1250,MOCK
-2022-12-01,beans-brown,1250,MOCK
-2023-01-01,beans-brown,1250,MOCK
-2023-02-01,beans-brown,1230,MOCK
-2023-03-01,beans-brown,1280,MOCK
-2023-04-01,beans-brown,1390,MOCK
-2023-05-01,beans-brown,1480,MOCK
-2023-06-01,beans-brown,1570,MOCK
-2023-07-01,beans-brown,1750,MOCK
-2023-08-01,beans-brown,1810,MOCK
-2023-09-01,beans-brown,1780,MOCK
-2023-10-01,beans-brown,1930,MOCK
-2023-11-01,beans-brown,1770,MOCK
-2023-12-01,beans-brown,1830,MOCK
-2024-01-01,beans-brown,1870,MOCK
-2024-02-01,beans-brown,1930,MOCK
-2024-03-01,beans-brown,1970,MOCK
-2024-04-01,beans-brown,2100,MOCK
-2024-05-01,beans-brown,2480,MOCK
-2024-06-01,beans-brown,2380,MOCK
-2024-07-01,beans-brown,2560,MOCK
-2024-08-01,beans-brown,2780,MOCK
-2024-09-01,beans-brown,2820,MOCK
-2024-10-01,beans-brown,2720,MOCK
-2024-11-01,beans-brown,2720,MOCK
-2024-12-01,beans-brown,2600,MOCK
-2020-01-01,beans-white,620,MOCK
-2020-02-01,beans-white,660,MOCK
-2020-03-01,beans-white,630,MOCK
-2020-04-01,beans-white,660,MOCK
-2020-05-01,beans-white,730,MOCK
-2020-06-01,beans-white,750,MOCK
-2020-07-01,beans-white,790,MOCK
-2020-08-01,beans-white,840,MOCK
-2020-09-01,beans-white,770,MOCK
-2020-10-01,beans-white,760,MOCK
-2020-11-01,beans-white,710,MOCK
-2020-12-01,beans-white,730,MOCK
-2021-01-01,beans-white,700,MOCK
-2021-02-01,beans-white,760,MOCK
-2021-03-01,beans-white,770,MOCK
-2021-04-01,beans-white,810,MOCK
-2021-05-01,beans-white,850,MOCK
-2021-06-01,beans-white,940,MOCK
-2021-07-01,beans-white,920,MOCK
-2021-08-01,beans-white,930,MOCK
-2021-09-01,beans-white,930,MOCK
-2021-10-01,beans-white,870,MOCK
-2021-11-01,beans-white,840,MOCK
-2021-12-01,beans-white,880,MOCK
-2022-01-01,beans-white,910,MOCK
-2022-02-01,beans-white,860,MOCK
-2022-03-01,beans-white,890,MOCK
-2022-04-01,beans-white,1000,MOCK
-2022-05-01,beans-white,1060,MOCK
-2022-06-01,beans-white,1070,MOCK
-2022-07-01,beans-white,1120,MOCK
-2022-08-01,beans-white,1130,MOCK
-2022-09-01,beans-white,1080,MOCK
-2022-10-01,beans-white,1000,MOCK
-2022-11-01,beans-white,1000,MOCK
-2022-12-01,beans-white,1000,MOCK
-2023-01-01,beans-white,1020,MOCK
-2023-02-01,beans-white,1070,MOCK
-2023-03-01,beans-white,1060,MOCK
-2023-04-01,beans-white,1130,MOCK
-2023-05-01,beans-white,1310,MOCK
-2023-06-01,beans-white,1390,MOCK
-2023-07-01,beans-white,1530,MOCK
-2023-08-01,beans-white,1640,MOCK
-2023-09-01,beans-white,1660,MOCK
-2023-10-01,beans-white,1610,MOCK
-2023-11-01,beans-white,1670,MOCK
-2023-12-01,beans-white,1610,MOCK
-2024-01-01,beans-white,1530,MOCK
-2024-02-01,beans-white,1630,MOCK
-2024-03-01,beans-white,1780,MOCK
-2024-04-01,beans-white,1850,MOCK
-2024-05-01,beans-white,2040,MOCK
-2024-06-01,beans-white,2170,MOCK
-2024-07-01,beans-white,2360,MOCK
-2024-08-01,beans-white,2330,MOCK
-2024-09-01,beans-white,2390,MOCK
-2024-10-01,beans-white,2290,MOCK
-2024-11-01,beans-white,2350,MOCK
-2024-12-01,beans-white,2200,MOCK
-2020-01-01,yam,430,MOCK
-2020-02-01,yam,430,MOCK
-2020-03-01,yam,450,MOCK
-2020-04-01,yam,460,MOCK
-2020-05-01,yam,450,MOCK
-2020-06-01,yam,540,MOCK
-2020-07-01,yam,560,MOCK
-2020-08-01,yam,480,MOCK
-2020-09-01,yam,460,MOCK
-2020-10-01,yam,440,MOCK
-2020-11-01,yam,470,MOCK
-2020-12-01,yam,500,MOCK
-2021-01-01,yam,500,MOCK
-2021-02-01,yam,530,MOCK
-2021-03-01,yam,560,MOCK
-2021-04-01,yam,570,MOCK
-2021-05-01,yam,600,MOCK
-2021-06-01,yam,620,MOCK
-2021-07-01,yam,690,MOCK
-2021-08-01,yam,580,MOCK
-2021-09-01,yam,510,MOCK
-2021-10-01,yam,560,MOCK
-2021-11-01,yam,570,MOCK
-2021-12-01,yam,570,MOCK
-2022-01-01,yam,610,MOCK
-2022-02-01,yam,600,MOCK
-2022-03-01,yam,630,MOCK
-2022-04-01,yam,660,MOCK
-2022-05-01,yam,670,MOCK
-2022-06-01,yam,720,MOCK
-2022-07-01,yam,770,MOCK
-2022-08-01,yam,660,MOCK
-2022-09-01,yam,590,MOCK
-2022-10-01,yam,590,MOCK
-2022-11-01,yam,630,MOCK
-2022-12-01,yam,670,MOCK
-2023-01-01,yam,700,MOCK
-2023-02-01,yam,720,MOCK
-2023-03-01,yam,730,MOCK
-2023-04-01,yam,830,MOCK
-2023-05-01,yam,880,MOCK
-2023-06-01,yam,970,MOCK
-2023-07-01,yam,1000,MOCK
-2023-08-01,yam,940,MOCK
-2023-09-01,yam,960,MOCK
-2023-10-01,yam,930,MOCK
-2023-11-01,yam,1000,MOCK
-2023-12-01,yam,1170,MOCK
-2024-01-01,yam,1170,MOCK
-2024-02-01,yam,1190,MOCK
-2024-03-01,yam,1260,MOCK
-2024-04-01,yam,1230,MOCK
-2024-05-01,yam,1320,MOCK
-2024-06-01,yam,1530,MOCK
-2024-07-01,yam,1530,MOCK
-2024-08-01,yam,1410,MOCK
-2024-09-01,yam,1430,MOCK
-2024-10-01,yam,1330,MOCK
-2024-11-01,yam,1440,MOCK
-2024-12-01,yam,1500,MOCK
-2020-01-01,irish-potato,530,MOCK
-2020-02-01,irish-potato,540,MOCK
-2020-03-01,irish-potato,540,MOCK
-2020-04-01,irish-potato,600,MOCK
-2020-05-01,irish-potato,560,MOCK
-2020-06-01,irish-potato,590,MOCK
-2020-07-01,irish-potato,620,MOCK
-2020-08-01,irish-potato,600,MOCK
-2020-09-01,irish-potato,620,MOCK
-2020-10-01,irish-potato,560,MOCK
-2020-11-01,irish-potato,560,MOCK
-2020-12-01,irish-potato,590,MOCK
-2021-01-01,irish-potato,610,MOCK
-2021-02-01,irish-potato,640,MOCK
-2021-03-01,irish-potato,640,MOCK
-2021-04-01,irish-potato,730,MOCK
-2021-05-01,irish-potato,720,MOCK
-2021-06-01,irish-potato,720,MOCK
-2021-07-01,irish-potato,700,MOCK
-2021-08-01,irish-potato,690,MOCK
-2021-09-01,irish-potato,700,MOCK
-2021-10-01,irish-potato,700,MOCK
-2021-11-01,irish-potato,650,MOCK
-2021-12-01,irish-potato,680,MOCK
-2022-01-01,irish-potato,720,MOCK
-2022-02-01,irish-potato,750,MOCK
-2022-03-01,irish-potato,760,MOCK
-2022-04-01,irish-potato,760,MOCK
-2022-05-01,irish-potato,820,MOCK
-2022-06-01,irish-potato,810,MOCK
-2022-07-01,irish-potato,840,MOCK
-2022-08-01,irish-potato,810,MOCK
-2022-09-01,irish-potato,800,MOCK
-2022-10-01,irish-potato,810,MOCK
-2022-11-01,irish-potato,770,MOCK
-2022-12-01,irish-potato,810,MOCK
-2023-01-01,irish-potato,830,MOCK
-2023-02-01,irish-potato,880,MOCK
-2023-03-01,irish-potato,940,MOCK
-2023-04-01,irish-potato,1060,MOCK
-2023-05-01,irish-potato,1040,MOCK
-2023-06-01,irish-potato,1140,MOCK
-2023-07-01,irish-potato,1160,MOCK
-2023-08-01,irish-potato,1210,MOCK
-2023-09-01,irish-potato,1240,MOCK
-2023-10-01,irish-potato,1270,MOCK
-2023-11-01,irish-potato,1180,MOCK
-2023-12-01,irish-potato,1250,MOCK
-2024-01-01,irish-potato,1280,MOCK
-2024-02-01,irish-potato,1390,MOCK
-2024-03-01,irish-potato,1450,MOCK
-2024-04-01,irish-potato,1510,MOCK
-2024-05-01,irish-potato,1570,MOCK
-2024-06-01,irish-potato,1580,MOCK
-2024-07-01,irish-potato,1620,MOCK
-2024-08-01,irish-potato,1680,MOCK
-2024-09-01,irish-potato,1800,MOCK
-2024-10-01,irish-potato,1770,MOCK
-2024-11-01,irish-potato,1840,MOCK
-2024-12-01,irish-potato,1800,MOCK
-2020-01-01,sweet-potato,280,MOCK
-2020-02-01,sweet-potato,250,MOCK
-2020-03-01,sweet-potato,270,MOCK
-2020-04-01,sweet-potato,290,MOCK
-2020-05-01,sweet-potato,330,MOCK
-2020-06-01,sweet-potato,280,MOCK
-2020-07-01,sweet-potato,300,MOCK
-2020-08-01,sweet-potato,310,MOCK
-2020-09-01,sweet-potato,290,MOCK
-2020-10-01,sweet-potato,290,MOCK
-2020-11-01,sweet-potato,300,MOCK
-2020-12-01,sweet-potato,280,MOCK
-2021-01-01,sweet-potato,280,MOCK
-2021-02-01,sweet-potato,320,MOCK
-2021-03-01,sweet-potato,340,MOCK
-2021-04-01,sweet-potato,340,MOCK
-2021-05-01,sweet-potato,370,MOCK
-2021-06-01,sweet-potato,340,MOCK
-2021-07-01,sweet-potato,360,MOCK
-2021-08-01,sweet-potato,350,MOCK
-2021-09-01,sweet-potato,370,MOCK
-2021-10-01,sweet-potato,360,MOCK
-2021-11-01,sweet-potato,350,MOCK
-2021-12-01,sweet-potato,340,MOCK
-2022-01-01,sweet-potato,360,MOCK
-2022-02-01,sweet-potato,360,MOCK
-2022-03-01,sweet-potato,370,MOCK
-2022-04-01,sweet-potato,390,MOCK
-2022-05-01,sweet-potato,400,MOCK
-2022-06-01,sweet-potato,410,MOCK
-2022-07-01,sweet-potato,440,MOCK
-2022-08-01,sweet-potato,420,MOCK
-2022-09-01,sweet-potato,430,MOCK
-2022-10-01,sweet-potato,420,MOCK
-2022-11-01,sweet-potato,450,MOCK
-2022-12-01,sweet-potato,400,MOCK
-2023-01-01,sweet-potato,430,MOCK
-2023-02-01,sweet-potato,440,MOCK
-2023-03-01,sweet-potato,500,MOCK
-2023-04-01,sweet-potato,520,MOCK
-2023-05-01,sweet-potato,480,MOCK
-2023-06-01,sweet-potato,570,MOCK
-2023-07-01,sweet-potato,570,MOCK
-2023-08-01,sweet-potato,560,MOCK
-2023-09-01,sweet-potato,590,MOCK
-2023-10-01,sweet-potato,620,MOCK
-2023-11-01,sweet-potato,640,MOCK
-2023-12-01,sweet-potato,590,MOCK
-2024-01-01,sweet-potato,710,MOCK
-2024-02-01,sweet-potato,660,MOCK
-2024-03-01,sweet-potato,730,MOCK
-2024-04-01,sweet-potato,710,MOCK
-2024-05-01,sweet-potato,790,MOCK
-2024-06-01,sweet-potato,800,MOCK
-2024-07-01,sweet-potato,840,MOCK
-2024-08-01,sweet-potato,770,MOCK
-2024-09-01,sweet-potato,770,MOCK
-2024-10-01,sweet-potato,910,MOCK
-2024-11-01,sweet-potato,850,MOCK
-2024-12-01,sweet-potato,900,MOCK
-2020-01-01,garri-white,380,MOCK
-2020-02-01,garri-white,380,MOCK
-2020-03-01,garri-white,410,MOCK
-2020-04-01,garri-white,400,MOCK
-2020-05-01,garri-white,420,MOCK
-2020-06-01,garri-white,420,MOCK
-2020-07-01,garri-white,430,MOCK
-2020-08-01,garri-white,400,MOCK
-2020-09-01,garri-white,420,MOCK
-2020-10-01,garri-white,410,MOCK
-2020-11-01,garri-white,400,MOCK
-2020-12-01,garri-white,430,MOCK
-2021-01-01,garri-white,460,MOCK
-2021-02-01,garri-white,450,MOCK
-2021-03-01,garri-white,480,MOCK
-2021-04-01,garri-white,470,MOCK
-2021-05-01,garri-white,490,MOCK
-2021-06-01,garri-white,510,MOCK
-2021-07-01,garri-white,520,MOCK
-2021-08-01,garri-white,510,MOCK
-2021-09-01,garri-white,510,MOCK
-2021-10-01,garri-white,480,MOCK
-2021-11-01,garri-white,470,MOCK
-2021-12-01,garri-white,510,MOCK
-2022-01-01,garri-white,510,MOCK
-2022-02-01,garri-white,500,MOCK
-2022-03-01,garri-white,520,MOCK
-2022-04-01,garri-white,570,MOCK
-2022-05-01,garri-white,550,MOCK
-2022-06-01,garri-white,570,MOCK
-2022-07-01,garri-white,570,MOCK
-2022-08-01,garri-white,640,MOCK
-2022-09-01,garri-white,610,MOCK
-2022-10-01,garri-white,590,MOCK
-2022-11-01,garri-white,590,MOCK
-2022-12-01,garri-white,590,MOCK
-2023-01-01,garri-white,620,MOCK
-2023-02-01,garri-white,620,MOCK
-2023-03-01,garri-white,680,MOCK
-2023-04-01,garri-white,700,MOCK
-2023-05-01,garri-white,730,MOCK
-2023-06-01,garri-white,810,MOCK
-2023-07-01,garri-white,860,MOCK
-2023-08-01,garri-white,860,MOCK
-2023-09-01,garri-white,910,MOCK
-2023-10-01,garri-white,930,MOCK
-2023-11-01,garri-white,980,MOCK
-2023-12-01,garri-white,930,MOCK
-2024-01-01,garri-white,910,MOCK
-2024-02-01,garri-white,1000,MOCK
-2024-03-01,garri-white,1150,MOCK
-2024-04-01,garri-white,1140,MOCK
-2024-05-01,garri-white,1190,MOCK
-2024-06-01,garri-white,1220,MOCK
-2024-07-01,garri-white,1200,MOCK
-2024-08-01,garri-white,1250,MOCK
-2024-09-01,garri-white,1290,MOCK
-2024-10-01,garri-white,1240,MOCK
-2024-11-01,garri-white,1240,MOCK
-2024-12-01,garri-white,1300,MOCK
-2020-01-01,garri-yellow,410,MOCK
-2020-02-01,garri-yellow,410,MOCK
-2020-03-01,garri-yellow,420,MOCK
-2020-04-01,garri-yellow,440,MOCK
-2020-05-01,garri-yellow,480,MOCK
-2020-06-01,garri-yellow,460,MOCK
-2020-07-01,garri-yellow,470,MOCK
-2020-08-01,garri-yellow,450,MOCK
-2020-09-01,garri-yellow,490,MOCK
-2020-10-01,garri-yellow,470,MOCK
-2020-11-01,garri-yellow,480,MOCK
-2020-12-01,garri-yellow,460,MOCK
-2021-01-01,garri-yellow,480,MOCK
-2021-02-01,garri-yellow,500,MOCK
-2021-03-01,garri-yellow,490,MOCK
-2021-04-01,garri-yellow,530,MOCK
-2021-05-01,garri-yellow,520,MOCK
-2021-06-01,garri-yellow,550,MOCK
-2021-07-01,garri-yellow,540,MOCK
-2021-08-01,garri-yellow,520,MOCK
-2021-09-01,garri-yellow,530,MOCK
-2021-10-01,garri-yellow,560,MOCK
-2021-11-01,garri-yellow,560,MOCK
-2021-12-01,garri-yellow,560,MOCK
-2022-01-01,garri-yellow,570,MOCK
-2022-02-01,garri-yellow,580,MOCK
-2022-03-01,garri-yellow,600,MOCK
-2022-04-01,garri-yellow,600,MOCK
-2022-05-01,garri-yellow,620,MOCK
-2022-06-01,garri-yellow,680,MOCK
-2022-07-01,garri-yellow,670,MOCK
-2022-08-01,garri-yellow,650,MOCK
-2022-09-01,garri-yellow,640,MOCK
-2022-10-01,garri-yellow,620,MOCK
-2022-11-01,garri-yellow,630,MOCK
-2022-12-01,garri-yellow,630,MOCK
-2023-01-01,garri-yellow,680,MOCK
-2023-02-01,garri-yellow,690,MOCK
-2023-03-01,garri-yellow,680,MOCK
-2023-04-01,garri-yellow,770,MOCK
-2023-05-01,garri-yellow,750,MOCK
-2023-06-01,garri-yellow,830,MOCK
-2023-07-01,garri-yellow,860,MOCK
-2023-08-01,garri-yellow,990,MOCK
-2023-09-01,garri-yellow,990,MOCK
-2023-10-01,garri-yellow,980,MOCK
-2023-11-01,garri-yellow,980,MOCK
-2023-12-01,garri-yellow,970,MOCK
-2024-01-01,garri-yellow,1010,MOCK
-2024-02-01,garri-yellow,1060,MOCK
-2024-03-01,garri-yellow,1140,MOCK
-2024-04-01,garri-yellow,1170,MOCK
-2024-05-01,garri-yellow,1190,MOCK
-2024-06-01,garri-yellow,1290,MOCK
-2024-07-01,garri-yellow,1340,MOCK
-2024-08-01,garri-yellow,1350,MOCK
-2024-09-01,garri-yellow,1310,MOCK
-2024-10-01,garri-yellow,1270,MOCK
-2024-11-01,garri-yellow,1410,MOCK
-2024-12-01,garri-yellow,1400,MOCK
-2020-01-01,tomato,730,MOCK
-2020-02-01,tomato,780,MOCK
-2020-03-01,tomato,940,MOCK
-2020-04-01,tomato,970,MOCK
-2020-05-01,tomato,1150,MOCK
-2020-06-01,tomato,960,MOCK
-2020-07-01,tomato,950,MOCK
-2020-08-01,tomato,860,MOCK
-2020-09-01,tomato,800,MOCK
-2020-10-01,tomato,660,MOCK
-2020-11-01,tomato,710,MOCK
-2020-12-01,tomato,700,MOCK
-2021-01-01,tomato,800,MOCK
-2021-02-01,tomato,900,MOCK
-2021-03-01,tomato,990,MOCK
-2021-04-01,tomato,1170,MOCK
-2021-05-01,tomato,1240,MOCK
-2021-06-01,tomato,1150,MOCK
-2021-07-01,tomato,1110,MOCK
-2021-08-01,tomato,960,MOCK
-2021-09-01,tomato,900,MOCK
-2021-10-01,tomato,750,MOCK
-2021-11-01,tomato,850,MOCK
-2021-12-01,tomato,830,MOCK
-2022-01-01,tomato,930,MOCK
-2022-02-01,tomato,1070,MOCK
-2022-03-01,tomato,1280,MOCK
-2022-04-01,tomato,1470,MOCK
-2022-05-01,tomato,1620,MOCK
-2022-06-01,tomato,1440,MOCK
-2022-07-01,tomato,1470,MOCK
-2022-08-01,tomato,1130,MOCK
-2022-09-01,tomato,1180,MOCK
-2022-10-01,tomato,1020,MOCK
-2022-11-01,tomato,990,MOCK
-2022-12-01,tomato,1050,MOCK
-2023-01-01,tomato,1180,MOCK
-2023-02-01,tomato,1400,MOCK
-2023-03-01,tomato,1550,MOCK
-2023-04-01,tomato,1760,MOCK
-2023-05-01,tomato,2060,MOCK
-2023-06-01,tomato,2080,MOCK
-2023-07-01,tomato,1830,MOCK
-2023-08-01,tomato,2010,MOCK
-2023-09-01,tomato,1680,MOCK
-2023-10-01,tomato,1510,MOCK
-2023-11-01,tomato,1460,MOCK
-2023-12-01,tomato,1660,MOCK
-2024-01-01,tomato,1830,MOCK
-2024-02-01,tomato,2010,MOCK
-2024-03-01,tomato,2610,MOCK
-2024-04-01,tomato,2540,MOCK
-2024-05-01,tomato,2650,MOCK
-2024-06-01,tomato,2930,MOCK
-2024-07-01,tomato,2650,MOCK
-2024-08-01,tomato,2630,MOCK
-2024-09-01,tomato,2280,MOCK
-2024-10-01,tomato,2000,MOCK
-2024-11-01,tomato,2030,MOCK
-2024-12-01,tomato,2200,MOCK
-2020-01-01,onion,460,MOCK
-2020-02-01,onion,440,MOCK
-2020-03-01,onion,520,MOCK
-2020-04-01,onion,570,MOCK
-2020-05-01,onion,560,MOCK
-2020-06-01,onion,630,MOCK
-2020-07-01,onion,690,MOCK
-2020-08-01,onion,640,MOCK
-2020-09-01,onion,660,MOCK
-2020-10-01,onion,620,MOCK
-2020-11-01,onion,510,MOCK
-2020-12-01,onion,520,MOCK
-2021-01-01,onion,550,MOCK
-2021-02-01,onion,540,MOCK
-2021-03-01,onion,590,MOCK
-2021-04-01,onion,650,MOCK
-2021-05-01,onion,640,MOCK
-2021-06-01,onion,720,MOCK
-2021-07-01,onion,760,MOCK
-2021-08-01,onion,830,MOCK
-2021-09-01,onion,700,MOCK
-2021-10-01,onion,740,MOCK
-2021-11-01,onion,650,MOCK
-2021-12-01,onion,580,MOCK
-2022-01-01,onion,600,MOCK
-2022-02-01,onion,640,MOCK
-2022-03-01,onion,680,MOCK
-2022-04-01,onion,780,MOCK
-2022-05-01,onion,790,MOCK
-2022-06-01,onion,810,MOCK
-2022-07-01,onion,900,MOCK
-2022-08-01,onion,860,MOCK
-2022-09-01,onion,900,MOCK
-2022-10-01,onion,830,MOCK
-2022-11-01,onion,750,MOCK
-2022-12-01,onion,760,MOCK
-2023-01-01,onion,730,MOCK
-2023-02-01,onion,790,MOCK
-2023-03-01,onion,860,MOCK
-2023-04-01,onion,900,MOCK
-2023-05-01,onion,1020,MOCK
-2023-06-01,onion,1110,MOCK
-2023-07-01,onion,1250,MOCK
-2023-08-01,onion,1260,MOCK
-2023-09-01,onion,1260,MOCK
-2023-10-01,onion,1270,MOCK
-2023-11-01,onion,1110,MOCK
-2023-12-01,onion,1100,MOCK
-2024-01-01,onion,1110,MOCK
-2024-02-01,onion,1160,MOCK
-2024-03-01,onion,1280,MOCK
-2024-04-01,onion,1350,MOCK
-2024-05-01,onion,1430,MOCK
-2024-06-01,onion,1760,MOCK
-2024-07-01,onion,1720,MOCK
-2024-08-01,onion,1790,MOCK
-2024-09-01,onion,1740,MOCK
-2024-10-01,onion,1830,MOCK
-2024-11-01,onion,1680,MOCK
-2024-12-01,onion,1600,MOCK
-2020-01-01,fresh-pepper,820,MOCK
-2020-02-01,fresh-pepper,940,MOCK
-2020-03-01,fresh-pepper,990,MOCK
-2020-04-01,fresh-pepper,1050,MOCK
-2020-05-01,fresh-pepper,1110,MOCK
-2020-06-01,fresh-pepper,1250,MOCK
-2020-07-01,fresh-pepper,1160,MOCK
-2020-08-01,fresh-pepper,1020,MOCK
-2020-09-01,fresh-pepper,980,MOCK
-2020-10-01,fresh-pepper,770,MOCK
-2020-11-01,fresh-pepper,800,MOCK
-2020-12-01,fresh-pepper,840,MOCK
-2021-01-01,fresh-pepper,980,MOCK
-2021-02-01,fresh-pepper,1090,MOCK
-2021-03-01,fresh-pepper,1240,MOCK
-2021-04-01,fresh-pepper,1500,MOCK
-2021-05-01,fresh-pepper,1510,MOCK
-2021-06-01,fresh-pepper,1380,MOCK
-2021-07-01,fresh-pepper,1230,MOCK
-2021-08-01,fresh-pepper,1220,MOCK
-2021-09-01,fresh-pepper,1020,MOCK
-2021-10-01,fresh-pepper,910,MOCK
-2021-11-01,fresh-pepper,900,MOCK
-2021-12-01,fresh-pepper,990,MOCK
-2022-01-01,fresh-pepper,1130,MOCK
-2022-02-01,fresh-pepper,1230,MOCK
-2022-03-01,fresh-pepper,1560,MOCK
-2022-04-01,fresh-pepper,1650,MOCK
-2022-05-01,fresh-pepper,1730,MOCK
-2022-06-01,fresh-pepper,1670,MOCK
-2022-07-01,fresh-pepper,1630,MOCK
-2022-08-01,fresh-pepper,1400,MOCK
-2022-09-01,fresh-pepper,1240,MOCK
-2022-10-01,fresh-pepper,1200,MOCK
-2022-11-01,fresh-pepper,1230,MOCK
-2022-12-01,fresh-pepper,1130,MOCK
-2023-01-01,fresh-pepper,1360,MOCK
-2023-02-01,fresh-pepper,1480,MOCK
-2023-03-01,fresh-pepper,1810,MOCK
-2023-04-01,fresh-pepper,1970,MOCK
-2023-05-01,fresh-pepper,2040,MOCK
-2023-06-01,fresh-pepper,2230,MOCK
-2023-07-01,fresh-pepper,2220,MOCK
-2023-08-01,fresh-pepper,2170,MOCK
-2023-09-01,fresh-pepper,1900,MOCK
-2023-10-01,fresh-pepper,1650,MOCK
-2023-11-01,fresh-pepper,1680,MOCK
-2023-12-01,fresh-pepper,1850,MOCK
-2024-01-01,fresh-pepper,1910,MOCK
-2024-02-01,fresh-pepper,2280,MOCK
-2024-03-01,fresh-pepper,2820,MOCK
-2024-04-01,fresh-pepper,2970,MOCK
-2024-05-01,fresh-pepper,3220,MOCK
-2024-06-01,fresh-pepper,3250,MOCK
-2024-07-01,fresh-pepper,3230,MOCK
-2024-08-01,fresh-pepper,2570,MOCK
-2024-09-01,fresh-pepper,2440,MOCK
-2024-10-01,fresh-pepper,2380,MOCK
-2024-11-01,fresh-pepper,2030,MOCK
-2024-12-01,fresh-pepper,2500,MOCK
-2020-01-01,carrot,390,MOCK
-2020-02-01,carrot,440,MOCK
-2020-03-01,carrot,470,MOCK
-2020-04-01,carrot,490,MOCK
-2020-05-01,carrot,480,MOCK
-2020-06-01,carrot,520,MOCK
-2020-07-01,carrot,510,MOCK
-2020-08-01,carrot,520,MOCK
-2020-09-01,carrot,500,MOCK
-2020-10-01,carrot,510,MOCK
-2020-11-01,carrot,510,MOCK
-2020-12-01,carrot,510,MOCK
-2021-01-01,carrot,510,MOCK
-2021-02-01,carrot,520,MOCK
-2021-03-01,carrot,540,MOCK
-2021-04-01,carrot,590,MOCK
-2021-05-01,carrot,580,MOCK
-2021-06-01,carrot,620,MOCK
-2021-07-01,carrot,590,MOCK
-2021-08-01,carrot,590,MOCK
-2021-09-01,carrot,570,MOCK
-2021-10-01,carrot,520,MOCK
-2021-11-01,carrot,610,MOCK
-2021-12-01,carrot,540,MOCK
-2022-01-01,carrot,600,MOCK
-2022-02-01,carrot,620,MOCK
-2022-03-01,carrot,630,MOCK
-2022-04-01,carrot,590,MOCK
-2022-05-01,carrot,670,MOCK
-2022-06-01,carrot,750,MOCK
-2022-07-01,carrot,720,MOCK
-2022-08-01,carrot,740,MOCK
-2022-09-01,carrot,660,MOCK
-2022-10-01,carrot,640,MOCK
-2022-11-01,carrot,730,MOCK
-2022-12-01,carrot,730,MOCK
-2023-01-01,carrot,730,MOCK
-2023-02-01,carrot,690,MOCK
-2023-03-01,carrot,810,MOCK
-2023-04-01,carrot,840,MOCK
-2023-05-01,carrot,870,MOCK
-2023-06-01,carrot,900,MOCK
-2023-07-01,carrot,910,MOCK
-2023-08-01,carrot,960,MOCK
-2023-09-01,carrot,1070,MOCK
-2023-10-01,carrot,970,MOCK
-2023-11-01,carrot,1150,MOCK
-2023-12-01,carrot,1070,MOCK
-2024-01-01,carrot,1110,MOCK
-2024-02-01,carrot,1220,MOCK
-2024-03-01,carrot,1170,MOCK
-2024-04-01,carrot,1250,MOCK
-2024-05-01,carrot,1390,MOCK
-2024-06-01,carrot,1420,MOCK
-2024-07-01,carrot,1370,MOCK
-2024-08-01,carrot,1450,MOCK
-2024-09-01,carrot,1510,MOCK
-2024-10-01,carrot,1330,MOCK
-2024-11-01,carrot,1470,MOCK
-2024-12-01,carrot,1500,MOCK
-2020-01-01,plantain,370,MOCK
-2020-02-01,plantain,410,MOCK
-2020-03-01,plantain,450,MOCK
-2020-04-01,plantain,420,MOCK
-2020-05-01,plantain,460,MOCK
-2020-06-01,plantain,500,MOCK
-2020-07-01,plantain,460,MOCK
-2020-08-01,plantain,490,MOCK
-2020-09-01,plantain,480,MOCK
-2020-10-01,plantain,490,MOCK
-2020-11-01,plantain,440,MOCK
-2020-12-01,plantain,470,MOCK
-2021-01-01,plantain,510,MOCK
-2021-02-01,plantain,490,MOCK
-2021-03-01,plantain,540,MOCK
-2021-04-01,plantain,530,MOCK
-2021-05-01,plantain,480,MOCK
-2021-06-01,plantain,580,MOCK
-2021-07-01,plantain,530,MOCK
-2021-08-01,plantain,560,MOCK
-2021-09-01,plantain,550,MOCK
-2021-10-01,plantain,470,MOCK
-2021-11-01,plantain,480,MOCK
-2021-12-01,plantain,540,MOCK
-2022-01-01,plantain,560,MOCK
-2022-02-01,plantain,600,MOCK
-2022-03-01,plantain,600,MOCK
-2022-04-01,plantain,620,MOCK
-2022-05-01,plantain,650,MOCK
-2022-06-01,plantain,690,MOCK
-2022-07-01,plantain,650,MOCK
-2022-08-01,plantain,670,MOCK
-2022-09-01,plantain,620,MOCK
-2022-10-01,plantain,680,MOCK
-2022-11-01,plantain,670,MOCK
-2022-12-01,plantain,650,MOCK
-2023-01-01,plantain,690,MOCK
-2023-02-01,plantain,670,MOCK
-2023-03-01,plantain,750,MOCK
-2023-04-01,plantain,770,MOCK
-2023-05-01,plantain,800,MOCK
-2023-06-01,plantain,900,MOCK
-2023-07-01,plantain,890,MOCK
-2023-08-01,plantain,1000,MOCK
-2023-09-01,plantain,990,MOCK
-2023-10-01,plantain,950,MOCK
-2023-11-01,plantain,960,MOCK
-2023-12-01,plantain,930,MOCK
-2024-01-01,plantain,1040,MOCK
-2024-02-01,plantain,1030,MOCK
-2024-03-01,plantain,1200,MOCK
-2024-04-01,plantain,1200,MOCK
-2024-05-01,plantain,1160,MOCK
-2024-06-01,plantain,1340,MOCK
-2024-07-01,plantain,1300,MOCK
-2024-08-01,plantain,1480,MOCK
-2024-09-01,plantain,1280,MOCK
-2024-10-01,plantain,1450,MOCK
-2024-11-01,plantain,1440,MOCK
-2024-12-01,plantain,1400,MOCK
-2020-01-01,beef,2530,MOCK
-2020-02-01,beef,2490,MOCK
-2020-03-01,beef,2660,MOCK
-2020-04-01,beef,2640,MOCK
-2020-05-01,beef,2640,MOCK
-2020-06-01,beef,2770,MOCK
-2020-07-01,beef,2680,MOCK
-2020-08-01,beef,2860,MOCK
-2020-09-01,beef,3040,MOCK
-2020-10-01,beef,2740,MOCK
-2020-11-01,beef,2660,MOCK
-2020-12-01,beef,2800,MOCK
-2021-01-01,beef,2820,MOCK
-2021-02-01,beef,3060,MOCK
-2021-03-01,beef,3110,MOCK
-2021-04-01,beef,3110,MOCK
-2021-05-01,beef,3490,MOCK
-2021-06-01,beef,3600,MOCK
-2021-07-01,beef,3240,MOCK
-2021-08-01,beef,3350,MOCK
-2021-09-01,beef,3320,MOCK
-2021-10-01,beef,3130,MOCK
-2021-11-01,beef,3230,MOCK
-2021-12-01,beef,3390,MOCK
-2022-01-01,beef,3550,MOCK
-2022-02-01,beef,3380,MOCK
-2022-03-01,beef,3540,MOCK
-2022-04-01,beef,3680,MOCK
-2022-05-01,beef,3900,MOCK
-2022-06-01,beef,3910,MOCK
-2022-07-01,beef,3990,MOCK
-2022-08-01,beef,4040,MOCK
-2022-09-01,beef,3820,MOCK
-2022-10-01,beef,4020,MOCK
-2022-11-01,beef,3960,MOCK
-2022-12-01,beef,4020,MOCK
-2023-01-01,beef,3950,MOCK
-2023-02-01,beef,4150,MOCK
-2023-03-01,beef,4370,MOCK
-2023-04-01,beef,4370,MOCK
-2023-05-01,beef,4960,MOCK
-2023-06-01,beef,5190,MOCK
-2023-07-01,beef,5610,MOCK
-2023-08-01,beef,5450,MOCK
-2023-09-01,beef,5850,MOCK
-2023-10-01,beef,5770,MOCK
-2023-11-01,beef,5920,MOCK
-2023-12-01,beef,6050,MOCK
-2024-01-01,beef,6180,MOCK
-2024-02-01,beef,6600,MOCK
-2024-03-01,beef,7050,MOCK
-2024-04-01,beef,7420,MOCK
-2024-05-01,beef,7020,MOCK
-2024-06-01,beef,8070,MOCK
-2024-07-01,beef,8100,MOCK
-2024-08-01,beef,8510,MOCK
-2024-09-01,beef,8310,MOCK
-2024-10-01,beef,8480,MOCK
-2024-11-01,beef,8160,MOCK
-2024-12-01,beef,8500,MOCK
-2020-01-01,chicken,2090,MOCK
-2020-02-01,chicken,1900,MOCK
-2020-03-01,chicken,1960,MOCK
-2020-04-01,chicken,2180,MOCK
-2020-05-01,chicken,2080,MOCK
-2020-06-01,chicken,1980,MOCK
-2020-07-01,chicken,2160,MOCK
-2020-08-01,chicken,2210,MOCK
-2020-09-01,chicken,2090,MOCK
-2020-10-01,chicken,2240,MOCK
-2020-11-01,chicken,2350,MOCK
-2020-12-01,chicken,2340,MOCK
-2021-01-01,chicken,2240,MOCK
-2021-02-01,chicken,2510,MOCK
-2021-03-01,chicken,2430,MOCK
-2021-04-01,chicken,2380,MOCK
-2021-05-01,chicken,2430,MOCK
-2021-06-01,chicken,2520,MOCK
-2021-07-01,chicken,2380,MOCK
-2021-08-01,chicken,2490,MOCK
-2021-09-01,chicken,2710,MOCK
-2021-10-01,chicken,2640,MOCK
-2021-11-01,chicken,2790,MOCK
-2021-12-01,chicken,2790,MOCK
-2022-01-01,chicken,2800,MOCK
-2022-02-01,chicken,2850,MOCK
-2022-03-01,chicken,2870,MOCK
-2022-04-01,chicken,2840,MOCK
-2022-05-01,chicken,2890,MOCK
-2022-06-01,chicken,2950,MOCK
-2022-07-01,chicken,3070,MOCK
-2022-08-01,chicken,2960,MOCK
-2022-09-01,chicken,3060,MOCK
-2022-10-01,chicken,3120,MOCK
-2022-11-01,chicken,3380,MOCK
-2022-12-01,chicken,3430,MOCK
-2023-01-01,chicken,3240,MOCK
-2023-02-01,chicken,3260,MOCK
-2023-03-01,chicken,3540,MOCK
-2023-04-01,chicken,3330,MOCK
-2023-05-01,chicken,3640,MOCK
-2023-06-01,chicken,3770,MOCK
-2023-07-01,chicken,4260,MOCK
-2023-08-01,chicken,4620,MOCK
-2023-09-01,chicken,4700,MOCK
-2023-10-01,chicken,4770,MOCK
-2023-11-01,chicken,4990,MOCK
-2023-12-01,chicken,5320,MOCK
-2024-01-01,chicken,5170,MOCK
-2024-02-01,chicken,5180,MOCK
-2024-03-01,chicken,5590,MOCK
-2024-04-01,chicken,5660,MOCK
-2024-05-01,chicken,5630,MOCK
-2024-06-01,chicken,5810,MOCK
-2024-07-01,chicken,6010,MOCK
-2024-08-01,chicken,6160,MOCK
-2024-09-01,chicken,6210,MOCK
-2024-10-01,chicken,6620,MOCK
-2024-11-01,chicken,6930,MOCK
-2024-12-01,chicken,7500,MOCK
-2020-01-01,frozen-fish,1580,MOCK
-2020-02-01,frozen-fish,1520,MOCK
-2020-03-01,frozen-fish,1620,MOCK
-2020-04-01,frozen-fish,1860,MOCK
-2020-05-01,frozen-fish,1810,MOCK
-2020-06-01,frozen-fish,1950,MOCK
-2020-07-01,frozen-fish,1880,MOCK
-2020-08-01,frozen-fish,1840,MOCK
-2020-09-01,frozen-fish,1780,MOCK
-2020-10-01,frozen-fish,1840,MOCK
-2020-11-01,frozen-fish,1780,MOCK
-2020-12-01,frozen-fish,1820,MOCK
-2021-01-01,frozen-fish,1820,MOCK
-2021-02-01,frozen-fish,1900,MOCK
-2021-03-01,frozen-fish,1960,MOCK
-2021-04-01,frozen-fish,2190,MOCK
-2021-05-01,frozen-fish,2240,MOCK
-2021-06-01,frozen-fish,2150,MOCK
-2021-07-01,frozen-fish,2290,MOCK
-2021-08-01,frozen-fish,2060,MOCK
-2021-09-01,frozen-fish,2220,MOCK
-2021-10-01,frozen-fish,2220,MOCK
-2021-11-01,frozen-fish,2150,MOCK
-2021-12-01,frozen-fish,2090,MOCK
-2022-01-01,frozen-fish,2140,MOCK
-2022-02-01,frozen-fish,2190,MOCK
-2022-03-01,frozen-fish,2360,MOCK
-2022-04-01,frozen-fish,2420,MOCK
-2022-05-01,frozen-fish,2550,MOCK
-2022-06-01,frozen-fish,2610,MOCK
-2022-07-01,frozen-fish,2560,MOCK
-2022-08-01,frozen-fish,2630,MOCK
-2022-09-01,frozen-fish,2420,MOCK
-2022-10-01,frozen-fish,2500,MOCK
-2022-11-01,frozen-fish,2440,MOCK
-2022-12-01,frozen-fish,2370,MOCK
-2023-01-01,frozen-fish,2680,MOCK
-2023-02-01,frozen-fish,2550,MOCK
-2023-03-01,frozen-fish,2880,MOCK
-2023-04-01,frozen-fish,2880,MOCK
-2023-05-01,frozen-fish,3210,MOCK
-2023-06-01,frozen-fish,3360,MOCK
-2023-07-01,frozen-fish,3640,MOCK
-2023-08-01,frozen-fish,3890,MOCK
-2023-09-01,frozen-fish,3720,MOCK
-2023-10-01,frozen-fish,3680,MOCK
-2023-11-01,frozen-fish,3610,MOCK
-2023-12-01,frozen-fish,3830,MOCK
-2024-01-01,frozen-fish,3760,MOCK
-2024-02-01,frozen-fish,4390,MOCK
-2024-03-01,frozen-fish,4340,MOCK
-2024-04-01,frozen-fish,4610,MOCK
-2024-05-01,frozen-fish,5200,MOCK
-2024-06-01,frozen-fish,5200,MOCK
-2024-07-01,frozen-fish,4820,MOCK
-2024-08-01,frozen-fish,5420,MOCK
-2024-09-01,frozen-fish,5200,MOCK
-2024-10-01,frozen-fish,5290,MOCK
-2024-11-01,frozen-fish,5200,MOCK
-2024-12-01,frozen-fish,5500,MOCK
-2020-01-01,eggs,1570,MOCK
-2020-02-01,eggs,1620,MOCK
-2020-03-01,eggs,1630,MOCK
-2020-04-01,eggs,1690,MOCK
-2020-05-01,eggs,1670,MOCK
-2020-06-01,eggs,1670,MOCK
-2020-07-01,eggs,1770,MOCK
-2020-08-01,eggs,1830,MOCK
-2020-09-01,eggs,1780,MOCK
-2020-10-01,eggs,1680,MOCK
-2020-11-01,eggs,1830,MOCK
-2020-12-01,eggs,2000,MOCK
-2021-01-01,eggs,1910,MOCK
-2021-02-01,eggs,1790,MOCK
-2021-03-01,eggs,1950,MOCK
-2021-04-01,eggs,2000,MOCK
-2021-05-01,eggs,1960,MOCK
-2021-06-01,eggs,2030,MOCK
-2021-07-01,eggs,1980,MOCK
-2021-08-01,eggs,2060,MOCK
-2021-09-01,eggs,2120,MOCK
-2021-10-01,eggs,2160,MOCK
-2021-11-01,eggs,2170,MOCK
-2021-12-01,eggs,2320,MOCK
-2022-01-01,eggs,2220,MOCK
-2022-02-01,eggs,2280,MOCK
-2022-03-01,eggs,2320,MOCK
-2022-04-01,eggs,2290,MOCK
-2022-05-01,eggs,2430,MOCK
-2022-06-01,eggs,2400,MOCK
-2022-07-01,eggs,2370,MOCK
-2022-08-01,eggs,2600,MOCK
-2022-09-01,eggs,2480,MOCK
-2022-10-01,eggs,2590,MOCK
-2022-11-01,eggs,2670,MOCK
-2022-12-01,eggs,2690,MOCK
-2023-01-01,eggs,2760,MOCK
-2023-02-01,eggs,2580,MOCK
-2023-03-01,eggs,2730,MOCK
-2023-04-01,eggs,2940,MOCK
-2023-05-01,eggs,2920,MOCK
-2023-06-01,eggs,2940,MOCK
-2023-07-01,eggs,3230,MOCK
-2023-08-01,eggs,3400,MOCK
-2023-09-01,eggs,3730,MOCK
-2023-10-01,eggs,3800,MOCK
-2023-11-01,eggs,4120,MOCK
-2023-12-01,eggs,4030,MOCK
-2024-01-01,eggs,3920,MOCK
-2024-02-01,eggs,4390,MOCK
-2024-03-01,eggs,4400,MOCK
-2024-04-01,eggs,4460,MOCK
-2024-05-01,eggs,4650,MOCK
-2024-06-01,eggs,4460,MOCK
-2024-07-01,eggs,4910,MOCK
-2024-08-01,eggs,4740,MOCK
-2024-09-01,eggs,4750,MOCK
-2024-10-01,eggs,5410,MOCK
-2024-11-01,eggs,5720,MOCK
-2024-12-01,eggs,6000,MOCK
-2020-01-01,vegetable-oil,940,MOCK
-2020-02-01,vegetable-oil,950,MOCK
-2020-03-01,vegetable-oil,970,MOCK
-2020-04-01,vegetable-oil,990,MOCK
-2020-05-01,vegetable-oil,1010,MOCK
-2020-06-01,vegetable-oil,1000,MOCK
-2020-07-01,vegetable-oil,1020,MOCK
-2020-08-01,vegetable-oil,1030,MOCK
-2020-09-01,vegetable-oil,1030,MOCK
-2020-10-01,vegetable-oil,1060,MOCK
-2020-11-01,vegetable-oil,1040,MOCK
-2020-12-01,vegetable-oil,1010,MOCK
-2021-01-01,vegetable-oil,1070,MOCK
-2021-02-01,vegetable-oil,1090,MOCK
-2021-03-01,vegetable-oil,1160,MOCK
-2021-04-01,vegetable-oil,1170,MOCK
-2021-05-01,vegetable-oil,1180,MOCK
-2021-06-01,vegetable-oil,1180,MOCK
-2021-07-01,vegetable-oil,1240,MOCK
-2021-08-01,vegetable-oil,1260,MOCK
-2021-09-01,vegetable-oil,1170,MOCK
-2021-10-01,vegetable-oil,1200,MOCK
-2021-11-01,vegetable-oil,1190,MOCK
-2021-12-01,vegetable-oil,1200,MOCK
-2022-01-01,vegetable-oil,1250,MOCK
-2022-02-01,vegetable-oil,1330,MOCK
-2022-03-01,vegetable-oil,1330,MOCK
-2022-04-01,vegetable-oil,1410,MOCK
-2022-05-01,vegetable-oil,1370,MOCK
-2022-06-01,vegetable-oil,1450,MOCK
-2022-07-01,vegetable-oil,1490,MOCK
-2022-08-01,vegetable-oil,1460,MOCK
-2022-09-01,vegetable-oil,1450,MOCK
-2022-10-01,vegetable-oil,1480,MOCK
-2022-11-01,vegetable-oil,1480,MOCK
-2022-12-01,vegetable-oil,1470,MOCK
-2023-01-01,vegetable-oil,1510,MOCK
-2023-02-01,vegetable-oil,1620,MOCK
-2023-03-01,vegetable-oil,1630,MOCK
-2023-04-01,vegetable-oil,1660,MOCK
-2023-05-01,vegetable-oil,1730,MOCK
-2023-06-01,vegetable-oil,1780,MOCK
-2023-07-01,vegetable-oil,1940,MOCK
-2023-08-01,vegetable-oil,2130,MOCK
-2023-09-01,vegetable-oil,2120,MOCK
-2023-10-01,vegetable-oil,2200,MOCK
-2023-11-01,vegetable-oil,2200,MOCK
-2023-12-01,vegetable-oil,2270,MOCK
-2024-01-01,vegetable-oil,2350,MOCK
-2024-02-01,vegetable-oil,2470,MOCK
-2024-03-01,vegetable-oil,2390,MOCK
-2024-04-01,vegetable-oil,2650,MOCK
-2024-05-01,vegetable-oil,2690,MOCK
-2024-06-01,vegetable-oil,2810,MOCK
-2024-07-01,vegetable-oil,2930,MOCK
-2024-08-01,vegetable-oil,2930,MOCK
-2024-09-01,vegetable-oil,3030,MOCK
-2024-10-01,vegetable-oil,2990,MOCK
-2024-11-01,vegetable-oil,3200,MOCK
-2024-12-01,vegetable-oil,3200,MOCK
-2020-01-01,palm-oil,840,MOCK
-2020-02-01,palm-oil,850,MOCK
-2020-03-01,palm-oil,850,MOCK
-2020-04-01,palm-oil,910,MOCK
-2020-05-01,palm-oil,950,MOCK
-2020-06-01,palm-oil,970,MOCK
-2020-07-01,palm-oil,920,MOCK
-2020-08-01,palm-oil,920,MOCK
-2020-09-01,palm-oil,940,MOCK
-2020-10-01,palm-oil,900,MOCK
-2020-11-01,palm-oil,890,MOCK
-2020-12-01,palm-oil,920,MOCK
-2021-01-01,palm-oil,870,MOCK
-2021-02-01,palm-oil,980,MOCK
-2021-03-01,palm-oil,1040,MOCK
-2021-04-01,palm-oil,1050,MOCK
-2021-05-01,palm-oil,1040,MOCK
-2021-06-01,palm-oil,1110,MOCK
-2021-07-01,palm-oil,1040,MOCK
-2021-08-01,palm-oil,1100,MOCK
-2021-09-01,palm-oil,1060,MOCK
-2021-10-01,palm-oil,1110,MOCK
-2021-11-01,palm-oil,1140,MOCK
-2021-12-01,palm-oil,1060,MOCK
-2022-01-01,palm-oil,1150,MOCK
-2022-02-01,palm-oil,1220,MOCK
-2022-03-01,palm-oil,1160,MOCK
-2022-04-01,palm-oil,1190,MOCK
-2022-05-01,palm-oil,1250,MOCK
-2022-06-01,palm-oil,1300,MOCK
-2022-07-01,palm-oil,1350,MOCK
-2022-08-01,palm-oil,1310,MOCK
-2022-09-01,palm-oil,1270,MOCK
-2022-10-01,palm-oil,1290,MOCK
-2022-11-01,palm-oil,1210,MOCK
-2022-12-01,palm-oil,1320,MOCK
-2023-01-01,palm-oil,1310,MOCK
-2023-02-01,palm-oil,1330,MOCK
-2023-03-01,palm-oil,1500,MOCK
-2023-04-01,palm-oil,1540,MOCK
-2023-05-01,palm-oil,1570,MOCK
-2023-06-01,palm-oil,1700,MOCK
-2023-07-01,palm-oil,1810,MOCK
-2023-08-01,palm-oil,1880,MOCK
-2023-09-01,palm-oil,2010,MOCK
-2023-10-01,palm-oil,1830,MOCK
-2023-11-01,palm-oil,1950,MOCK
-2023-12-01,palm-oil,2040,MOCK
-2024-01-01,palm-oil,1920,MOCK
-2024-02-01,palm-oil,2240,MOCK
-2024-03-01,palm-oil,2310,MOCK
-2024-04-01,palm-oil,2400,MOCK
-2024-05-01,palm-oil,2490,MOCK
-2024-06-01,palm-oil,2590,MOCK
-2024-07-01,palm-oil,2680,MOCK
-2024-08-01,palm-oil,2650,MOCK
-2024-09-01,palm-oil,2680,MOCK
-2024-10-01,palm-oil,2750,MOCK
-2024-11-01,palm-oil,2670,MOCK
-2024-12-01,palm-oil,2800,MOCK
-2020-01-01,sugar,540,MOCK
-2020-02-01,sugar,540,MOCK
-2020-03-01,sugar,580,MOCK
-2020-04-01,sugar,560,MOCK
-2020-05-01,sugar,580,MOCK
-2020-06-01,sugar,610,MOCK
-2020-07-01,sugar,620,MOCK
-2020-08-01,sugar,620,MOCK
-2020-09-01,sugar,620,MOCK
-2020-10-01,sugar,600,MOCK
-2020-11-01,sugar,580,MOCK
-2020-12-01,sugar,610,MOCK
-2021-01-01,sugar,630,MOCK
-2021-02-01,sugar,660,MOCK
-2021-03-01,sugar,660,MOCK
-2021-04-01,sugar,640,MOCK
-2021-05-01,sugar,690,MOCK
-2021-06-01,sugar,690,MOCK
-2021-07-01,sugar,710,MOCK
-2021-08-01,sugar,700,MOCK
-2021-09-01,sugar,700,MOCK
-2021-10-01,sugar,680,MOCK
-2021-11-01,sugar,690,MOCK
-2021-12-01,sugar,740,MOCK
-2022-01-01,sugar,740,MOCK
-2022-02-01,sugar,750,MOCK
-2022-03-01,sugar,780,MOCK
-2022-04-01,sugar,800,MOCK
-2022-05-01,sugar,840,MOCK
-2022-06-01,sugar,880,MOCK
-2022-07-01,sugar,870,MOCK
-2022-08-01,sugar,860,MOCK
-2022-09-01,sugar,860,MOCK
-2022-10-01,sugar,880,MOCK
-2022-11-01,sugar,870,MOCK
-2022-12-01,sugar,900,MOCK
-2023-01-01,sugar,930,MOCK
-2023-02-01,sugar,890,MOCK
-2023-03-01,sugar,930,MOCK
-2023-04-01,sugar,980,MOCK
-2023-05-01,sugar,1040,MOCK
-2023-06-01,sugar,1130,MOCK
-2023-07-01,sugar,1200,MOCK
-2023-08-01,sugar,1220,MOCK
-2023-09-01,sugar,1300,MOCK
-2023-10-01,sugar,1330,MOCK
-2023-11-01,sugar,1310,MOCK
-2023-12-01,sugar,1380,MOCK
-2024-01-01,sugar,1410,MOCK
-2024-02-01,sugar,1430,MOCK
-2024-03-01,sugar,1560,MOCK
-2024-04-01,sugar,1560,MOCK
-2024-05-01,sugar,1620,MOCK
-2024-06-01,sugar,1750,MOCK
-2024-07-01,sugar,1730,MOCK
-2024-08-01,sugar,1760,MOCK
-2024-09-01,sugar,1790,MOCK
-2024-10-01,sugar,1800,MOCK
-2024-11-01,sugar,1880,MOCK
-2024-12-01,sugar,1900,MOCK
-2020-01-01,powdered-milk,1010,MOCK
-2020-02-01,powdered-milk,1020,MOCK
-2020-03-01,powdered-milk,1010,MOCK
-2020-04-01,powdered-milk,1050,MOCK
-2020-05-01,powdered-milk,1030,MOCK
-2020-06-01,powdered-milk,1120,MOCK
-2020-07-01,powdered-milk,1150,MOCK
-2020-08-01,powdered-milk,1170,MOCK
-2020-09-01,powdered-milk,1100,MOCK
-2020-10-01,powdered-milk,1150,MOCK
-2020-11-01,powdered-milk,1170,MOCK
-2020-12-01,powdered-milk,1190,MOCK
-2021-01-01,powdered-milk,1190,MOCK
-2021-02-01,powdered-milk,1200,MOCK
-2021-03-01,powdered-milk,1210,MOCK
-2021-04-01,powdered-milk,1240,MOCK
-2021-05-01,powdered-milk,1300,MOCK
-2021-06-01,powdered-milk,1300,MOCK
-2021-07-01,powdered-milk,1320,MOCK
-2021-08-01,powdered-milk,1360,MOCK
-2021-09-01,powdered-milk,1330,MOCK
-2021-10-01,powdered-milk,1310,MOCK
-2021-11-01,powdered-milk,1290,MOCK
-2021-12-01,powdered-milk,1300,MOCK
-2022-01-01,powdered-milk,1380,MOCK
-2022-02-01,powdered-milk,1370,MOCK
-2022-03-01,powdered-milk,1470,MOCK
-2022-04-01,powdered-milk,1470,MOCK
-2022-05-01,powdered-milk,1490,MOCK
-2022-06-01,powdered-milk,1550,MOCK
-2022-07-01,powdered-milk,1580,MOCK
-2022-08-01,powdered-milk,1630,MOCK
-2022-09-01,powdered-milk,1610,MOCK
-2022-10-01,powdered-milk,1590,MOCK
-2022-11-01,powdered-milk,1630,MOCK
-2022-12-01,powdered-milk,1620,MOCK
-2023-01-01,powdered-milk,1660,MOCK
-2023-02-01,powdered-milk,1670,MOCK
-2023-03-01,powdered-milk,1820,MOCK
-2023-04-01,powdered-milk,1790,MOCK
-2023-05-01,powdered-milk,1790,MOCK
-2023-06-01,powdered-milk,2060,MOCK
-2023-07-01,powdered-milk,2190,MOCK
-2023-08-01,powdered-milk,2320,MOCK
-2023-09-01,powdered-milk,2330,MOCK
-2023-10-01,powdered-milk,2390,MOCK
-2023-11-01,powdered-milk,2500,MOCK
-2023-12-01,powdered-milk,2570,MOCK
-2024-01-01,powdered-milk,2590,MOCK
-2024-02-01,powdered-milk,2740,MOCK
-2024-03-01,powdered-milk,2870,MOCK
-2024-04-01,powdered-milk,2860,MOCK
-2024-05-01,powdered-milk,2970,MOCK
-2024-06-01,powdered-milk,3180,MOCK
-2024-07-01,powdered-milk,3290,MOCK
-2024-08-01,powdered-milk,3390,MOCK
-2024-09-01,powdered-milk,3290,MOCK
-2024-10-01,powdered-milk,3380,MOCK
-2024-11-01,powdered-milk,3440,MOCK
-2024-12-01,powdered-milk,3500,MOCK
+period,commodity_slug,price,source,basis
+2018-01-01,rice-local,330,NBS Lagos,real
+2018-02-01,rice-local,350.22,NBS Lagos,real
+2018-03-01,rice-local,298.66,NBS Lagos,real
+2018-04-01,rice-local,266.67,NBS Lagos,real
+2018-05-01,rice-local,309.67,NBS Lagos,real
+2018-06-01,rice-local,296.88,NBS Lagos,real
+2018-07-01,rice-local,290,NBS Lagos,real
+2018-08-01,rice-local,304.84,NBS Lagos,real
+2018-09-01,rice-local,297.18,NBS Lagos,real
+2018-10-01,rice-local,300,NBS Lagos,real
+2018-11-01,rice-local,300.67,NBS Lagos,real
+2018-12-01,rice-local,334.52,NBS Lagos,real
+2019-01-01,rice-local,335.88,NBS Lagos,real
+2019-02-01,rice-local,320,NBS Lagos,real
+2019-03-01,rice-local,300,NBS Lagos,real
+2019-04-01,rice-local,312.02,NBS Lagos,real
+2019-05-01,rice-local,292.16,NBS Lagos,real
+2019-06-01,rice-local,259.46,NBS Lagos,real
+2019-07-01,rice-local,300,NBS Lagos,real
+2019-08-01,rice-local,323.52,NBS Lagos,real
+2019-09-01,rice-local,355.23,NBS Lagos,real
+2019-10-01,rice-local,375,NBS Lagos,real
+2019-11-01,rice-local,409.27,NBS Lagos,real
+2019-12-01,rice-local,419.27,NBS Lagos,real
+2020-01-01,rice-local,401.79,NBS Lagos,real
+2020-02-01,rice-local,422.72,NBS Lagos,real
+2020-03-01,rice-local,389.52,NBS Lagos,real
+2020-04-01,rice-local,414.51,NBS Lagos,real
+2020-05-01,rice-local,418.31,NBS Lagos,real
+2020-06-01,rice-local,423.67,NBS Lagos,real
+2020-07-01,rice-local,426.63,NBS Lagos,real
+2020-08-01,rice-local,439.83,NBS Lagos,real
+2020-09-01,rice-local,440.83,NBS Lagos,real
+2020-10-01,rice-local,448.53,NBS Lagos,real
+2020-11-01,rice-local,449.08,NBS Lagos,real
+2020-12-01,rice-local,443.12,NBS Lagos,real
+2021-01-01,rice-local,414.94,NBS Lagos,real
+2021-02-01,rice-local,426.67,NBS Lagos,real
+2021-03-01,rice-local,416.7,NBS Lagos,real
+2021-04-01,rice-local,406.52,NBS Lagos,real
+2021-05-01,rice-local,434.57,NBS Lagos,real
+2021-06-01,rice-local,418.27,NBS Lagos,real
+2021-07-01,rice-local,405.76,NBS Lagos,real
+2021-08-01,rice-local,426.25,NBS Lagos,real
+2021-09-01,rice-local,432.67,NBS Lagos,real
+2021-10-01,rice-local,444.55,NBS Lagos,real
+2021-11-01,rice-local,445.67,NBS Lagos,real
+2021-12-01,rice-local,503.15,NBS Lagos,real
+2022-01-01,rice-local,529.76,NBS Lagos,real
+2022-02-01,rice-local,528.45,NBS Lagos,real
+2022-03-01,rice-local,530,NBS Lagos,real
+2022-04-01,rice-local,532,NBS Lagos,real
+2022-05-01,rice-local,536.03,NBS Lagos,real
+2022-06-01,rice-local,545.45,NBS Lagos,real
+2022-07-01,rice-local,552.27,NBS Lagos,real
+2022-08-01,rice-local,545.34,NBS Lagos,real
+2022-09-01,rice-local,550.98,NBS Lagos,real
+2022-10-01,rice-local,554.41,NBS Lagos,real
+2022-11-01,rice-local,560.79,NBS Lagos,real
+2022-12-01,rice-local,561.46,NBS Lagos,real
+2023-01-01,rice-local,570.33,NBS Lagos,real
+2023-02-01,rice-local,543.37,NBS Lagos,real
+2023-03-01,rice-local,550.33,NBS Lagos,real
+2023-04-01,rice-local,575.64,NBS Lagos,real
+2023-05-01,rice-local,624.77,NBS Lagos,real
+2023-06-01,rice-local,635.27,NBS Lagos,real
+2023-07-01,rice-local,660.84,NBS Lagos,real
+2023-08-01,rice-local,731.29,NBS Lagos,real
+2023-09-01,rice-local,768.28,NBS Lagos,real
+2023-10-01,rice-local,875.71,NBS Lagos,real
+2023-11-01,rice-local,1122.42,NBS Lagos,real
+2023-12-01,rice-local,1130,NBS Lagos,real
+2024-01-01,rice-local,1131.34,NBS Lagos,real
+2024-02-01,rice-local,1302.31,NBS Lagos,real
+2024-03-01,rice-local,1353.05,NBS Lagos,real
+2024-04-01,rice-local,1551.61,NBS Lagos,real
+2024-05-01,rice-local,1607.06,NBS Lagos,real
+2024-06-01,rice-local,1719.35,NBS Lagos,real
+2024-07-01,rice-local,1930.65,NBS Lagos,real
+2024-08-01,rice-local,1953.38,NBS Lagos,real
+2024-09-01,rice-local,2135.73,NBS Lagos,real
+2024-10-01,rice-local,2144.62,NBS Lagos,real
+2024-11-01,rice-local,2200,NBS Lagos,real
+2024-12-01,rice-local,2230,NBS Lagos,real
+2025-01-01,rice-local,2209.31,NBS South-West average,estimated
+2025-02-01,rice-local,2065.78,NBS South-West average,estimated
+2025-03-01,rice-local,2136.71,NBS South-West average,estimated
+2025-04-01,rice-local,2036.21,NBS South-West average,estimated
+2025-05-01,rice-local,1934.32,NBS South-West average,estimated
+2025-06-01,rice-local,1885.24,NBS South-West average,estimated
+2025-07-01,rice-local,1837.57,NBS South-West average,estimated
+2025-08-01,rice-local,1730.47,NBS Lagos,real
+2025-09-01,rice-local,1648.83,NBS Lagos,real
+2025-10-01,rice-local,1645.88,NBS South-West average,estimated
+2025-11-01,rice-local,1625.88,NBS South-West average,estimated
+2025-12-01,rice-local,1622.85,NBS South-West average,estimated
+2026-01-01,rice-local,1617.58,NBS South-West average,estimated
+2026-02-01,rice-local,1620.29,NBS South-West average,estimated
+2026-03-01,rice-local,1637.04,NBS South-West average,estimated
+2026-04-01,rice-local,1651.98,NBS South-West average,estimated
+2026-05-01,rice-local,1659.45,NBS South-West average,estimated
+2018-01-01,rice-imported,306.87,NBS Lagos,real
+2018-02-01,rice-imported,311.08,NBS Lagos,real
+2018-03-01,rice-imported,319.39,NBS Lagos,real
+2018-04-01,rice-imported,296.39,NBS Lagos,real
+2018-05-01,rice-imported,318.24,NBS Lagos,real
+2018-06-01,rice-imported,315.96,NBS Lagos,real
+2018-07-01,rice-imported,330.06,NBS Lagos,real
+2018-08-01,rice-imported,338.55,NBS Lagos,real
+2018-09-01,rice-imported,388.79,NBS Lagos,real
+2018-10-01,rice-imported,370.99,NBS Lagos,real
+2018-11-01,rice-imported,308.71,NBS Lagos,real
+2018-12-01,rice-imported,334.19,NBS Lagos,real
+2019-01-01,rice-imported,322.58,NBS Lagos,real
+2019-02-01,rice-imported,305.96,NBS Lagos,real
+2019-03-01,rice-imported,301.65,NBS Lagos,real
+2019-04-01,rice-imported,333.95,NBS Lagos,real
+2019-05-01,rice-imported,335.2,NBS Lagos,real
+2019-06-01,rice-imported,342.54,NBS Lagos,real
+2019-07-01,rice-imported,320.37,NBS Lagos,real
+2019-08-01,rice-imported,318.03,NBS Lagos,real
+2019-09-01,rice-imported,324.92,NBS Lagos,real
+2019-10-01,rice-imported,374.39,NBS Lagos,real
+2019-11-01,rice-imported,358.63,NBS Lagos,real
+2019-12-01,rice-imported,361.38,NBS Lagos,real
+2020-01-01,rice-imported,391.09,NBS Lagos,real
+2020-02-01,rice-imported,381.85,NBS Lagos,real
+2020-03-01,rice-imported,407.24,NBS Lagos,real
+2020-04-01,rice-imported,482.64,NBS Lagos,real
+2020-05-01,rice-imported,492.53,NBS Lagos,real
+2020-06-01,rice-imported,509.56,NBS Lagos,real
+2020-07-01,rice-imported,527.83,NBS Lagos,real
+2020-08-01,rice-imported,527.7,NBS Lagos,real
+2020-09-01,rice-imported,529.03,NBS Lagos,real
+2020-10-01,rice-imported,536.83,NBS Lagos,real
+2020-11-01,rice-imported,547.98,NBS Lagos,real
+2020-12-01,rice-imported,539.24,NBS Lagos,real
+2021-01-01,rice-imported,577.89,NBS Lagos,real
+2021-02-01,rice-imported,572.79,NBS Lagos,real
+2021-03-01,rice-imported,536.24,NBS Lagos,real
+2021-04-01,rice-imported,595.65,NBS Lagos,real
+2021-05-01,rice-imported,563.67,NBS Lagos,real
+2021-06-01,rice-imported,661.72,NBS Lagos,real
+2021-07-01,rice-imported,604.08,NBS Lagos,real
+2021-08-01,rice-imported,607.36,NBS Lagos,real
+2021-09-01,rice-imported,610.95,NBS Lagos,real
+2021-10-01,rice-imported,629.32,NBS Lagos,real
+2021-11-01,rice-imported,663.59,NBS Lagos,real
+2021-12-01,rice-imported,697.66,NBS Lagos,real
+2022-01-01,rice-imported,699.69,NBS Lagos,real
+2022-02-01,rice-imported,699.54,NBS Lagos,real
+2022-03-01,rice-imported,670,NBS Lagos,real
+2022-04-01,rice-imported,676.91,NBS Lagos,real
+2022-05-01,rice-imported,689,NBS Lagos,real
+2022-06-01,rice-imported,700,NBS Lagos,real
+2022-07-01,rice-imported,713.38,NBS Lagos,real
+2022-08-01,rice-imported,721.9,NBS Lagos,real
+2022-09-01,rice-imported,724.68,NBS Lagos,real
+2022-10-01,rice-imported,741.19,NBS Lagos,real
+2022-11-01,rice-imported,752.23,NBS Lagos,real
+2022-12-01,rice-imported,753.62,NBS Lagos,real
+2023-01-01,rice-imported,760.18,NBS Lagos,real
+2023-02-01,rice-imported,786.27,NBS Lagos,real
+2023-03-01,rice-imported,782.71,NBS Lagos,real
+2023-04-01,rice-imported,758.87,NBS Lagos,real
+2023-05-01,rice-imported,783.97,NBS Lagos,real
+2023-06-01,rice-imported,789.72,NBS Lagos,real
+2023-07-01,rice-imported,824.5,NBS Lagos,real
+2023-08-01,rice-imported,845.72,NBS Lagos,real
+2023-09-01,rice-imported,897.52,NBS Lagos,real
+2023-10-01,rice-imported,916.44,NBS Lagos,real
+2023-11-01,rice-imported,1248.96,NBS Lagos,real
+2023-12-01,rice-imported,1287.48,NBS Lagos,real
+2024-01-01,rice-imported,1364.82,NBS Lagos,real
+2024-02-01,rice-imported,1626.05,NBS Lagos,real
+2024-03-01,rice-imported,1712.09,NBS Lagos,real
+2024-04-01,rice-imported,1928.87,NBS Lagos,real
+2024-05-01,rice-imported,1978.3,NBS Lagos,real
+2024-06-01,rice-imported,2128.99,NBS Lagos,real
+2024-07-01,rice-imported,2309.35,NBS Lagos,real
+2024-08-01,rice-imported,2400,NBS Lagos,real
+2024-09-01,rice-imported,2423.23,NBS Lagos,real
+2024-10-01,rice-imported,2440.83,NBS Lagos,real
+2024-11-01,rice-imported,2500,NBS Lagos,real
+2024-12-01,rice-imported,2600,NBS Lagos,real
+2025-01-01,rice-imported,2413.06,NBS South-West average,estimated
+2025-02-01,rice-imported,2379.69,NBS South-West average,estimated
+2025-03-01,rice-imported,2419.77,NBS South-West average,estimated
+2025-04-01,rice-imported,2303.69,NBS South-West average,estimated
+2025-05-01,rice-imported,2220.12,NBS South-West average,estimated
+2025-06-01,rice-imported,2180.6,NBS South-West average,estimated
+2025-07-01,rice-imported,2172.94,NBS South-West average,estimated
+2025-08-01,rice-imported,2062.56,NBS Lagos,real
+2025-09-01,rice-imported,1968.85,NBS Lagos,real
+2025-10-01,rice-imported,1962.97,NBS South-West average,estimated
+2025-11-01,rice-imported,1941.55,NBS South-West average,estimated
+2025-12-01,rice-imported,1935.35,NBS South-West average,estimated
+2026-01-01,rice-imported,1929.72,NBS South-West average,estimated
+2026-02-01,rice-imported,1932.71,NBS South-West average,estimated
+2026-03-01,rice-imported,1949.42,NBS South-West average,estimated
+2026-04-01,rice-imported,1951.77,NBS South-West average,estimated
+2026-05-01,rice-imported,1956.35,NBS South-West average,estimated
+2018-01-01,maize-white,225,NBS Lagos,real
+2018-02-01,maize-white,283.82,NBS Lagos,real
+2018-03-01,maize-white,214.86,NBS Lagos,real
+2018-04-01,maize-white,232.52,NBS Lagos,real
+2018-05-01,maize-white,238.98,NBS Lagos,real
+2018-06-01,maize-white,250.42,NBS Lagos,real
+2018-07-01,maize-white,250.46,NBS Lagos,real
+2018-08-01,maize-white,211.33,NBS Lagos,real
+2018-09-01,maize-white,215.43,NBS Lagos,real
+2018-10-01,maize-white,198.61,NBS Lagos,real
+2018-11-01,maize-white,227.14,NBS Lagos,real
+2018-12-01,maize-white,209.64,NBS Lagos,real
+2019-01-01,maize-white,228.81,NBS Lagos,real
+2019-02-01,maize-white,219.11,NBS Lagos,real
+2019-03-01,maize-white,200.51,NBS Lagos,real
+2019-04-01,maize-white,214.99,NBS Lagos,real
+2019-05-01,maize-white,207.05,NBS Lagos,real
+2019-06-01,maize-white,222.88,NBS Lagos,real
+2019-07-01,maize-white,202.49,NBS Lagos,real
+2019-08-01,maize-white,199.01,NBS Lagos,real
+2019-09-01,maize-white,206.92,NBS Lagos,real
+2019-10-01,maize-white,208.91,NBS Lagos,real
+2019-11-01,maize-white,224.2,NBS Lagos,real
+2019-12-01,maize-white,204.97,NBS Lagos,real
+2020-01-01,maize-white,246.57,NBS Lagos,real
+2020-02-01,maize-white,252.01,NBS Lagos,real
+2020-03-01,maize-white,247.37,NBS Lagos,real
+2020-04-01,maize-white,251.73,NBS Lagos,real
+2020-05-01,maize-white,250.82,NBS Lagos,real
+2020-06-01,maize-white,240.05,NBS Lagos,real
+2020-07-01,maize-white,269.18,NBS Lagos,real
+2020-08-01,maize-white,238.83,NBS Lagos,real
+2020-09-01,maize-white,235.94,NBS Lagos,real
+2020-10-01,maize-white,261.7,NBS Lagos,real
+2020-11-01,maize-white,273.21,NBS Lagos,real
+2020-12-01,maize-white,257.27,NBS Lagos,real
+2021-01-01,maize-white,274.48,NBS Lagos,real
+2021-02-01,maize-white,263.77,NBS Lagos,real
+2021-03-01,maize-white,302.49,NBS Lagos,real
+2021-04-01,maize-white,312.43,NBS Lagos,real
+2021-05-01,maize-white,356.2,NBS Lagos,real
+2021-06-01,maize-white,359.21,NBS Lagos,real
+2021-07-01,maize-white,340.2,NBS Lagos,real
+2021-08-01,maize-white,356.66,NBS Lagos,real
+2021-09-01,maize-white,362.59,NBS Lagos,real
+2021-10-01,maize-white,326.49,NBS Lagos,real
+2021-11-01,maize-white,400,NBS Lagos,real
+2021-12-01,maize-white,457.43,NBS Lagos,real
+2022-01-01,maize-white,428.01,NBS Lagos,real
+2022-02-01,maize-white,430.62,NBS Lagos,real
+2022-03-01,maize-white,435,NBS Lagos,real
+2022-04-01,maize-white,438.99,NBS Lagos,real
+2022-05-01,maize-white,492.69,NBS Lagos,real
+2022-06-01,maize-white,501.74,NBS Lagos,real
+2022-07-01,maize-white,502.91,NBS Lagos,real
+2022-08-01,maize-white,500.01,NBS Lagos,real
+2022-09-01,maize-white,406.62,NBS Lagos,real
+2022-10-01,maize-white,407.88,NBS Lagos,real
+2022-11-01,maize-white,403.86,NBS Lagos,real
+2022-12-01,maize-white,408.73,NBS Lagos,real
+2023-01-01,maize-white,444.01,NBS Lagos,real
+2023-02-01,maize-white,449.47,NBS Lagos,real
+2023-03-01,maize-white,460.18,NBS Lagos,real
+2023-04-01,maize-white,495.01,NBS Lagos,real
+2023-05-01,maize-white,499.18,NBS Lagos,real
+2023-06-01,maize-white,508.58,NBS Lagos,real
+2023-07-01,maize-white,520.31,NBS Lagos,real
+2023-08-01,maize-white,573.29,NBS Lagos,real
+2023-09-01,maize-white,590.83,NBS Lagos,real
+2023-10-01,maize-white,603.41,NBS Lagos,real
+2023-11-01,maize-white,662.67,NBS Lagos,real
+2023-12-01,maize-white,734.27,NBS Lagos,real
+2024-01-01,maize-white,711.45,NBS Lagos,real
+2024-02-01,maize-white,997.5,NBS Lagos,real
+2024-03-01,maize-white,911.28,NBS Lagos,real
+2024-04-01,maize-white,943.37,NBS Lagos,real
+2024-05-01,maize-white,1086.45,NBS Lagos,real
+2024-06-01,maize-white,1294.31,NBS Lagos,real
+2024-07-01,maize-white,1164.2,NBS Lagos,real
+2024-08-01,maize-white,1200,NBS Lagos,real
+2024-09-01,maize-white,1370.52,NBS Lagos,real
+2024-10-01,maize-white,1376.26,NBS Lagos,real
+2024-11-01,maize-white,1380,NBS Lagos,real
+2024-12-01,maize-white,1390,NBS Lagos,real
+2025-01-01,maize-white,1461.42,NBS South-West average,estimated
+2025-02-01,maize-white,1431.21,NBS South-West average,estimated
+2025-03-01,maize-white,1581.17,NBS South-West average,estimated
+2025-04-01,maize-white,1477.02,NBS South-West average,estimated
+2025-05-01,maize-white,1289.53,NBS South-West average,estimated
+2025-06-01,maize-white,1285.21,NBS South-West average,estimated
+2025-07-01,maize-white,1284.9,NBS South-West average,estimated
+2025-08-01,maize-white,1070.99,NBS South-West average,estimated
+2025-09-01,maize-white,1021.58,NBS South-West average,estimated
+2025-10-01,maize-white,1022.98,NBS South-West average,estimated
+2025-11-01,maize-white,960.69,NBS South-West average,estimated
+2025-12-01,maize-white,937.27,NBS South-West average,estimated
+2026-01-01,maize-white,919.19,NBS South-West average,estimated
+2026-02-01,maize-white,924.72,NBS South-West average,estimated
+2026-03-01,maize-white,942.13,NBS South-West average,estimated
+2026-04-01,maize-white,962.32,NBS South-West average,estimated
+2026-05-01,maize-white,970.41,NBS South-West average,estimated
+2018-01-01,sliced-bread,350,NBS Lagos,real
+2018-02-01,sliced-bread,328.21,NBS Lagos,real
+2018-03-01,sliced-bread,339.52,NBS Lagos,real
+2018-04-01,sliced-bread,297.62,NBS Lagos,real
+2018-05-01,sliced-bread,295.56,NBS Lagos,real
+2018-06-01,sliced-bread,296.32,NBS Lagos,real
+2018-07-01,sliced-bread,305.17,NBS Lagos,real
+2018-08-01,sliced-bread,295,NBS Lagos,real
+2018-09-01,sliced-bread,297.37,NBS Lagos,real
+2018-10-01,sliced-bread,295.71,NBS Lagos,real
+2018-11-01,sliced-bread,305,NBS Lagos,real
+2018-12-01,sliced-bread,306.5,NBS Lagos,real
+2019-01-01,sliced-bread,308.82,NBS Lagos,real
+2019-02-01,sliced-bread,291.67,NBS Lagos,real
+2019-03-01,sliced-bread,274.76,NBS Lagos,real
+2019-04-01,sliced-bread,287.78,NBS Lagos,real
+2019-05-01,sliced-bread,288.64,NBS Lagos,real
+2019-06-01,sliced-bread,205.26,NBS Lagos,real
+2019-07-01,sliced-bread,247.89,NBS Lagos,real
+2019-08-01,sliced-bread,298.21,NBS Lagos,real
+2019-09-01,sliced-bread,288.89,NBS Lagos,real
+2019-10-01,sliced-bread,292.96,NBS Lagos,real
+2019-11-01,sliced-bread,290.56,NBS Lagos,real
+2019-12-01,sliced-bread,295.24,NBS Lagos,real
+2020-01-01,sliced-bread,288.1,NBS Lagos,real
+2020-02-01,sliced-bread,288.89,NBS Lagos,real
+2020-03-01,sliced-bread,295.83,NBS Lagos,real
+2020-04-01,sliced-bread,325,NBS Lagos,real
+2020-05-01,sliced-bread,325,NBS Lagos,real
+2020-06-01,sliced-bread,311.5,NBS Lagos,real
+2020-07-01,sliced-bread,316.5,NBS Lagos,real
+2020-08-01,sliced-bread,318.13,NBS Lagos,real
+2020-09-01,sliced-bread,323.33,NBS Lagos,real
+2020-10-01,sliced-bread,330.63,NBS Lagos,real
+2020-11-01,sliced-bread,335.26,NBS Lagos,real
+2020-12-01,sliced-bread,344.44,NBS Lagos,real
+2021-01-01,sliced-bread,344.44,NBS Lagos,real
+2021-02-01,sliced-bread,352.94,NBS Lagos,real
+2021-03-01,sliced-bread,360,NBS Lagos,real
+2021-04-01,sliced-bread,376.32,NBS Lagos,real
+2021-05-01,sliced-bread,397.06,NBS Lagos,real
+2021-06-01,sliced-bread,365.79,NBS Lagos,real
+2021-07-01,sliced-bread,397.37,NBS Lagos,real
+2021-08-01,sliced-bread,425,NBS Lagos,real
+2021-09-01,sliced-bread,402.94,NBS Lagos,real
+2021-10-01,sliced-bread,434.21,NBS Lagos,real
+2021-11-01,sliced-bread,412.5,NBS Lagos,real
+2021-12-01,sliced-bread,428.5,NBS Lagos,real
+2022-01-01,sliced-bread,460,NBS Lagos,real
+2022-02-01,sliced-bread,470.88,NBS Lagos,real
+2022-03-01,sliced-bread,479.41,NBS Lagos,real
+2022-04-01,sliced-bread,483.57,NBS Lagos,real
+2022-05-01,sliced-bread,491.67,NBS Lagos,real
+2022-06-01,sliced-bread,500,NBS Lagos,real
+2022-07-01,sliced-bread,529.41,NBS Lagos,real
+2022-08-01,sliced-bread,532.63,NBS Lagos,real
+2022-09-01,sliced-bread,535.71,NBS Lagos,real
+2022-10-01,sliced-bread,540.35,NBS Lagos,real
+2022-11-01,sliced-bread,546.33,NBS Lagos,real
+2022-12-01,sliced-bread,547.65,NBS Lagos,real
+2023-01-01,sliced-bread,559.38,NBS Lagos,real
+2023-02-01,sliced-bread,550,NBS Lagos,real
+2023-03-01,sliced-bread,580.26,NBS Lagos,real
+2023-04-01,sliced-bread,588.64,NBS Lagos,real
+2023-05-01,sliced-bread,627.5,NBS Lagos,real
+2023-06-01,sliced-bread,659.38,NBS Lagos,real
+2023-07-01,sliced-bread,697.62,NBS Lagos,real
+2023-08-01,sliced-bread,714.71,NBS Lagos,real
+2023-09-01,sliced-bread,778.57,NBS Lagos,real
+2023-10-01,sliced-bread,857.14,NBS Lagos,real
+2023-11-01,sliced-bread,825,NBS Lagos,real
+2023-12-01,sliced-bread,838.75,NBS Lagos,real
+2024-01-01,sliced-bread,836.13,NBS Lagos,real
+2024-02-01,sliced-bread,924.24,NBS Lagos,real
+2024-03-01,sliced-bread,986.69,NBS Lagos,real
+2024-04-01,sliced-bread,1200,NBS Lagos,real
+2024-05-01,sliced-bread,1394.52,NBS Lagos,real
+2024-06-01,sliced-bread,1283.57,NBS Lagos,real
+2024-07-01,sliced-bread,1225,NBS Lagos,real
+2024-08-01,sliced-bread,1317.42,NBS Lagos,real
+2024-09-01,sliced-bread,1386.36,NBS Lagos,real
+2024-10-01,sliced-bread,1398.18,NBS Lagos,real
+2024-11-01,sliced-bread,1450,NBS Lagos,real
+2024-12-01,sliced-bread,1500,NBS Lagos,real
+2025-01-01,sliced-bread,1819.67,NBS South-West average,estimated
+2025-02-01,sliced-bread,1841.61,NBS South-West average,estimated
+2025-03-01,sliced-bread,1906.39,NBS South-West average,estimated
+2025-04-01,sliced-bread,1926.07,NBS South-West average,estimated
+2025-05-01,sliced-bread,1895.36,NBS South-West average,estimated
+2025-06-01,sliced-bread,1944.37,NBS South-West average,estimated
+2025-07-01,sliced-bread,1991.35,NBS South-West average,estimated
+2025-08-01,sliced-bread,2083.37,NBS South-West average,estimated
+2025-09-01,sliced-bread,2110.16,NBS South-West average,estimated
+2025-10-01,sliced-bread,2132.94,NBS South-West average,estimated
+2025-11-01,sliced-bread,2171.46,NBS Lagos,real
+2025-12-01,sliced-bread,2173.33,NBS Lagos,real
+2026-01-01,sliced-bread,2173.47,NBS Lagos,real
+2026-02-01,sliced-bread,2178.16,NBS Lagos,real
+2026-03-01,sliced-bread,2178.16,NBS South-West average,estimated
+2026-04-01,sliced-bread,2178.19,NBS South-West average,estimated
+2026-05-01,sliced-bread,2178.19,NBS South-West average,estimated
+2018-01-01,spaghetti,215.65,Estimated,estimated
+2018-02-01,spaghetti,206.29,Estimated,estimated
+2018-03-01,spaghetti,213.32,Estimated,estimated
+2018-04-01,spaghetti,202.59,Estimated,estimated
+2018-05-01,spaghetti,210.38,Estimated,estimated
+2018-06-01,spaghetti,205.78,Estimated,estimated
+2018-07-01,spaghetti,202.89,Estimated,estimated
+2018-08-01,spaghetti,197.7,Estimated,estimated
+2018-09-01,spaghetti,190.3,Estimated,estimated
+2018-10-01,spaghetti,204.93,Estimated,estimated
+2018-11-01,spaghetti,196.12,Estimated,estimated
+2018-12-01,spaghetti,193.63,Estimated,estimated
+2019-01-01,spaghetti,203.16,Estimated,estimated
+2019-02-01,spaghetti,206.72,Estimated,estimated
+2019-03-01,spaghetti,207.84,Estimated,estimated
+2019-04-01,spaghetti,197.7,Estimated,estimated
+2019-05-01,spaghetti,201.71,Estimated,estimated
+2019-06-01,spaghetti,200,Nairametrics Lagos market survey (6 Jun 2019),real
+2019-07-01,spaghetti,203.14,Estimated,estimated
+2019-08-01,spaghetti,209.55,Estimated,estimated
+2019-09-01,spaghetti,209.06,Estimated,estimated
+2019-10-01,spaghetti,220,Nairametrics Lagos market survey (Oct 2019),real
+2019-11-01,spaghetti,226.92,Estimated,estimated
+2019-12-01,spaghetti,215,Nairametrics Lagos market survey (Dec 2019),real
+2020-01-01,spaghetti,212.54,Estimated,estimated
+2020-02-01,spaghetti,211.59,Estimated,estimated
+2020-03-01,spaghetti,231.23,Estimated,estimated
+2020-04-01,spaghetti,238.22,Estimated,estimated
+2020-05-01,spaghetti,237.08,Estimated,estimated
+2020-06-01,spaghetti,234.74,Estimated,estimated
+2020-07-01,spaghetti,234.61,Estimated,estimated
+2020-08-01,spaghetti,242.06,Estimated,estimated
+2020-09-01,spaghetti,239.89,Estimated,estimated
+2020-10-01,spaghetti,236.13,Estimated,estimated
+2020-11-01,spaghetti,235.71,Estimated,estimated
+2020-12-01,spaghetti,219.92,Estimated,estimated
+2021-01-01,spaghetti,234.19,Estimated,estimated
+2021-02-01,spaghetti,229.25,Estimated,estimated
+2021-03-01,spaghetti,233.03,Estimated,estimated
+2021-04-01,spaghetti,238.96,Estimated,estimated
+2021-05-01,spaghetti,252.22,Estimated,estimated
+2021-06-01,spaghetti,247.03,Estimated,estimated
+2021-07-01,spaghetti,262.5,Nairametrics Lagos market survey (Jul 2021),real
+2021-08-01,spaghetti,276.6,Estimated,estimated
+2021-09-01,spaghetti,283.98,Estimated,estimated
+2021-10-01,spaghetti,297.5,Nairametrics Lagos market survey (Oct 2021),real
+2021-11-01,spaghetti,309.95,Estimated,estimated
+2021-12-01,spaghetti,317.83,Estimated,estimated
+2022-01-01,spaghetti,336.19,Estimated,estimated
+2022-02-01,spaghetti,342.83,Estimated,estimated
+2022-03-01,spaghetti,347.16,Estimated,estimated
+2022-04-01,spaghetti,351.28,Estimated,estimated
+2022-05-01,spaghetti,355.87,Estimated,estimated
+2022-06-01,spaghetti,363.2,Estimated,estimated
+2022-07-01,spaghetti,373.36,Estimated,estimated
+2022-08-01,spaghetti,380,Nairametrics Lagos market survey (Aug 2022),real
+2022-09-01,spaghetti,362.67,Estimated,estimated
+2022-10-01,spaghetti,382.57,Estimated,estimated
+2022-11-01,spaghetti,460.54,Estimated,estimated
+2022-12-01,spaghetti,461.14,Estimated,estimated
+2023-01-01,spaghetti,461.91,Estimated,estimated
+2023-02-01,spaghetti,449.82,Estimated,estimated
+2023-03-01,spaghetti,467.51,Estimated,estimated
+2023-04-01,spaghetti,471.35,Estimated,estimated
+2023-05-01,spaghetti,447.06,Estimated,estimated
+2023-06-01,spaghetti,453.8,Estimated,estimated
+2023-07-01,spaghetti,466.98,Estimated,estimated
+2023-08-01,spaghetti,467.61,Estimated,estimated
+2023-09-01,spaghetti,489.27,Estimated,estimated
+2023-10-01,spaghetti,510.34,Estimated,estimated
+2023-11-01,spaghetti,578.37,Estimated,estimated
+2023-12-01,spaghetti,615.77,Estimated,estimated
+2024-01-01,spaghetti,617.86,Estimated,estimated
+2024-02-01,spaghetti,635.46,Estimated,estimated
+2024-03-01,spaghetti,677.5,Estimated,estimated
+2024-04-01,spaghetti,730.19,Estimated,estimated
+2024-05-01,spaghetti,718.03,Estimated,estimated
+2024-06-01,spaghetti,702.52,Estimated,estimated
+2024-07-01,spaghetti,903.95,Estimated,estimated
+2024-08-01,spaghetti,894.27,Estimated,estimated
+2024-09-01,spaghetti,978.29,Estimated,estimated
+2024-10-01,spaghetti,981.45,Estimated,estimated
+2024-11-01,spaghetti,980.97,Estimated,estimated
+2024-12-01,spaghetti,1038.58,Estimated,estimated
+2025-01-01,spaghetti,1023.98,Estimated,estimated
+2025-02-01,spaghetti,1041.09,Estimated,estimated
+2025-03-01,spaghetti,1118.84,Estimated,estimated
+2025-04-01,spaghetti,1111.28,Estimated,estimated
+2025-05-01,spaghetti,1129.19,Estimated,estimated
+2025-06-01,spaghetti,1141.69,Estimated,estimated
+2025-07-01,spaghetti,1145.11,Estimated,estimated
+2025-08-01,spaghetti,1050,Nairametrics Lagos market survey (Aug 2025),real
+2025-09-01,spaghetti,1055.29,Estimated,estimated
+2025-10-01,spaghetti,1056.33,Estimated,estimated
+2025-11-01,spaghetti,1081.71,Estimated,estimated
+2025-12-01,spaghetti,1082.68,Estimated,estimated
+2026-01-01,spaghetti,1081.31,Estimated,estimated
+2026-02-01,spaghetti,1082.37,Estimated,estimated
+2026-03-01,spaghetti,1082.37,Estimated,estimated
+2026-04-01,spaghetti,1084.9,Estimated,estimated
+2026-05-01,spaghetti,1085.72,Estimated,estimated
+2018-01-01,beans-brown,417.56,NBS Lagos,real
+2018-02-01,beans-brown,420.5,NBS Lagos,real
+2018-03-01,beans-brown,455.47,NBS Lagos,real
+2018-04-01,beans-brown,461.71,NBS Lagos,real
+2018-05-01,beans-brown,400,NBS Lagos,real
+2018-06-01,beans-brown,457.55,NBS Lagos,real
+2018-07-01,beans-brown,495.9,NBS Lagos,real
+2018-08-01,beans-brown,467.76,NBS Lagos,real
+2018-09-01,beans-brown,498.74,NBS Lagos,real
+2018-10-01,beans-brown,494.23,NBS Lagos,real
+2018-11-01,beans-brown,466.09,NBS Lagos,real
+2018-12-01,beans-brown,468.12,NBS Lagos,real
+2019-01-01,beans-brown,467.45,NBS Lagos,real
+2019-02-01,beans-brown,393.38,NBS Lagos,real
+2019-03-01,beans-brown,376.83,NBS Lagos,real
+2019-04-01,beans-brown,374.31,NBS Lagos,real
+2019-05-01,beans-brown,343.48,NBS Lagos,real
+2019-06-01,beans-brown,310.6,NBS Lagos,real
+2019-07-01,beans-brown,269.84,NBS Lagos,real
+2019-08-01,beans-brown,265.13,NBS Lagos,real
+2019-09-01,beans-brown,270.49,NBS Lagos,real
+2019-10-01,beans-brown,268.13,NBS Lagos,real
+2019-11-01,beans-brown,263.63,NBS Lagos,real
+2019-12-01,beans-brown,259.69,NBS Lagos,real
+2020-01-01,beans-brown,287.6,NBS Lagos,real
+2020-02-01,beans-brown,255.56,NBS Lagos,real
+2020-03-01,beans-brown,253.05,NBS Lagos,real
+2020-04-01,beans-brown,299.92,NBS Lagos,real
+2020-05-01,beans-brown,268.48,NBS Lagos,real
+2020-06-01,beans-brown,295.07,NBS Lagos,real
+2020-07-01,beans-brown,295.63,NBS Lagos,real
+2020-08-01,beans-brown,290.76,NBS Lagos,real
+2020-09-01,beans-brown,296.94,NBS Lagos,real
+2020-10-01,beans-brown,296.82,NBS Lagos,real
+2020-11-01,beans-brown,272.64,NBS Lagos,real
+2020-12-01,beans-brown,292.01,NBS Lagos,real
+2021-01-01,beans-brown,301.21,NBS Lagos,real
+2021-02-01,beans-brown,342.16,NBS Lagos,real
+2021-03-01,beans-brown,347.67,NBS Lagos,real
+2021-04-01,beans-brown,346.16,NBS Lagos,real
+2021-05-01,beans-brown,358.88,NBS Lagos,real
+2021-06-01,beans-brown,342.38,NBS Lagos,real
+2021-07-01,beans-brown,388.29,NBS Lagos,real
+2021-08-01,beans-brown,484.88,NBS Lagos,real
+2021-09-01,beans-brown,481.76,NBS Lagos,real
+2021-10-01,beans-brown,438.56,NBS Lagos,real
+2021-11-01,beans-brown,440.54,NBS Lagos,real
+2021-12-01,beans-brown,449.63,NBS Lagos,real
+2022-01-01,beans-brown,458.46,NBS Lagos,real
+2022-02-01,beans-brown,460.72,NBS Lagos,real
+2022-03-01,beans-brown,462,NBS Lagos,real
+2022-04-01,beans-brown,464.47,NBS Lagos,real
+2022-05-01,beans-brown,465.01,NBS Lagos,real
+2022-06-01,beans-brown,486.14,NBS Lagos,real
+2022-07-01,beans-brown,499.96,NBS Lagos,real
+2022-08-01,beans-brown,500.3,NBS Lagos,real
+2022-09-01,beans-brown,527,NBS Lagos,real
+2022-10-01,beans-brown,530.3,NBS Lagos,real
+2022-11-01,beans-brown,538.15,NBS Lagos,real
+2022-12-01,beans-brown,540.73,NBS Lagos,real
+2023-01-01,beans-brown,546.56,NBS Lagos,real
+2023-02-01,beans-brown,532.32,NBS Lagos,real
+2023-03-01,beans-brown,579.38,NBS Lagos,real
+2023-04-01,beans-brown,586.94,NBS Lagos,real
+2023-05-01,beans-brown,579.37,NBS Lagos,real
+2023-06-01,beans-brown,582.04,NBS Lagos,real
+2023-07-01,beans-brown,578.28,NBS Lagos,real
+2023-08-01,beans-brown,581.58,NBS Lagos,real
+2023-09-01,beans-brown,587.58,NBS Lagos,real
+2023-10-01,beans-brown,617.98,NBS Lagos,real
+2023-11-01,beans-brown,895.98,NBS Lagos,real
+2023-12-01,beans-brown,1026.19,NBS Lagos,real
+2024-01-01,beans-brown,1027.23,NBS Lagos,real
+2024-02-01,beans-brown,1264.25,NBS Lagos,real
+2024-03-01,beans-brown,1458.35,NBS Lagos,real
+2024-04-01,beans-brown,1644.85,NBS Lagos,real
+2024-05-01,beans-brown,1897.19,NBS Lagos,real
+2024-06-01,beans-brown,2334.23,NBS Lagos,real
+2024-07-01,beans-brown,2763.34,NBS Lagos,real
+2024-08-01,beans-brown,2790.47,NBS Lagos,real
+2024-09-01,beans-brown,2909.97,NBS Lagos,real
+2024-10-01,beans-brown,2954.02,NBS Lagos,real
+2024-11-01,beans-brown,2960,NBS Lagos,real
+2024-12-01,beans-brown,2400,NBS Lagos,real
+2025-01-01,beans-brown,2486.91,NBS South-West average,estimated
+2025-02-01,beans-brown,2430.24,NBS South-West average,estimated
+2025-03-01,beans-brown,2575.04,NBS South-West average,estimated
+2025-04-01,beans-brown,2439.36,NBS South-West average,estimated
+2025-05-01,beans-brown,2375.61,NBS South-West average,estimated
+2025-06-01,beans-brown,2312.65,NBS South-West average,estimated
+2025-07-01,beans-brown,2357.01,NBS South-West average,estimated
+2025-08-01,beans-brown,2234.52,NBS South-West average,estimated
+2025-09-01,beans-brown,2174.04,NBS South-West average,estimated
+2025-10-01,beans-brown,2172.8,NBS South-West average,estimated
+2025-11-01,beans-brown,1806.88,NBS South-West average,estimated
+2025-12-01,beans-brown,1772.1,NBS South-West average,estimated
+2026-01-01,beans-brown,1791.88,NBS South-West average,estimated
+2026-02-01,beans-brown,1820.11,NBS South-West average,estimated
+2026-03-01,beans-brown,1848.38,NBS South-West average,estimated
+2026-04-01,beans-brown,1865.63,NBS South-West average,estimated
+2026-05-01,beans-brown,1869.4,NBS South-West average,estimated
+2018-01-01,beans-white,450,NBS Lagos,real
+2018-02-01,beans-white,409.8,NBS Lagos,real
+2018-03-01,beans-white,453.27,NBS Lagos,real
+2018-04-01,beans-white,441.54,NBS Lagos,real
+2018-05-01,beans-white,526.36,NBS Lagos,real
+2018-06-01,beans-white,530.75,NBS Lagos,real
+2018-07-01,beans-white,443.56,NBS Lagos,real
+2018-08-01,beans-white,446.56,NBS Lagos,real
+2018-09-01,beans-white,455.31,NBS Lagos,real
+2018-10-01,beans-white,400.92,NBS Lagos,real
+2018-11-01,beans-white,400.58,NBS Lagos,real
+2018-12-01,beans-white,443.58,NBS Lagos,real
+2019-01-01,beans-white,440,NBS Lagos,real
+2019-02-01,beans-white,398.29,NBS Lagos,real
+2019-03-01,beans-white,386.9,NBS Lagos,real
+2019-04-01,beans-white,369.64,NBS Lagos,real
+2019-05-01,beans-white,391.98,NBS Lagos,real
+2019-06-01,beans-white,307.04,NBS Lagos,real
+2019-07-01,beans-white,272.94,NBS Lagos,real
+2019-08-01,beans-white,306.57,NBS Lagos,real
+2019-09-01,beans-white,315.23,NBS Lagos,real
+2019-10-01,beans-white,296.14,NBS Lagos,real
+2019-11-01,beans-white,282.71,NBS Lagos,real
+2019-12-01,beans-white,299.92,NBS Lagos,real
+2020-01-01,beans-white,306.66,NBS Lagos,real
+2020-02-01,beans-white,295.75,NBS Lagos,real
+2020-03-01,beans-white,304.43,NBS Lagos,real
+2020-04-01,beans-white,300.42,NBS Lagos,real
+2020-05-01,beans-white,296.04,NBS Lagos,real
+2020-06-01,beans-white,305.41,NBS Lagos,real
+2020-07-01,beans-white,319.67,NBS Lagos,real
+2020-08-01,beans-white,310.29,NBS Lagos,real
+2020-09-01,beans-white,326.83,NBS Lagos,real
+2020-10-01,beans-white,330.17,NBS Lagos,real
+2020-11-01,beans-white,343.59,NBS Lagos,real
+2020-12-01,beans-white,359.47,NBS Lagos,real
+2021-01-01,beans-white,370.36,NBS Lagos,real
+2021-02-01,beans-white,363.94,NBS Lagos,real
+2021-03-01,beans-white,343.28,NBS Lagos,real
+2021-04-01,beans-white,356.32,NBS Lagos,real
+2021-05-01,beans-white,396.32,NBS Lagos,real
+2021-06-01,beans-white,386.9,NBS Lagos,real
+2021-07-01,beans-white,372.81,NBS Lagos,real
+2021-08-01,beans-white,471.73,NBS Lagos,real
+2021-09-01,beans-white,497.47,NBS Lagos,real
+2021-10-01,beans-white,499.63,NBS Lagos,real
+2021-11-01,beans-white,500.86,NBS Lagos,real
+2021-12-01,beans-white,511.18,NBS Lagos,real
+2022-01-01,beans-white,543.84,NBS Lagos,real
+2022-02-01,beans-white,550,NBS Lagos,real
+2022-03-01,beans-white,552,NBS Lagos,real
+2022-04-01,beans-white,557.17,NBS Lagos,real
+2022-05-01,beans-white,560.81,NBS Lagos,real
+2022-06-01,beans-white,569.63,NBS Lagos,real
+2022-07-01,beans-white,579.94,NBS Lagos,real
+2022-08-01,beans-white,490.28,NBS Lagos,real
+2022-09-01,beans-white,495.51,NBS Lagos,real
+2022-10-01,beans-white,505.65,NBS Lagos,real
+2022-11-01,beans-white,510.11,NBS Lagos,real
+2022-12-01,beans-white,515.26,NBS Lagos,real
+2023-01-01,beans-white,520.3,NBS Lagos,real
+2023-02-01,beans-white,562.12,NBS Lagos,real
+2023-03-01,beans-white,572.11,NBS Lagos,real
+2023-04-01,beans-white,623.34,NBS Lagos,real
+2023-05-01,beans-white,657.42,NBS Lagos,real
+2023-06-01,beans-white,660.96,NBS Lagos,real
+2023-07-01,beans-white,694.66,NBS Lagos,real
+2023-08-01,beans-white,688.1,NBS Lagos,real
+2023-09-01,beans-white,739.72,NBS Lagos,real
+2023-10-01,beans-white,823.79,NBS Lagos,real
+2023-11-01,beans-white,887.89,NBS Lagos,real
+2023-12-01,beans-white,968.59,NBS Lagos,real
+2024-01-01,beans-white,973.48,NBS Lagos,real
+2024-02-01,beans-white,1217.52,NBS Lagos,real
+2024-03-01,beans-white,1438.48,NBS Lagos,real
+2024-04-01,beans-white,1586.65,NBS Lagos,real
+2024-05-01,beans-white,1762.15,NBS Lagos,real
+2024-06-01,beans-white,2318.99,NBS Lagos,real
+2024-07-01,beans-white,2422.32,NBS Lagos,real
+2024-08-01,beans-white,2432.65,NBS Lagos,real
+2024-09-01,beans-white,2589.77,NBS Lagos,real
+2024-10-01,beans-white,2599.42,NBS Lagos,real
+2024-11-01,beans-white,2600,NBS Lagos,real
+2024-12-01,beans-white,2100,NBS Lagos,real
+2025-01-01,beans-white,2025.51,NBS South-West average,estimated
+2025-02-01,beans-white,2046.17,NBS South-West average,estimated
+2025-03-01,beans-white,2090.44,NBS South-West average,estimated
+2025-04-01,beans-white,2079.51,NBS South-West average,estimated
+2025-05-01,beans-white,1872.06,NBS South-West average,estimated
+2025-06-01,beans-white,1886.25,NBS South-West average,estimated
+2025-07-01,beans-white,1894.29,NBS South-West average,estimated
+2025-08-01,beans-white,1769.74,NBS South-West average,estimated
+2025-09-01,beans-white,1742.56,NBS South-West average,estimated
+2025-10-01,beans-white,1741.17,NBS South-West average,estimated
+2025-11-01,beans-white,1558.69,NBS South-West average,estimated
+2025-12-01,beans-white,1546.49,NBS South-West average,estimated
+2026-01-01,beans-white,1580.49,NBS South-West average,estimated
+2026-02-01,beans-white,1603.07,NBS South-West average,estimated
+2026-03-01,beans-white,1653.42,NBS South-West average,estimated
+2026-04-01,beans-white,1655.18,NBS South-West average,estimated
+2026-05-01,beans-white,1660.92,NBS South-West average,estimated
+2018-01-01,yam,200,NBS Lagos,real
+2018-02-01,yam,201,NBS Lagos,real
+2018-03-01,yam,232.5,NBS Lagos,real
+2018-04-01,yam,390.31,NBS Lagos,real
+2018-05-01,yam,408.33,NBS Lagos,real
+2018-06-01,yam,463.79,NBS Lagos,real
+2018-07-01,yam,437.72,NBS Lagos,real
+2018-08-01,yam,430.34,NBS Lagos,real
+2018-09-01,yam,415.3,NBS Lagos,real
+2018-10-01,yam,395.77,NBS Lagos,real
+2018-11-01,yam,279.32,NBS Lagos,real
+2018-12-01,yam,230.97,NBS Lagos,real
+2019-01-01,yam,234.83,NBS Lagos,real
+2019-02-01,yam,222.92,NBS Lagos,real
+2019-03-01,yam,215.79,NBS Lagos,real
+2019-04-01,yam,262.85,NBS Lagos,real
+2019-05-01,yam,285.73,NBS Lagos,real
+2019-06-01,yam,243,NBS Lagos,real
+2019-07-01,yam,203.65,NBS Lagos,real
+2019-08-01,yam,245.8,NBS Lagos,real
+2019-09-01,yam,221.95,NBS Lagos,real
+2019-10-01,yam,206.79,NBS Lagos,real
+2019-11-01,yam,257.35,NBS Lagos,real
+2019-12-01,yam,243.9,NBS Lagos,real
+2020-01-01,yam,214.71,NBS Lagos,real
+2020-02-01,yam,223.74,NBS Lagos,real
+2020-03-01,yam,221.71,NBS Lagos,real
+2020-04-01,yam,242.17,NBS Lagos,real
+2020-05-01,yam,242.51,NBS Lagos,real
+2020-06-01,yam,256.79,NBS Lagos,real
+2020-07-01,yam,285.24,NBS Lagos,real
+2020-08-01,yam,292.66,NBS Lagos,real
+2020-09-01,yam,277.47,NBS Lagos,real
+2020-10-01,yam,275.17,NBS Lagos,real
+2020-11-01,yam,293.95,NBS Lagos,real
+2020-12-01,yam,283.44,NBS Lagos,real
+2021-01-01,yam,309.1,NBS Lagos,real
+2021-02-01,yam,292.56,NBS Lagos,real
+2021-03-01,yam,303.5,NBS Lagos,real
+2021-04-01,yam,316.56,NBS Lagos,real
+2021-05-01,yam,316.71,NBS Lagos,real
+2021-06-01,yam,342.63,NBS Lagos,real
+2021-07-01,yam,407.39,NBS Lagos,real
+2021-08-01,yam,467.18,NBS Lagos,real
+2021-09-01,yam,464.87,NBS Lagos,real
+2021-10-01,yam,476.78,NBS Lagos,real
+2021-11-01,yam,600.27,NBS Lagos,real
+2021-12-01,yam,623.02,NBS Lagos,real
+2022-01-01,yam,647.66,NBS Lagos,real
+2022-02-01,yam,650.15,NBS Lagos,real
+2022-03-01,yam,652,NBS Lagos,real
+2022-04-01,yam,656.36,NBS Lagos,real
+2022-05-01,yam,658,NBS Lagos,real
+2022-06-01,yam,675,NBS Lagos,real
+2022-07-01,yam,673.97,NBS Lagos,real
+2022-08-01,yam,670.02,NBS Lagos,real
+2022-09-01,yam,670.35,NBS Lagos,real
+2022-10-01,yam,672.78,NBS Lagos,real
+2022-11-01,yam,681.22,NBS Lagos,real
+2022-12-01,yam,683.15,NBS Lagos,real
+2023-01-01,yam,690.58,NBS Lagos,real
+2023-02-01,yam,714.37,NBS Lagos,real
+2023-03-01,yam,739.02,NBS Lagos,real
+2023-04-01,yam,747.85,NBS Lagos,real
+2023-05-01,yam,759.44,NBS Lagos,real
+2023-06-01,yam,762.53,NBS Lagos,real
+2023-07-01,yam,789.79,NBS Lagos,real
+2023-08-01,yam,785,NBS Lagos,real
+2023-09-01,yam,788.25,NBS Lagos,real
+2023-10-01,yam,792.69,NBS Lagos,real
+2023-11-01,yam,950,NBS Lagos,real
+2023-12-01,yam,1134.84,NBS Lagos,real
+2024-01-01,yam,1029.85,NBS Lagos,real
+2024-02-01,yam,1070.38,NBS Lagos,real
+2024-03-01,yam,1000,NBS Lagos,real
+2024-04-01,yam,1100,NBS Lagos,real
+2024-05-01,yam,1179.45,NBS Lagos,real
+2024-06-01,yam,3376.54,NBS Lagos,real
+2024-07-01,yam,2793.09,NBS Lagos,real
+2024-08-01,yam,2475.24,NBS Lagos,real
+2024-09-01,yam,1966.74,NBS Lagos,real
+2024-10-01,yam,2001,NBS Lagos,real
+2024-11-01,yam,2050,NBS Lagos,real
+2024-12-01,yam,2070,NBS Lagos,real
+2025-01-01,yam,1964.51,NBS South-West average,estimated
+2025-02-01,yam,1943.25,NBS South-West average,estimated
+2025-03-01,yam,2126.04,NBS South-West average,estimated
+2025-04-01,yam,2198.11,NBS South-West average,estimated
+2025-05-01,yam,2447.18,NBS South-West average,estimated
+2025-06-01,yam,2470.33,NBS South-West average,estimated
+2025-07-01,yam,2342.73,NBS South-West average,estimated
+2025-08-01,yam,1934.13,NBS South-West average,estimated
+2025-09-01,yam,1834.78,NBS South-West average,estimated
+2025-10-01,yam,1835.26,NBS South-West average,estimated
+2025-11-01,yam,1878.78,NBS South-West average,estimated
+2025-12-01,yam,1889.82,NBS South-West average,estimated
+2026-01-01,yam,1898.34,NBS South-West average,estimated
+2026-02-01,yam,1921.11,NBS South-West average,estimated
+2026-03-01,yam,2014.61,NBS South-West average,estimated
+2026-04-01,yam,2300.67,NBS South-West average,estimated
+2026-05-01,yam,2477.36,NBS South-West average,estimated
+2018-01-01,irish-potato,350,NBS Lagos,real
+2018-02-01,irish-potato,330.71,NBS Lagos,real
+2018-03-01,irish-potato,325.04,NBS Lagos,real
+2018-04-01,irish-potato,339.82,NBS Lagos,real
+2018-05-01,irish-potato,377.78,NBS Lagos,real
+2018-06-01,irish-potato,389.37,NBS Lagos,real
+2018-07-01,irish-potato,405,NBS Lagos,real
+2018-08-01,irish-potato,378.7,NBS Lagos,real
+2018-09-01,irish-potato,401.78,NBS Lagos,real
+2018-10-01,irish-potato,385.27,NBS Lagos,real
+2018-11-01,irish-potato,371.76,NBS Lagos,real
+2018-12-01,irish-potato,292.26,NBS Lagos,real
+2019-01-01,irish-potato,310,NBS Lagos,real
+2019-02-01,irish-potato,314.16,NBS Lagos,real
+2019-03-01,irish-potato,315.22,NBS Lagos,real
+2019-04-01,irish-potato,328.76,NBS Lagos,real
+2019-05-01,irish-potato,307.04,NBS Lagos,real
+2019-06-01,irish-potato,371.65,NBS Lagos,real
+2019-07-01,irish-potato,350.54,NBS Lagos,real
+2019-08-01,irish-potato,402,NBS Lagos,real
+2019-09-01,irish-potato,393.81,NBS Lagos,real
+2019-10-01,irish-potato,349.18,NBS Lagos,real
+2019-11-01,irish-potato,362.24,NBS Lagos,real
+2019-12-01,irish-potato,377.08,NBS Lagos,real
+2020-01-01,irish-potato,308.31,NBS Lagos,real
+2020-02-01,irish-potato,367.86,NBS Lagos,real
+2020-03-01,irish-potato,400.95,NBS Lagos,real
+2020-04-01,irish-potato,480.92,NBS Lagos,real
+2020-05-01,irish-potato,457.22,NBS Lagos,real
+2020-06-01,irish-potato,490.13,NBS Lagos,real
+2020-07-01,irish-potato,496.4,NBS Lagos,real
+2020-08-01,irish-potato,456.26,NBS Lagos,real
+2020-09-01,irish-potato,457.57,NBS Lagos,real
+2020-10-01,irish-potato,473.23,NBS Lagos,real
+2020-11-01,irish-potato,444.93,NBS Lagos,real
+2020-12-01,irish-potato,476.36,NBS Lagos,real
+2021-01-01,irish-potato,506.79,NBS Lagos,real
+2021-02-01,irish-potato,572.88,NBS Lagos,real
+2021-03-01,irish-potato,481.99,NBS Lagos,real
+2021-04-01,irish-potato,473.22,NBS Lagos,real
+2021-05-01,irish-potato,471.22,NBS Lagos,real
+2021-06-01,irish-potato,520.43,NBS Lagos,real
+2021-07-01,irish-potato,570.56,NBS Lagos,real
+2021-08-01,irish-potato,518.93,NBS Lagos,real
+2021-09-01,irish-potato,525.94,NBS Lagos,real
+2021-10-01,irish-potato,553.98,NBS Lagos,real
+2021-11-01,irish-potato,632.37,NBS Lagos,real
+2021-12-01,irish-potato,843.02,NBS Lagos,real
+2022-01-01,irish-potato,854.39,NBS Lagos,real
+2022-02-01,irish-potato,855.91,NBS Lagos,real
+2022-03-01,irish-potato,857,NBS Lagos,real
+2022-04-01,irish-potato,859.92,NBS Lagos,real
+2022-05-01,irish-potato,865.83,NBS Lagos,real
+2022-06-01,irish-potato,870.08,NBS Lagos,real
+2022-07-01,irish-potato,876.41,NBS Lagos,real
+2022-08-01,irish-potato,880.1,NBS Lagos,real
+2022-09-01,irish-potato,890.5,NBS Lagos,real
+2022-10-01,irish-potato,895.05,NBS Lagos,real
+2022-11-01,irish-potato,1047.28,NBS Lagos,real
+2022-12-01,irish-potato,1049.01,NBS Lagos,real
+2023-01-01,irish-potato,1056.36,NBS Lagos,real
+2023-02-01,irish-potato,1066.63,NBS Lagos,real
+2023-03-01,irish-potato,1162.26,NBS Lagos,real
+2023-04-01,irish-potato,1251.23,NBS Lagos,real
+2023-05-01,irish-potato,1253.04,NBS Lagos,real
+2023-06-01,irish-potato,1269.14,NBS Lagos,real
+2023-07-01,irish-potato,1283.81,NBS Lagos,real
+2023-08-01,irish-potato,1366.86,NBS Lagos,real
+2023-09-01,irish-potato,1358.57,NBS Lagos,real
+2023-10-01,irish-potato,1366.24,NBS Lagos,real
+2023-11-01,irish-potato,1697.71,NBS Lagos,real
+2023-12-01,irish-potato,1724.28,NBS Lagos,real
+2024-01-01,irish-potato,1371.2,NBS Lagos,real
+2024-02-01,irish-potato,1321.44,NBS Lagos,real
+2024-03-01,irish-potato,1776.88,NBS Lagos,real
+2024-04-01,irish-potato,1781.82,NBS Lagos,real
+2024-05-01,irish-potato,1964.63,NBS Lagos,real
+2024-06-01,irish-potato,3222.99,NBS Lagos,real
+2024-07-01,irish-potato,1900,NBS Lagos,real
+2024-08-01,irish-potato,1755.6,NBS Lagos,real
+2024-09-01,irish-potato,2269.08,NBS Lagos,real
+2024-10-01,irish-potato,2363.42,NBS Lagos,real
+2024-11-01,irish-potato,2400,NBS Lagos,real
+2024-12-01,irish-potato,2500,NBS Lagos,real
+2025-01-01,irish-potato,2378.02,NBS South-West average,estimated
+2025-02-01,irish-potato,2262.9,NBS South-West average,estimated
+2025-03-01,irish-potato,2381.64,NBS South-West average,estimated
+2025-04-01,irish-potato,2392.14,NBS South-West average,estimated
+2025-05-01,irish-potato,2422.73,NBS South-West average,estimated
+2025-06-01,irish-potato,2385.8,NBS South-West average,estimated
+2025-07-01,irish-potato,2303.56,NBS South-West average,estimated
+2025-08-01,irish-potato,1944.89,NBS South-West average,estimated
+2025-09-01,irish-potato,1920.66,NBS South-West average,estimated
+2025-10-01,irish-potato,1922.8,NBS South-West average,estimated
+2025-11-01,irish-potato,1965.09,NBS South-West average,estimated
+2025-12-01,irish-potato,2461.62,NBS South-West average,estimated
+2026-01-01,irish-potato,2601.52,NBS South-West average,estimated
+2026-02-01,irish-potato,2627.76,NBS South-West average,estimated
+2026-03-01,irish-potato,2678.33,NBS South-West average,estimated
+2026-04-01,irish-potato,2723,NBS South-West average,estimated
+2026-05-01,irish-potato,2761.61,NBS South-West average,estimated
+2018-01-01,sweet-potato,125,NBS Lagos,real
+2018-02-01,sweet-potato,135,NBS Lagos,real
+2018-03-01,sweet-potato,148.51,NBS Lagos,real
+2018-04-01,sweet-potato,157.96,NBS Lagos,real
+2018-05-01,sweet-potato,164.54,NBS Lagos,real
+2018-06-01,sweet-potato,175.74,NBS Lagos,real
+2018-07-01,sweet-potato,197.27,NBS Lagos,real
+2018-08-01,sweet-potato,198.77,NBS Lagos,real
+2018-09-01,sweet-potato,201.53,NBS Lagos,real
+2018-10-01,sweet-potato,221.82,NBS Lagos,real
+2018-11-01,sweet-potato,218.41,NBS Lagos,real
+2018-12-01,sweet-potato,201.76,NBS Lagos,real
+2019-01-01,sweet-potato,217.02,NBS Lagos,real
+2019-02-01,sweet-potato,212.73,NBS Lagos,real
+2019-03-01,sweet-potato,193.66,NBS Lagos,real
+2019-04-01,sweet-potato,189.24,NBS Lagos,real
+2019-05-01,sweet-potato,250.65,NBS Lagos,real
+2019-06-01,sweet-potato,209.74,NBS Lagos,real
+2019-07-01,sweet-potato,170.62,NBS Lagos,real
+2019-08-01,sweet-potato,200.03,NBS Lagos,real
+2019-09-01,sweet-potato,163.97,NBS Lagos,real
+2019-10-01,sweet-potato,139.27,NBS Lagos,real
+2019-11-01,sweet-potato,201.02,NBS Lagos,real
+2019-12-01,sweet-potato,226.36,NBS Lagos,real
+2020-01-01,sweet-potato,181.97,NBS Lagos,real
+2020-02-01,sweet-potato,196.5,NBS Lagos,real
+2020-03-01,sweet-potato,206.56,NBS Lagos,real
+2020-04-01,sweet-potato,219.98,NBS Lagos,real
+2020-05-01,sweet-potato,204.42,NBS Lagos,real
+2020-06-01,sweet-potato,208.19,NBS Lagos,real
+2020-07-01,sweet-potato,226.65,NBS Lagos,real
+2020-08-01,sweet-potato,229.39,NBS Lagos,real
+2020-09-01,sweet-potato,228.76,NBS Lagos,real
+2020-10-01,sweet-potato,238.16,NBS Lagos,real
+2020-11-01,sweet-potato,231.57,NBS Lagos,real
+2020-12-01,sweet-potato,226.06,NBS Lagos,real
+2021-01-01,sweet-potato,207.2,NBS Lagos,real
+2021-02-01,sweet-potato,225.43,NBS Lagos,real
+2021-03-01,sweet-potato,236.76,NBS Lagos,real
+2021-04-01,sweet-potato,232.66,NBS Lagos,real
+2021-05-01,sweet-potato,235.96,NBS Lagos,real
+2021-06-01,sweet-potato,268.53,NBS Lagos,real
+2021-07-01,sweet-potato,268.99,NBS Lagos,real
+2021-08-01,sweet-potato,241.2,NBS Lagos,real
+2021-09-01,sweet-potato,246.65,NBS Lagos,real
+2021-10-01,sweet-potato,269.27,NBS Lagos,real
+2021-11-01,sweet-potato,246.19,NBS Lagos,real
+2021-12-01,sweet-potato,350.44,NBS Lagos,real
+2022-01-01,sweet-potato,310.38,NBS Lagos,real
+2022-02-01,sweet-potato,300.77,NBS Lagos,real
+2022-03-01,sweet-potato,302,NBS Lagos,real
+2022-04-01,sweet-potato,304.29,NBS Lagos,real
+2022-05-01,sweet-potato,323.84,NBS Lagos,real
+2022-06-01,sweet-potato,330.23,NBS Lagos,real
+2022-07-01,sweet-potato,380.17,NBS Lagos,real
+2022-08-01,sweet-potato,380.38,NBS Lagos,real
+2022-09-01,sweet-potato,393.53,NBS Lagos,real
+2022-10-01,sweet-potato,396.23,NBS Lagos,real
+2022-11-01,sweet-potato,406.08,NBS Lagos,real
+2022-12-01,sweet-potato,407.57,NBS Lagos,real
+2023-01-01,sweet-potato,412.94,NBS Lagos,real
+2023-02-01,sweet-potato,423.99,NBS Lagos,real
+2023-03-01,sweet-potato,410.87,NBS Lagos,real
+2023-04-01,sweet-potato,443.81,NBS Lagos,real
+2023-05-01,sweet-potato,483.57,NBS Lagos,real
+2023-06-01,sweet-potato,486.44,NBS Lagos,real
+2023-07-01,sweet-potato,535.69,NBS Lagos,real
+2023-08-01,sweet-potato,574.57,NBS Lagos,real
+2023-09-01,sweet-potato,579.19,NBS Lagos,real
+2023-10-01,sweet-potato,691.02,NBS Lagos,real
+2023-11-01,sweet-potato,825.28,NBS Lagos,real
+2023-12-01,sweet-potato,942.99,NBS Lagos,real
+2024-01-01,sweet-potato,901.93,NBS Lagos,real
+2024-02-01,sweet-potato,957.96,NBS Lagos,real
+2024-03-01,sweet-potato,703.28,NBS Lagos,real
+2024-04-01,sweet-potato,1071.41,NBS Lagos,real
+2024-05-01,sweet-potato,811.44,NBS Lagos,real
+2024-06-01,sweet-potato,1205.8,NBS Lagos,real
+2024-07-01,sweet-potato,1171.87,NBS Lagos,real
+2024-08-01,sweet-potato,650,NBS Lagos,real
+2024-09-01,sweet-potato,970.8,NBS Lagos,real
+2024-10-01,sweet-potato,1000,NBS Lagos,real
+2024-11-01,sweet-potato,1100,NBS Lagos,real
+2024-12-01,sweet-potato,900,NBS Lagos,real
+2025-01-01,sweet-potato,722.4,NBS South-West average,estimated
+2025-02-01,sweet-potato,683.48,NBS South-West average,estimated
+2025-03-01,sweet-potato,759.11,NBS South-West average,estimated
+2025-04-01,sweet-potato,781.58,NBS South-West average,estimated
+2025-05-01,sweet-potato,1217.92,NBS South-West average,estimated
+2025-06-01,sweet-potato,1329.66,NBS South-West average,estimated
+2025-07-01,sweet-potato,1474.64,NBS South-West average,estimated
+2025-08-01,sweet-potato,1024.03,NBS South-West average,estimated
+2025-09-01,sweet-potato,953.75,NBS South-West average,estimated
+2025-10-01,sweet-potato,956.18,NBS South-West average,estimated
+2025-11-01,sweet-potato,804.98,NBS South-West average,estimated
+2025-12-01,sweet-potato,783.88,NBS South-West average,estimated
+2026-01-01,sweet-potato,763.22,NBS South-West average,estimated
+2026-02-01,sweet-potato,769.15,NBS South-West average,estimated
+2026-03-01,sweet-potato,824.26,NBS South-West average,estimated
+2026-04-01,sweet-potato,837.37,NBS South-West average,estimated
+2026-05-01,sweet-potato,839.68,NBS South-West average,estimated
+2018-01-01,garri-white,200,NBS Lagos,real
+2018-02-01,garri-white,237.75,NBS Lagos,real
+2018-03-01,garri-white,204.74,NBS Lagos,real
+2018-04-01,garri-white,200.66,NBS Lagos,real
+2018-05-01,garri-white,225.94,NBS Lagos,real
+2018-06-01,garri-white,206.88,NBS Lagos,real
+2018-07-01,garri-white,195.07,NBS Lagos,real
+2018-08-01,garri-white,204.8,NBS Lagos,real
+2018-09-01,garri-white,183.88,NBS Lagos,real
+2018-10-01,garri-white,151.45,NBS Lagos,real
+2018-11-01,garri-white,130.36,NBS Lagos,real
+2018-12-01,garri-white,129.53,NBS Lagos,real
+2019-01-01,garri-white,136.01,NBS Lagos,real
+2019-02-01,garri-white,138.16,NBS Lagos,real
+2019-03-01,garri-white,127.43,NBS Lagos,real
+2019-04-01,garri-white,134.58,NBS Lagos,real
+2019-05-01,garri-white,131.29,NBS Lagos,real
+2019-06-01,garri-white,123.34,NBS Lagos,real
+2019-07-01,garri-white,143.93,NBS Lagos,real
+2019-08-01,garri-white,136.91,NBS Lagos,real
+2019-09-01,garri-white,139,NBS Lagos,real
+2019-10-01,garri-white,132.09,NBS Lagos,real
+2019-11-01,garri-white,128.51,NBS Lagos,real
+2019-12-01,garri-white,126.59,NBS Lagos,real
+2020-01-01,garri-white,154.81,NBS Lagos,real
+2020-02-01,garri-white,145.71,NBS Lagos,real
+2020-03-01,garri-white,140.45,NBS Lagos,real
+2020-04-01,garri-white,171.62,NBS Lagos,real
+2020-05-01,garri-white,156.67,NBS Lagos,real
+2020-06-01,garri-white,161.72,NBS Lagos,real
+2020-07-01,garri-white,173.59,NBS Lagos,real
+2020-08-01,garri-white,162.15,NBS Lagos,real
+2020-09-01,garri-white,170.9,NBS Lagos,real
+2020-10-01,garri-white,170.18,NBS Lagos,real
+2020-11-01,garri-white,176.56,NBS Lagos,real
+2020-12-01,garri-white,253.21,NBS Lagos,real
+2021-01-01,garri-white,262.42,NBS Lagos,real
+2021-02-01,garri-white,261.49,NBS Lagos,real
+2021-03-01,garri-white,306.89,NBS Lagos,real
+2021-04-01,garri-white,347.37,NBS Lagos,real
+2021-05-01,garri-white,356.7,NBS Lagos,real
+2021-06-01,garri-white,360.21,NBS Lagos,real
+2021-07-01,garri-white,344.96,NBS Lagos,real
+2021-08-01,garri-white,340.02,NBS Lagos,real
+2021-09-01,garri-white,358.4,NBS Lagos,real
+2021-10-01,garri-white,356.15,NBS Lagos,real
+2021-11-01,garri-white,372.89,NBS Lagos,real
+2021-12-01,garri-white,374.93,NBS Lagos,real
+2022-01-01,garri-white,375.85,NBS Lagos,real
+2022-02-01,garri-white,378.06,NBS Lagos,real
+2022-03-01,garri-white,380,NBS Lagos,real
+2022-04-01,garri-white,385.57,NBS Lagos,real
+2022-05-01,garri-white,390.44,NBS Lagos,real
+2022-06-01,garri-white,395.45,NBS Lagos,real
+2022-07-01,garri-white,385.9,NBS Lagos,real
+2022-08-01,garri-white,327.31,NBS Lagos,real
+2022-09-01,garri-white,367.72,NBS Lagos,real
+2022-10-01,garri-white,382.16,NBS Lagos,real
+2022-11-01,garri-white,396.31,NBS Lagos,real
+2022-12-01,garri-white,397.5,NBS Lagos,real
+2023-01-01,garri-white,400.75,NBS Lagos,real
+2023-02-01,garri-white,423.43,NBS Lagos,real
+2023-03-01,garri-white,394.19,NBS Lagos,real
+2023-04-01,garri-white,354.89,NBS Lagos,real
+2023-05-01,garri-white,374.33,NBS Lagos,real
+2023-06-01,garri-white,387.07,NBS Lagos,real
+2023-07-01,garri-white,433.17,NBS Lagos,real
+2023-08-01,garri-white,523.59,NBS Lagos,real
+2023-09-01,garri-white,526.51,NBS Lagos,real
+2023-10-01,garri-white,606.27,NBS Lagos,real
+2023-11-01,garri-white,692.22,NBS Lagos,real
+2023-12-01,garri-white,697.58,NBS Lagos,real
+2024-01-01,garri-white,693.37,NBS Lagos,real
+2024-02-01,garri-white,758.3,NBS Lagos,real
+2024-03-01,garri-white,932.76,NBS Lagos,real
+2024-04-01,garri-white,1018.48,NBS Lagos,real
+2024-05-01,garri-white,1316.87,NBS Lagos,real
+2024-06-01,garri-white,1311.6,NBS Lagos,real
+2024-07-01,garri-white,1200,NBS Lagos,real
+2024-08-01,garri-white,1228.39,NBS Lagos,real
+2024-09-01,garri-white,1260.98,NBS Lagos,real
+2024-10-01,garri-white,1167.96,NBS Lagos,real
+2024-11-01,garri-white,1198,NBS Lagos,real
+2024-12-01,garri-white,1200,NBS Lagos,real
+2025-01-01,garri-white,1014.06,NBS South-West average,estimated
+2025-02-01,garri-white,1027.7,NBS South-West average,estimated
+2025-03-01,garri-white,1128.95,NBS South-West average,estimated
+2025-04-01,garri-white,1123.81,NBS South-West average,estimated
+2025-05-01,garri-white,1132.23,NBS South-West average,estimated
+2025-06-01,garri-white,1137.43,NBS South-West average,estimated
+2025-07-01,garri-white,1111.65,NBS South-West average,estimated
+2025-08-01,garri-white,928.55,NBS South-West average,estimated
+2025-09-01,garri-white,908.11,NBS South-West average,estimated
+2025-10-01,garri-white,908.91,NBS South-West average,estimated
+2025-11-01,garri-white,816.66,NBS South-West average,estimated
+2025-12-01,garri-white,806.35,NBS South-West average,estimated
+2026-01-01,garri-white,797.95,NBS South-West average,estimated
+2026-02-01,garri-white,801.9,NBS South-West average,estimated
+2026-03-01,garri-white,807.68,NBS South-West average,estimated
+2026-04-01,garri-white,817.83,NBS South-West average,estimated
+2026-05-01,garri-white,821.45,NBS South-West average,estimated
+2018-01-01,garri-yellow,235,NBS Lagos,real
+2018-02-01,garri-yellow,266,NBS Lagos,real
+2018-03-01,garri-yellow,245.56,NBS Lagos,real
+2018-04-01,garri-yellow,241.18,NBS Lagos,real
+2018-05-01,garri-yellow,299.23,NBS Lagos,real
+2018-06-01,garri-yellow,314.88,NBS Lagos,real
+2018-07-01,garri-yellow,317.15,NBS Lagos,real
+2018-08-01,garri-yellow,334.34,NBS Lagos,real
+2018-09-01,garri-yellow,334.34,NBS Lagos,real
+2018-10-01,garri-yellow,298.44,NBS Lagos,real
+2018-11-01,garri-yellow,253.88,NBS Lagos,real
+2018-12-01,garri-yellow,185.89,NBS Lagos,real
+2019-01-01,garri-yellow,196.43,NBS Lagos,real
+2019-02-01,garri-yellow,165.5,NBS Lagos,real
+2019-03-01,garri-yellow,151.11,NBS Lagos,real
+2019-04-01,garri-yellow,157.5,NBS Lagos,real
+2019-05-01,garri-yellow,161.65,NBS Lagos,real
+2019-06-01,garri-yellow,138.04,NBS Lagos,real
+2019-07-01,garri-yellow,147.13,NBS Lagos,real
+2019-08-01,garri-yellow,152.18,NBS Lagos,real
+2019-09-01,garri-yellow,168.35,NBS Lagos,real
+2019-10-01,garri-yellow,160.12,NBS Lagos,real
+2019-11-01,garri-yellow,161.65,NBS Lagos,real
+2019-12-01,garri-yellow,150.81,NBS Lagos,real
+2020-01-01,garri-yellow,189.86,NBS Lagos,real
+2020-02-01,garri-yellow,180.07,NBS Lagos,real
+2020-03-01,garri-yellow,190.85,NBS Lagos,real
+2020-04-01,garri-yellow,203.43,NBS Lagos,real
+2020-05-01,garri-yellow,197.23,NBS Lagos,real
+2020-06-01,garri-yellow,207.59,NBS Lagos,real
+2020-07-01,garri-yellow,205.13,NBS Lagos,real
+2020-08-01,garri-yellow,206.72,NBS Lagos,real
+2020-09-01,garri-yellow,207.94,NBS Lagos,real
+2020-10-01,garri-yellow,202.23,NBS Lagos,real
+2020-11-01,garri-yellow,200.32,NBS Lagos,real
+2020-12-01,garri-yellow,235.18,NBS Lagos,real
+2021-01-01,garri-yellow,272.07,NBS Lagos,real
+2021-02-01,garri-yellow,275.8,NBS Lagos,real
+2021-03-01,garri-yellow,277.17,NBS Lagos,real
+2021-04-01,garri-yellow,312.79,NBS Lagos,real
+2021-05-01,garri-yellow,363.29,NBS Lagos,real
+2021-06-01,garri-yellow,366.21,NBS Lagos,real
+2021-07-01,garri-yellow,367.85,NBS Lagos,real
+2021-08-01,garri-yellow,368.24,NBS Lagos,real
+2021-09-01,garri-yellow,390.29,NBS Lagos,real
+2021-10-01,garri-yellow,399.31,NBS Lagos,real
+2021-11-01,garri-yellow,481.98,NBS Lagos,real
+2021-12-01,garri-yellow,490.56,NBS Lagos,real
+2022-01-01,garri-yellow,488.12,NBS Lagos,real
+2022-02-01,garri-yellow,490.3,NBS Lagos,real
+2022-03-01,garri-yellow,492,NBS Lagos,real
+2022-04-01,garri-yellow,494.59,NBS Lagos,real
+2022-05-01,garri-yellow,496.24,NBS Lagos,real
+2022-06-01,garri-yellow,500.54,NBS Lagos,real
+2022-07-01,garri-yellow,502.39,NBS Lagos,real
+2022-08-01,garri-yellow,500.6,NBS Lagos,real
+2022-09-01,garri-yellow,459.17,NBS Lagos,real
+2022-10-01,garri-yellow,464.23,NBS Lagos,real
+2022-11-01,garri-yellow,473.74,NBS Lagos,real
+2022-12-01,garri-yellow,474.54,NBS Lagos,real
+2023-01-01,garri-yellow,480.28,NBS Lagos,real
+2023-02-01,garri-yellow,461.53,NBS Lagos,real
+2023-03-01,garri-yellow,430.6,NBS Lagos,real
+2023-04-01,garri-yellow,425.17,NBS Lagos,real
+2023-05-01,garri-yellow,428.26,NBS Lagos,real
+2023-06-01,garri-yellow,460.82,NBS Lagos,real
+2023-07-01,garri-yellow,481.84,NBS Lagos,real
+2023-08-01,garri-yellow,531.7,NBS Lagos,real
+2023-09-01,garri-yellow,558.72,NBS Lagos,real
+2023-10-01,garri-yellow,592.86,NBS Lagos,real
+2023-11-01,garri-yellow,582.14,NBS Lagos,real
+2023-12-01,garri-yellow,592.48,NBS Lagos,real
+2024-01-01,garri-yellow,594.5,NBS Lagos,real
+2024-02-01,garri-yellow,856.16,NBS Lagos,real
+2024-03-01,garri-yellow,1005.25,NBS Lagos,real
+2024-04-01,garri-yellow,1149.15,NBS Lagos,real
+2024-05-01,garri-yellow,1476.89,NBS Lagos,real
+2024-06-01,garri-yellow,1357.16,NBS Lagos,real
+2024-07-01,garri-yellow,1329.72,NBS Lagos,real
+2024-08-01,garri-yellow,1388.11,NBS Lagos,real
+2024-09-01,garri-yellow,1317.36,NBS Lagos,real
+2024-10-01,garri-yellow,1219.54,NBS Lagos,real
+2024-11-01,garri-yellow,1300,NBS Lagos,real
+2024-12-01,garri-yellow,1320,NBS Lagos,real
+2025-01-01,garri-yellow,1097.93,NBS South-West average,estimated
+2025-02-01,garri-yellow,1122.08,NBS South-West average,estimated
+2025-03-01,garri-yellow,1248.17,NBS South-West average,estimated
+2025-04-01,garri-yellow,1224.44,NBS South-West average,estimated
+2025-05-01,garri-yellow,1280.01,NBS South-West average,estimated
+2025-06-01,garri-yellow,1294.83,NBS South-West average,estimated
+2025-07-01,garri-yellow,1264.02,NBS South-West average,estimated
+2025-08-01,garri-yellow,1053.68,NBS South-West average,estimated
+2025-09-01,garri-yellow,1068.52,NBS South-West average,estimated
+2025-10-01,garri-yellow,1068.66,NBS South-West average,estimated
+2025-11-01,garri-yellow,980.14,NBS South-West average,estimated
+2025-12-01,garri-yellow,952.31,NBS South-West average,estimated
+2026-01-01,garri-yellow,909.79,NBS South-West average,estimated
+2026-02-01,garri-yellow,913.76,NBS South-West average,estimated
+2026-03-01,garri-yellow,917.67,NBS South-West average,estimated
+2026-04-01,garri-yellow,922.75,NBS South-West average,estimated
+2026-05-01,garri-yellow,924.49,NBS South-West average,estimated
+2018-01-01,tomato,400,NBS Lagos,real
+2018-02-01,tomato,401.92,NBS Lagos,real
+2018-03-01,tomato,400.44,NBS Lagos,real
+2018-04-01,tomato,530.18,NBS Lagos,real
+2018-05-01,tomato,560,NBS Lagos,real
+2018-06-01,tomato,565.41,NBS Lagos,real
+2018-07-01,tomato,592.51,NBS Lagos,real
+2018-08-01,tomato,523.11,NBS Lagos,real
+2018-09-01,tomato,575.92,NBS Lagos,real
+2018-10-01,tomato,407.15,NBS Lagos,real
+2018-11-01,tomato,436.25,NBS Lagos,real
+2018-12-01,tomato,384.91,NBS Lagos,real
+2019-01-01,tomato,466.67,NBS Lagos,real
+2019-02-01,tomato,340.66,NBS Lagos,real
+2019-03-01,tomato,335.15,NBS Lagos,real
+2019-04-01,tomato,322.71,NBS Lagos,real
+2019-05-01,tomato,301.23,NBS Lagos,real
+2019-06-01,tomato,256.27,NBS Lagos,real
+2019-07-01,tomato,289.37,NBS Lagos,real
+2019-08-01,tomato,289.93,NBS Lagos,real
+2019-09-01,tomato,282.54,NBS Lagos,real
+2019-10-01,tomato,208.91,NBS Lagos,real
+2019-11-01,tomato,239.09,NBS Lagos,real
+2019-12-01,tomato,243.95,NBS Lagos,real
+2020-01-01,tomato,208.65,NBS Lagos,real
+2020-02-01,tomato,233.75,NBS Lagos,real
+2020-03-01,tomato,259.42,NBS Lagos,real
+2020-04-01,tomato,282.11,NBS Lagos,real
+2020-05-01,tomato,294.1,NBS Lagos,real
+2020-06-01,tomato,315.44,NBS Lagos,real
+2020-07-01,tomato,300,NBS Lagos,real
+2020-08-01,tomato,282.43,NBS Lagos,real
+2020-09-01,tomato,294.19,NBS Lagos,real
+2020-10-01,tomato,297.01,NBS Lagos,real
+2020-11-01,tomato,287.52,NBS Lagos,real
+2020-12-01,tomato,266.39,NBS Lagos,real
+2021-01-01,tomato,223.1,NBS Lagos,real
+2021-02-01,tomato,267.9,NBS Lagos,real
+2021-03-01,tomato,230.12,NBS Lagos,real
+2021-04-01,tomato,301.15,NBS Lagos,real
+2021-05-01,tomato,309.72,NBS Lagos,real
+2021-06-01,tomato,335.64,NBS Lagos,real
+2021-07-01,tomato,370.9,NBS Lagos,real
+2021-08-01,tomato,376.44,NBS Lagos,real
+2021-09-01,tomato,331,NBS Lagos,real
+2021-10-01,tomato,356.44,NBS Lagos,real
+2021-11-01,tomato,428.01,NBS Lagos,real
+2021-12-01,tomato,554.76,NBS Lagos,real
+2022-01-01,tomato,564.77,NBS Lagos,real
+2022-02-01,tomato,555.77,NBS Lagos,real
+2022-03-01,tomato,558,NBS Lagos,real
+2022-04-01,tomato,560.73,NBS Lagos,real
+2022-05-01,tomato,566.31,NBS Lagos,real
+2022-06-01,tomato,564.74,NBS Lagos,real
+2022-07-01,tomato,574.85,NBS Lagos,real
+2022-08-01,tomato,590.25,NBS Lagos,real
+2022-09-01,tomato,602.15,NBS Lagos,real
+2022-10-01,tomato,610.27,NBS Lagos,real
+2022-11-01,tomato,627.41,NBS Lagos,real
+2022-12-01,tomato,630.85,NBS Lagos,real
+2023-01-01,tomato,635.93,NBS Lagos,real
+2023-02-01,tomato,620.28,NBS Lagos,real
+2023-03-01,tomato,647.13,NBS Lagos,real
+2023-04-01,tomato,659.02,NBS Lagos,real
+2023-05-01,tomato,663.16,NBS Lagos,real
+2023-06-01,tomato,687.78,NBS Lagos,real
+2023-07-01,tomato,709.44,NBS Lagos,real
+2023-08-01,tomato,809.88,NBS Lagos,real
+2023-09-01,tomato,814.91,NBS Lagos,real
+2023-10-01,tomato,840,NBS Lagos,real
+2023-11-01,tomato,1119.11,NBS Lagos,real
+2023-12-01,tomato,1150,NBS Lagos,real
+2024-01-01,tomato,1035.06,NBS Lagos,real
+2024-02-01,tomato,1177.39,NBS Lagos,real
+2024-03-01,tomato,1300,NBS Lagos,real
+2024-04-01,tomato,1384.5,NBS Lagos,real
+2024-05-01,tomato,1447.98,NBS Lagos,real
+2024-06-01,tomato,3213.4,NBS Lagos,real
+2024-07-01,tomato,2100,NBS Lagos,real
+2024-08-01,tomato,1900,NBS Lagos,real
+2024-09-01,tomato,1338.51,NBS Lagos,real
+2024-10-01,tomato,1671.71,NBS Lagos,real
+2024-11-01,tomato,1396.83,NBS Lagos,real
+2024-12-01,tomato,1400,NBS Lagos,real
+2025-01-01,tomato,1368.06,NBS South-West average,estimated
+2025-02-01,tomato,1412.09,NBS South-West average,estimated
+2025-03-01,tomato,1457.74,NBS South-West average,estimated
+2025-04-01,tomato,1473.1,NBS South-West average,estimated
+2025-05-01,tomato,1675.84,NBS South-West average,estimated
+2025-06-01,tomato,1765.31,NBS South-West average,estimated
+2025-07-01,tomato,1716.62,NBS South-West average,estimated
+2025-08-01,tomato,1461.89,NBS South-West average,estimated
+2025-09-01,tomato,1486.38,NBS South-West average,estimated
+2025-10-01,tomato,1495.42,NBS South-West average,estimated
+2025-11-01,tomato,1434,NBS South-West average,estimated
+2025-12-01,tomato,1309,NBS South-West average,estimated
+2026-01-01,tomato,1195.98,NBS South-West average,estimated
+2026-02-01,tomato,1203.06,NBS South-West average,estimated
+2026-03-01,tomato,1246.97,NBS South-West average,estimated
+2026-04-01,tomato,1378.95,NBS South-West average,estimated
+2026-05-01,tomato,1974.81,NBS Lagos,real
+2018-01-01,onion,300,NBS Lagos,real
+2018-02-01,onion,294.9,NBS Lagos,real
+2018-03-01,onion,232.2,NBS Lagos,real
+2018-04-01,onion,301.09,NBS Lagos,real
+2018-05-01,onion,301.15,NBS Lagos,real
+2018-06-01,onion,353.82,NBS Lagos,real
+2018-07-01,onion,350.57,NBS Lagos,real
+2018-08-01,onion,347.97,NBS Lagos,real
+2018-09-01,onion,355.25,NBS Lagos,real
+2018-10-01,onion,354.77,NBS Lagos,real
+2018-11-01,onion,368.89,NBS Lagos,real
+2018-12-01,onion,266.15,NBS Lagos,real
+2019-01-01,onion,233.33,NBS Lagos,real
+2019-02-01,onion,245.22,NBS Lagos,real
+2019-03-01,onion,232.76,NBS Lagos,real
+2019-04-01,onion,242.11,NBS Lagos,real
+2019-05-01,onion,216.84,NBS Lagos,real
+2019-06-01,onion,209.98,NBS Lagos,real
+2019-07-01,onion,213.48,NBS Lagos,real
+2019-08-01,onion,259.28,NBS Lagos,real
+2019-09-01,onion,254.86,NBS Lagos,real
+2019-10-01,onion,202.06,NBS Lagos,real
+2019-11-01,onion,249.19,NBS Lagos,real
+2019-12-01,onion,264.7,NBS Lagos,real
+2020-01-01,onion,217.84,NBS Lagos,real
+2020-02-01,onion,221.31,NBS Lagos,real
+2020-03-01,onion,278.91,NBS Lagos,real
+2020-04-01,onion,272.57,NBS Lagos,real
+2020-05-01,onion,248.74,NBS Lagos,real
+2020-06-01,onion,274.72,NBS Lagos,real
+2020-07-01,onion,278.04,NBS Lagos,real
+2020-08-01,onion,272.23,NBS Lagos,real
+2020-09-01,onion,289.39,NBS Lagos,real
+2020-10-01,onion,298.62,NBS Lagos,real
+2020-11-01,onion,249.61,NBS Lagos,real
+2020-12-01,onion,224.09,NBS Lagos,real
+2021-01-01,onion,217.22,NBS Lagos,real
+2021-02-01,onion,231.25,NBS Lagos,real
+2021-03-01,onion,234.02,NBS Lagos,real
+2021-04-01,onion,280.39,NBS Lagos,real
+2021-05-01,onion,313.02,NBS Lagos,real
+2021-06-01,onion,342.25,NBS Lagos,real
+2021-07-01,onion,431.19,NBS Lagos,real
+2021-08-01,onion,444.8,NBS Lagos,real
+2021-09-01,onion,419.28,NBS Lagos,real
+2021-10-01,onion,463.56,NBS Lagos,real
+2021-11-01,onion,500.3,NBS Lagos,real
+2021-12-01,onion,609.37,NBS Lagos,real
+2022-01-01,onion,604.67,NBS Lagos,real
+2022-02-01,onion,600.14,NBS Lagos,real
+2022-03-01,onion,605,NBS Lagos,real
+2022-04-01,onion,609.63,NBS Lagos,real
+2022-05-01,onion,610.41,NBS Lagos,real
+2022-06-01,onion,640,NBS Lagos,real
+2022-07-01,onion,657.42,NBS Lagos,real
+2022-08-01,onion,660.07,NBS Lagos,real
+2022-09-01,onion,668.01,NBS Lagos,real
+2022-10-01,onion,711.84,NBS Lagos,real
+2022-11-01,onion,722.66,NBS Lagos,real
+2022-12-01,onion,725.13,NBS Lagos,real
+2023-01-01,onion,743.72,NBS Lagos,real
+2023-02-01,onion,693.96,NBS Lagos,real
+2023-03-01,onion,698.52,NBS Lagos,real
+2023-04-01,onion,708.54,NBS Lagos,real
+2023-05-01,onion,709.66,NBS Lagos,real
+2023-06-01,onion,728.74,NBS Lagos,real
+2023-07-01,onion,773.57,NBS Lagos,real
+2023-08-01,onion,847.83,NBS Lagos,real
+2023-09-01,onion,842.81,NBS Lagos,real
+2023-10-01,onion,870.6,NBS Lagos,real
+2023-11-01,onion,786.3,NBS Lagos,real
+2023-12-01,onion,1040,NBS Lagos,real
+2024-01-01,onion,1033.81,NBS Lagos,real
+2024-02-01,onion,1067.31,NBS Lagos,real
+2024-03-01,onion,1121.58,NBS Lagos,real
+2024-04-01,onion,1215.38,NBS Lagos,real
+2024-05-01,onion,1347.89,NBS Lagos,real
+2024-06-01,onion,2309.1,NBS Lagos,real
+2024-07-01,onion,1591.53,NBS Lagos,real
+2024-08-01,onion,1120,NBS Lagos,real
+2024-09-01,onion,1200.95,NBS Lagos,real
+2024-10-01,onion,1219.59,NBS Lagos,real
+2024-11-01,onion,1900,NBS Lagos,real
+2024-12-01,onion,1920,NBS Lagos,real
+2025-01-01,onion,1149.28,NBS South-West average,estimated
+2025-02-01,onion,1145.38,NBS South-West average,estimated
+2025-03-01,onion,1167.59,NBS South-West average,estimated
+2025-04-01,onion,1205.45,NBS South-West average,estimated
+2025-05-01,onion,1573.48,NBS South-West average,estimated
+2025-06-01,onion,1645.97,NBS South-West average,estimated
+2025-07-01,onion,1685.12,NBS South-West average,estimated
+2025-08-01,onion,1265.95,NBS South-West average,estimated
+2025-09-01,onion,1322.84,NBS South-West average,estimated
+2025-10-01,onion,1324.49,NBS South-West average,estimated
+2025-11-01,onion,1248.24,NBS South-West average,estimated
+2025-12-01,onion,1168.5,NBS South-West average,estimated
+2026-01-01,onion,1093.1,NBS South-West average,estimated
+2026-02-01,onion,1095.19,NBS South-West average,estimated
+2026-03-01,onion,1122.12,NBS South-West average,estimated
+2026-04-01,onion,1132.37,NBS South-West average,estimated
+2026-05-01,onion,1149.63,NBS South-West average,estimated
+2018-01-01,fresh-pepper,687.61,Estimated,estimated
+2018-02-01,fresh-pepper,690.91,Estimated,estimated
+2018-03-01,fresh-pepper,688.36,Estimated,estimated
+2018-04-01,fresh-pepper,911.39,Estimated,estimated
+2018-05-01,fresh-pepper,962.65,Estimated,estimated
+2018-06-01,fresh-pepper,971.95,Estimated,estimated
+2018-07-01,fresh-pepper,1018.54,Estimated,estimated
+2018-08-01,fresh-pepper,899.24,Estimated,estimated
+2018-09-01,fresh-pepper,990.02,Estimated,estimated
+2018-10-01,fresh-pepper,699.9,Estimated,estimated
+2018-11-01,fresh-pepper,749.92,Estimated,estimated
+2018-12-01,fresh-pepper,661.67,Estimated,estimated
+2019-01-01,fresh-pepper,802.21,Estimated,estimated
+2019-02-01,fresh-pepper,585.6,Estimated,estimated
+2019-03-01,fresh-pepper,576.13,Estimated,estimated
+2019-04-01,fresh-pepper,554.74,Estimated,estimated
+2019-05-01,fresh-pepper,517.82,Estimated,estimated
+2019-06-01,fresh-pepper,440.53,Estimated,estimated
+2019-07-01,fresh-pepper,497.43,Estimated,estimated
+2019-08-01,fresh-pepper,498.39,Estimated,estimated
+2019-09-01,fresh-pepper,485.69,Estimated,estimated
+2019-10-01,fresh-pepper,359.12,Estimated,estimated
+2019-11-01,fresh-pepper,411,Nairametrics Lagos market survey (Nov 2019),estimated
+2019-12-01,fresh-pepper,342.32,Estimated,estimated
+2020-01-01,fresh-pepper,239,Estimated,estimated
+2020-02-01,fresh-pepper,218.56,Estimated,estimated
+2020-03-01,fresh-pepper,198,Nairametrics Lagos market survey (Jun 2020),estimated
+2020-04-01,fresh-pepper,260.23,Estimated,estimated
+2020-05-01,fresh-pepper,327.87,Estimated,estimated
+2020-06-01,fresh-pepper,425,Nairametrics Lagos market survey (Jun 2020),estimated
+2020-07-01,fresh-pepper,424.56,Estimated,estimated
+2020-08-01,fresh-pepper,419.83,Estimated,estimated
+2020-09-01,fresh-pepper,459.33,Estimated,estimated
+2020-10-01,fresh-pepper,487.1,Estimated,estimated
+2020-11-01,fresh-pepper,495.28,Estimated,estimated
+2020-12-01,fresh-pepper,482,Nairametrics Lagos market survey (Dec 2020),estimated
+2021-01-01,fresh-pepper,414.13,Estimated,estimated
+2021-02-01,fresh-pepper,510.17,Estimated,estimated
+2021-03-01,fresh-pepper,449.57,Estimated,estimated
+2021-04-01,fresh-pepper,603.58,Estimated,estimated
+2021-05-01,fresh-pepper,636.83,Estimated,estimated
+2021-06-01,fresh-pepper,708,Nairametrics Lagos market survey (Jul 2021),estimated
+2021-07-01,fresh-pepper,576,Nairametrics Lagos market survey (Jul 2021),estimated
+2021-08-01,fresh-pepper,596.84,Estimated,estimated
+2021-09-01,fresh-pepper,535.78,Estimated,estimated
+2021-10-01,fresh-pepper,589.04,Estimated,estimated
+2021-11-01,fresh-pepper,722.13,Estimated,estimated
+2021-12-01,fresh-pepper,955.57,Estimated,estimated
+2022-01-01,fresh-pepper,993.18,Estimated,estimated
+2022-02-01,fresh-pepper,997.81,Estimated,estimated
+2022-03-01,fresh-pepper,1022.79,Estimated,estimated
+2022-04-01,fresh-pepper,1049.31,Estimated,estimated
+2022-05-01,fresh-pepper,1081.94,Estimated,estimated
+2022-06-01,fresh-pepper,1101.53,Estimated,estimated
+2022-07-01,fresh-pepper,1144.73,Estimated,estimated
+2022-08-01,fresh-pepper,1200,Nairametrics Lagos market survey (Aug 2022),estimated
+2022-09-01,fresh-pepper,1145.42,Estimated,estimated
+2022-10-01,fresh-pepper,1086.16,Estimated,estimated
+2022-11-01,fresh-pepper,1044.81,Estimated,estimated
+2022-12-01,fresh-pepper,982.94,Estimated,estimated
+2023-01-01,fresh-pepper,927.09,Estimated,estimated
+2023-02-01,fresh-pepper,846.09,Estimated,estimated
+2023-03-01,fresh-pepper,825.91,Estimated,estimated
+2023-04-01,fresh-pepper,786.96,Estimated,estimated
+2023-05-01,fresh-pepper,740.95,Estimated,estimated
+2023-06-01,fresh-pepper,719,Estimated,estimated
+2023-07-01,fresh-pepper,693.92,Estimated,estimated
+2023-08-01,fresh-pepper,741.19,Estimated,estimated
+2023-09-01,fresh-pepper,697.8,Estimated,estimated
+2023-10-01,fresh-pepper,673,Nairametrics Lagos market survey (Oct 2023),estimated
+2023-11-01,fresh-pepper,911.84,Estimated,estimated
+2023-12-01,fresh-pepper,952.91,Estimated,estimated
+2024-01-01,fresh-pepper,872.23,Estimated,estimated
+2024-02-01,fresh-pepper,1009.01,Estimated,estimated
+2024-03-01,fresh-pepper,1133,Nairametrics Lagos market survey (Mar 2024),estimated
+2024-04-01,fresh-pepper,1297.74,Estimated,estimated
+2024-05-01,fresh-pepper,1459.72,Estimated,estimated
+2024-06-01,fresh-pepper,3484.01,Estimated,estimated
+2024-07-01,fresh-pepper,2448.75,Estimated,estimated
+2024-08-01,fresh-pepper,2382.8,Estimated,estimated
+2024-09-01,fresh-pepper,1805.37,Estimated,estimated
+2024-10-01,fresh-pepper,2425.01,Estimated,estimated
+2024-11-01,fresh-pepper,2179.25,Estimated,estimated
+2024-12-01,fresh-pepper,2349.09,Estimated,estimated
+2025-01-01,fresh-pepper,2468.8,Estimated,estimated
+2025-02-01,fresh-pepper,2740.66,Estimated,estimated
+2025-03-01,fresh-pepper,3042.86,Estimated,estimated
+2025-04-01,fresh-pepper,3307.07,Estimated,estimated
+2025-05-01,fresh-pepper,4046.25,Estimated,estimated
+2025-06-01,fresh-pepper,4584.06,Estimated,estimated
+2025-07-01,fresh-pepper,4794.16,Estimated,estimated
+2025-08-01,fresh-pepper,4391,Nairametrics Lagos market survey (Aug 2025),estimated
+2025-09-01,fresh-pepper,3070.8,Estimated,estimated
+2025-10-01,fresh-pepper,2125,Lagos State Ministry of Agriculture price tracker (Oct 2025),real
+2025-11-01,fresh-pepper,1700,Nairametrics Lagos market survey (Nov 2025),estimated
+2025-12-01,fresh-pepper,1596.15,Estimated,estimated
+2026-01-01,fresh-pepper,1500,Lagos State Ministry of Agriculture price tracker (Jan 2026),real
+2026-02-01,fresh-pepper,2402.81,Estimated,estimated
+2026-03-01,fresh-pepper,3966,Nairametrics Lagos market survey (Apr 2026),estimated
+2026-04-01,fresh-pepper,2975,Nairametrics Lagos market survey (Apr 2026),estimated
+2026-05-01,fresh-pepper,4260.52,Estimated,estimated
+2018-01-01,carrot,289.18,Estimated,estimated
+2018-02-01,carrot,273.24,Estimated,estimated
+2018-03-01,carrot,268.56,Estimated,estimated
+2018-04-01,carrot,280.77,Estimated,estimated
+2018-05-01,carrot,312.13,Estimated,estimated
+2018-06-01,carrot,321.71,Estimated,estimated
+2018-07-01,carrot,334.62,Estimated,estimated
+2018-08-01,carrot,312.89,Estimated,estimated
+2018-09-01,carrot,331.96,Estimated,estimated
+2018-10-01,carrot,318.32,Estimated,estimated
+2018-11-01,carrot,307.16,Estimated,estimated
+2018-12-01,carrot,241.47,Estimated,estimated
+2019-01-01,carrot,256.13,Estimated,estimated
+2019-02-01,carrot,259.57,Estimated,estimated
+2019-03-01,carrot,260.44,Estimated,estimated
+2019-04-01,carrot,271.63,Estimated,estimated
+2019-05-01,carrot,253.69,Estimated,estimated
+2019-06-01,carrot,307.07,Estimated,estimated
+2019-07-01,carrot,289.63,Estimated,estimated
+2019-08-01,carrot,332.14,Estimated,estimated
+2019-09-01,carrot,325.38,Estimated,estimated
+2019-10-01,carrot,288.5,Estimated,estimated
+2019-11-01,carrot,299.29,Estimated,estimated
+2019-12-01,carrot,311.55,Estimated,estimated
+2020-01-01,carrot,254.74,Estimated,estimated
+2020-02-01,carrot,303.94,Estimated,estimated
+2020-03-01,carrot,331.28,Estimated,estimated
+2020-04-01,carrot,397.35,Estimated,estimated
+2020-05-01,carrot,377.77,Estimated,estimated
+2020-06-01,carrot,404.96,Estimated,estimated
+2020-07-01,carrot,410.14,Estimated,estimated
+2020-08-01,carrot,376.98,Estimated,estimated
+2020-09-01,carrot,378.06,Estimated,estimated
+2020-10-01,carrot,391,Estimated,estimated
+2020-11-01,carrot,367.61,Estimated,estimated
+2020-12-01,carrot,393.58,Estimated,estimated
+2021-01-01,carrot,418.73,Estimated,estimated
+2021-02-01,carrot,473.33,Estimated,estimated
+2021-03-01,carrot,398.23,Estimated,estimated
+2021-04-01,carrot,390.99,Estimated,estimated
+2021-05-01,carrot,389.34,Estimated,estimated
+2021-06-01,carrot,430,Estimated,estimated
+2021-07-01,carrot,471.41,Estimated,estimated
+2021-08-01,carrot,428.76,Estimated,estimated
+2021-09-01,carrot,434.55,Estimated,estimated
+2021-10-01,carrot,457.72,Estimated,estimated
+2021-11-01,carrot,522.48,Estimated,estimated
+2021-12-01,carrot,696.53,Estimated,estimated
+2022-01-01,carrot,705.92,Estimated,estimated
+2022-02-01,carrot,707.18,Estimated,estimated
+2022-03-01,carrot,708.08,Estimated,estimated
+2022-04-01,carrot,710.49,Estimated,estimated
+2022-05-01,carrot,715.38,Estimated,estimated
+2022-06-01,carrot,718.89,Estimated,estimated
+2022-07-01,carrot,724.12,Estimated,estimated
+2022-08-01,carrot,727.17,Estimated,estimated
+2022-09-01,carrot,735.76,Estimated,estimated
+2022-10-01,carrot,739.52,Estimated,estimated
+2022-11-01,carrot,865.29,Estimated,estimated
+2022-12-01,carrot,866.72,Estimated,estimated
+2023-01-01,carrot,872.8,Estimated,estimated
+2023-02-01,carrot,881.28,Estimated,estimated
+2023-03-01,carrot,960.29,Estimated,estimated
+2023-04-01,carrot,1033.8,Estimated,estimated
+2023-05-01,carrot,1035.3,Estimated,estimated
+2023-06-01,carrot,1048.6,Estimated,estimated
+2023-07-01,carrot,1060.72,Estimated,estimated
+2023-08-01,carrot,1129.34,Estimated,estimated
+2023-09-01,carrot,1122.49,Estimated,estimated
+2023-10-01,carrot,1128.83,Estimated,estimated
+2023-11-01,carrot,1402.7,Estimated,estimated
+2023-12-01,carrot,1424.65,Estimated,estimated
+2024-01-01,carrot,1132.93,Estimated,estimated
+2024-02-01,carrot,1091.81,Estimated,estimated
+2024-03-01,carrot,1468.11,Estimated,estimated
+2024-04-01,carrot,1472.19,Estimated,estimated
+2024-05-01,carrot,1623.24,Estimated,estimated
+2024-06-01,carrot,2662.93,Estimated,estimated
+2024-07-01,carrot,1569.84,Estimated,estimated
+2024-08-01,carrot,1450.53,Estimated,estimated
+2024-09-01,carrot,1874.78,Estimated,estimated
+2024-10-01,carrot,1952.73,Estimated,estimated
+2024-11-01,carrot,1982.95,Estimated,estimated
+2024-12-01,carrot,2065.58,Estimated,estimated
+2025-01-01,carrot,1964.79,NBS South-West average,estimated
+2025-02-01,carrot,2080.07,NBS South-West average,estimated
+2025-03-01,carrot,2229.47,NBS South-West average,estimated
+2025-04-01,carrot,2229.47,NBS South-West average,estimated
+2025-05-01,carrot,2228.63,NBS South-West average,estimated
+2025-06-01,carrot,2163.67,NBS South-West average,estimated
+2025-07-01,carrot,2188.6,NBS South-West average,estimated
+2025-08-01,carrot,2124.45,NBS South-West average,estimated
+2025-09-01,carrot,2192.29,NBS South-West average,estimated
+2025-10-01,carrot,2198.1,NBS South-West average,estimated
+2025-11-01,carrot,2209.33,NBS South-West average,estimated
+2025-12-01,carrot,2216.17,NBS South-West average,estimated
+2026-01-01,carrot,2230.16,NBS South-West average,estimated
+2026-02-01,carrot,2239.71,NBS South-West average,estimated
+2026-03-01,carrot,2287.03,NBS South-West average,estimated
+2026-04-01,carrot,2314.04,NBS South-West average,estimated
+2026-05-01,carrot,2376.81,NBS South-West average,estimated
+2018-01-01,plantain,224.14,NBS Lagos,real
+2018-02-01,plantain,208.54,NBS Lagos,real
+2018-03-01,plantain,196.22,NBS Lagos,real
+2018-04-01,plantain,187.99,NBS Lagos,real
+2018-05-01,plantain,203.66,NBS Lagos,real
+2018-06-01,plantain,190.48,NBS Lagos,real
+2018-07-01,plantain,205.04,NBS Lagos,real
+2018-08-01,plantain,198.79,NBS Lagos,real
+2018-09-01,plantain,205.02,NBS Lagos,real
+2018-10-01,plantain,166.25,NBS Lagos,real
+2018-11-01,plantain,162.87,NBS Lagos,real
+2018-12-01,plantain,201.17,NBS Lagos,real
+2019-01-01,plantain,195.12,NBS Lagos,real
+2019-02-01,plantain,205.39,NBS Lagos,real
+2019-03-01,plantain,197.72,NBS Lagos,real
+2019-04-01,plantain,276.74,NBS Lagos,real
+2019-05-01,plantain,242.47,NBS Lagos,real
+2019-06-01,plantain,202.28,NBS Lagos,real
+2019-07-01,plantain,251.27,NBS Lagos,real
+2019-08-01,plantain,216.38,NBS Lagos,real
+2019-09-01,plantain,188.6,NBS Lagos,real
+2019-10-01,plantain,234.39,NBS Lagos,real
+2019-11-01,plantain,251.32,NBS Lagos,real
+2019-12-01,plantain,286.86,NBS Lagos,real
+2020-01-01,plantain,236.1,NBS Lagos,real
+2020-02-01,plantain,231.48,NBS Lagos,real
+2020-03-01,plantain,280.67,NBS Lagos,real
+2020-04-01,plantain,316.06,NBS Lagos,real
+2020-05-01,plantain,291.51,NBS Lagos,real
+2020-06-01,plantain,264.2,NBS Lagos,real
+2020-07-01,plantain,261.29,NBS Lagos,real
+2020-08-01,plantain,259.17,NBS Lagos,real
+2020-09-01,plantain,305.38,NBS Lagos,real
+2020-10-01,plantain,293.94,NBS Lagos,real
+2020-11-01,plantain,303.1,NBS Lagos,real
+2020-12-01,plantain,291.09,NBS Lagos,real
+2021-01-01,plantain,270.82,NBS Lagos,real
+2021-02-01,plantain,288.26,NBS Lagos,real
+2021-03-01,plantain,291.81,NBS Lagos,real
+2021-04-01,plantain,301.47,NBS Lagos,real
+2021-05-01,plantain,389.01,NBS Lagos,real
+2021-06-01,plantain,410.15,NBS Lagos,real
+2021-07-01,plantain,354.03,NBS Lagos,real
+2021-08-01,plantain,348.72,NBS Lagos,real
+2021-09-01,plantain,331.42,NBS Lagos,real
+2021-10-01,plantain,359.61,NBS Lagos,real
+2021-11-01,plantain,382.93,NBS Lagos,real
+2021-12-01,plantain,401.2,NBS Lagos,real
+2022-01-01,plantain,384.42,NBS Lagos,real
+2022-02-01,plantain,389.13,NBS Lagos,real
+2022-03-01,plantain,390,NBS Lagos,real
+2022-04-01,plantain,394.58,NBS Lagos,real
+2022-05-01,plantain,394.87,NBS Lagos,real
+2022-06-01,plantain,420.6,NBS Lagos,real
+2022-07-01,plantain,426.02,NBS Lagos,real
+2022-08-01,plantain,431.11,NBS Lagos,real
+2022-09-01,plantain,450,NBS Lagos,real
+2022-10-01,plantain,457.2,NBS Lagos,real
+2022-11-01,plantain,489.25,NBS Lagos,real
+2022-12-01,plantain,490.07,NBS Lagos,real
+2023-01-01,plantain,498.27,NBS Lagos,real
+2023-02-01,plantain,498.05,NBS Lagos,real
+2023-03-01,plantain,462.69,NBS Lagos,real
+2023-04-01,plantain,510.98,NBS Lagos,real
+2023-05-01,plantain,561.83,NBS Lagos,real
+2023-06-01,plantain,572.35,NBS Lagos,real
+2023-07-01,plantain,582.61,NBS Lagos,real
+2023-08-01,plantain,593.8,NBS Lagos,real
+2023-09-01,plantain,580.33,NBS Lagos,real
+2023-10-01,plantain,625,NBS Lagos,real
+2023-11-01,plantain,828.57,NBS Lagos,real
+2023-12-01,plantain,1000,NBS Lagos,real
+2024-01-01,plantain,1012,NBS Lagos,real
+2024-02-01,plantain,1050.67,NBS Lagos,real
+2024-03-01,plantain,1257.77,NBS Lagos,real
+2024-04-01,plantain,1326.13,NBS Lagos,real
+2024-05-01,plantain,1677.57,NBS Lagos,real
+2024-06-01,plantain,1870.37,NBS Lagos,real
+2024-07-01,plantain,1964.49,NBS Lagos,real
+2024-08-01,plantain,2029.65,NBS Lagos,real
+2024-09-01,plantain,2131.61,NBS Lagos,real
+2024-10-01,plantain,2135.57,NBS Lagos,real
+2024-11-01,plantain,2140,NBS Lagos,real
+2024-12-01,plantain,2285.99,NBS Lagos,real
+2025-01-01,plantain,1980.1,NBS South-West average,estimated
+2025-02-01,plantain,1900.87,NBS South-West average,estimated
+2025-03-01,plantain,2039.03,NBS South-West average,estimated
+2025-04-01,plantain,2264.05,NBS South-West average,estimated
+2025-05-01,plantain,2202.45,NBS South-West average,estimated
+2025-06-01,plantain,2268.22,NBS South-West average,estimated
+2025-07-01,plantain,2348.43,NBS South-West average,estimated
+2025-08-01,plantain,2315.06,NBS South-West average,estimated
+2025-09-01,plantain,2301.21,NBS South-West average,estimated
+2025-10-01,plantain,2302.76,NBS South-West average,estimated
+2025-11-01,plantain,2242.1,NBS South-West average,estimated
+2025-12-01,plantain,2244.36,NBS South-West average,estimated
+2026-01-01,plantain,2186.06,NBS South-West average,estimated
+2026-02-01,plantain,2240.11,NBS South-West average,estimated
+2026-03-01,plantain,2294.46,NBS South-West average,estimated
+2026-04-01,plantain,2376.94,NBS South-West average,estimated
+2026-05-01,plantain,2432.17,NBS South-West average,estimated
+2018-01-01,beef,1389.19,NBS Lagos,real
+2018-02-01,beef,1207.18,NBS Lagos,real
+2018-03-01,beef,1238.76,NBS Lagos,real
+2018-04-01,beef,1250.97,NBS Lagos,real
+2018-05-01,beef,1344.02,NBS Lagos,real
+2018-06-01,beef,1324.71,NBS Lagos,real
+2018-07-01,beef,1326.05,NBS Lagos,real
+2018-08-01,beef,1522.5,NBS Lagos,real
+2018-09-01,beef,1325.13,NBS Lagos,real
+2018-10-01,beef,1266.67,NBS Lagos,real
+2018-11-01,beef,1319.05,NBS Lagos,real
+2018-12-01,beef,1264.11,NBS Lagos,real
+2019-01-01,beef,1312.55,NBS Lagos,real
+2019-02-01,beef,1284.8,NBS Lagos,real
+2019-03-01,beef,1267.46,NBS Lagos,real
+2019-04-01,beef,1248.77,NBS Lagos,real
+2019-05-01,beef,1211.5,NBS Lagos,real
+2019-06-01,beef,1264.04,NBS Lagos,real
+2019-07-01,beef,1241.42,NBS Lagos,real
+2019-08-01,beef,1275.92,NBS Lagos,real
+2019-09-01,beef,1306.84,NBS Lagos,real
+2019-10-01,beef,1276.55,NBS Lagos,real
+2019-11-01,beef,1329.48,NBS Lagos,real
+2019-12-01,beef,1318.34,NBS Lagos,real
+2020-01-01,beef,1329.15,NBS Lagos,real
+2020-02-01,beef,1230.59,NBS Lagos,real
+2020-03-01,beef,1282.17,NBS Lagos,real
+2020-04-01,beef,1374.92,NBS Lagos,real
+2020-05-01,beef,1322.51,NBS Lagos,real
+2020-06-01,beef,1350.46,NBS Lagos,real
+2020-07-01,beef,1364.77,NBS Lagos,real
+2020-08-01,beef,1354.43,NBS Lagos,real
+2020-09-01,beef,1335.65,NBS Lagos,real
+2020-10-01,beef,1369.25,NBS Lagos,real
+2020-11-01,beef,1399.4,NBS Lagos,real
+2020-12-01,beef,1373.85,NBS Lagos,real
+2021-01-01,beef,1341.81,NBS Lagos,real
+2021-02-01,beef,1308.9,NBS Lagos,real
+2021-03-01,beef,1358.04,NBS Lagos,real
+2021-04-01,beef,1376.79,NBS Lagos,real
+2021-05-01,beef,1327.78,NBS Lagos,real
+2021-06-01,beef,1398.74,NBS Lagos,real
+2021-07-01,beef,1466.91,NBS Lagos,real
+2021-08-01,beef,1569.44,NBS Lagos,real
+2021-09-01,beef,1625.2,NBS Lagos,real
+2021-10-01,beef,1664.26,NBS Lagos,real
+2021-11-01,beef,1678.65,NBS Lagos,real
+2021-12-01,beef,1700,NBS Lagos,real
+2022-01-01,beef,1733.35,NBS Lagos,real
+2022-02-01,beef,1740.58,NBS Lagos,real
+2022-03-01,beef,1745,NBS Lagos,real
+2022-04-01,beef,1748.84,NBS Lagos,real
+2022-05-01,beef,1750.13,NBS Lagos,real
+2022-06-01,beef,1752,NBS Lagos,real
+2022-07-01,beef,1780.22,NBS Lagos,real
+2022-08-01,beef,1810.95,NBS Lagos,real
+2022-09-01,beef,1890.45,NBS Lagos,real
+2022-10-01,beef,1892.19,NBS Lagos,real
+2022-11-01,beef,1900.29,NBS Lagos,real
+2022-12-01,beef,1902.49,NBS Lagos,real
+2023-01-01,beef,1905.83,NBS Lagos,real
+2023-02-01,beef,1938.39,NBS Lagos,real
+2023-03-01,beef,2033.33,NBS Lagos,real
+2023-04-01,beef,2052.96,NBS Lagos,real
+2023-05-01,beef,2115.58,NBS Lagos,real
+2023-06-01,beef,2118.99,NBS Lagos,real
+2023-07-01,beef,2942.17,NBS Lagos,real
+2023-08-01,beef,2950.69,NBS Lagos,real
+2023-09-01,beef,2916.54,NBS Lagos,real
+2023-10-01,beef,3279.99,NBS Lagos,real
+2023-11-01,beef,3290.54,NBS Lagos,real
+2023-12-01,beef,3913.83,NBS Lagos,real
+2024-01-01,beef,3919.66,NBS Lagos,real
+2024-02-01,beef,4163.48,NBS Lagos,real
+2024-03-01,beef,4396.18,NBS Lagos,real
+2024-04-01,beef,4490.85,NBS Lagos,real
+2024-05-01,beef,5164.35,NBS Lagos,real
+2024-06-01,beef,5952.44,NBS Lagos,real
+2024-07-01,beef,5954.08,NBS Lagos,real
+2024-08-01,beef,6099.93,NBS Lagos,real
+2024-09-01,beef,6134.77,NBS Lagos,real
+2024-10-01,beef,6261.81,NBS Lagos,real
+2024-11-01,beef,6334.83,NBS Lagos,real
+2024-12-01,beef,6345.45,NBS Lagos,real
+2025-01-01,beef,6235.08,NBS South-West average,estimated
+2025-02-01,beef,6232.39,NBS South-West average,estimated
+2025-03-01,beef,6393.94,NBS South-West average,estimated
+2025-04-01,beef,6393.94,NBS South-West average,estimated
+2025-05-01,beef,6476.09,NBS South-West average,estimated
+2025-06-01,beef,6468.92,NBS South-West average,estimated
+2025-07-01,beef,6467.33,NBS South-West average,estimated
+2025-08-01,beef,6500.35,NBS South-West average,estimated
+2025-09-01,beef,6506.67,NBS South-West average,estimated
+2025-10-01,beef,6508.64,NBS South-West average,estimated
+2025-11-01,beef,6515.29,NBS South-West average,estimated
+2025-12-01,beef,6518.92,NBS South-West average,estimated
+2026-01-01,beef,6502.09,NBS South-West average,estimated
+2026-02-01,beef,6502.96,NBS South-West average,estimated
+2026-03-01,beef,6510.46,NBS South-West average,estimated
+2026-04-01,beef,6520.42,NBS South-West average,estimated
+2026-05-01,beef,6529.02,NBS South-West average,estimated
+2018-01-01,chicken,1293.75,NBS Lagos,real
+2018-02-01,chicken,1310.53,NBS Lagos,real
+2018-03-01,chicken,1304.17,NBS Lagos,real
+2018-04-01,chicken,1240,NBS Lagos,real
+2018-05-01,chicken,1325.68,NBS Lagos,real
+2018-06-01,chicken,1264.58,NBS Lagos,real
+2018-07-01,chicken,1303.45,NBS Lagos,real
+2018-08-01,chicken,1245,NBS Lagos,real
+2018-09-01,chicken,1278.95,NBS Lagos,real
+2018-10-01,chicken,1295,NBS Lagos,real
+2018-11-01,chicken,1263.16,NBS Lagos,real
+2018-12-01,chicken,1276.19,NBS Lagos,real
+2019-01-01,chicken,1283.12,NBS Lagos,real
+2019-02-01,chicken,1304.67,NBS Lagos,real
+2019-03-01,chicken,1316.84,NBS Lagos,real
+2019-04-01,chicken,1488.24,NBS Lagos,real
+2019-05-01,chicken,1467.65,NBS Lagos,real
+2019-06-01,chicken,1500,NBS Lagos,real
+2019-07-01,chicken,1505.26,NBS Lagos,real
+2019-08-01,chicken,1509.28,NBS Lagos,real
+2019-09-01,chicken,1630,NBS Lagos,real
+2019-10-01,chicken,1671.43,NBS Lagos,real
+2019-11-01,chicken,1650,NBS Lagos,real
+2019-12-01,chicken,1679.41,NBS Lagos,real
+2020-01-01,chicken,1650,NBS Lagos,real
+2020-02-01,chicken,1629.41,NBS Lagos,real
+2020-03-01,chicken,1621.43,NBS Lagos,real
+2020-04-01,chicken,1684.29,NBS Lagos,real
+2020-05-01,chicken,1625,NBS Lagos,real
+2020-06-01,chicken,1680,NBS Lagos,real
+2020-07-01,chicken,1677.78,NBS Lagos,real
+2020-08-01,chicken,1700,NBS Lagos,real
+2020-09-01,chicken,1678.95,NBS Lagos,real
+2020-10-01,chicken,1687.14,NBS Lagos,real
+2020-11-01,chicken,1757.89,NBS Lagos,real
+2020-12-01,chicken,1800,NBS Lagos,real
+2021-01-01,chicken,1775.26,NBS Lagos,real
+2021-02-01,chicken,1822.22,NBS Lagos,real
+2021-03-01,chicken,1868.18,NBS Lagos,real
+2021-04-01,chicken,1818.75,NBS Lagos,real
+2021-05-01,chicken,1900,NBS Lagos,real
+2021-06-01,chicken,1988.89,NBS Lagos,real
+2021-07-01,chicken,2061.11,NBS Lagos,real
+2021-08-01,chicken,2085.71,NBS Lagos,real
+2021-09-01,chicken,2196.88,NBS Lagos,real
+2021-10-01,chicken,2215.79,NBS Lagos,real
+2021-11-01,chicken,2387.5,NBS Lagos,real
+2021-12-01,chicken,2451.9,NBS Lagos,real
+2022-01-01,chicken,2469.44,NBS Lagos,real
+2022-02-01,chicken,2470,NBS Lagos,real
+2022-03-01,chicken,2480,NBS Lagos,real
+2022-04-01,chicken,2483.75,NBS Lagos,real
+2022-05-01,chicken,2488.24,NBS Lagos,real
+2022-06-01,chicken,2488,NBS Lagos,real
+2022-07-01,chicken,2506.19,NBS Lagos,real
+2022-08-01,chicken,2531.58,NBS Lagos,real
+2022-09-01,chicken,2500,NBS Lagos,real
+2022-10-01,chicken,2510.67,NBS Lagos,real
+2022-11-01,chicken,2600,NBS Lagos,real
+2022-12-01,chicken,2603.75,NBS Lagos,real
+2023-01-01,chicken,2610.88,NBS Lagos,real
+2023-02-01,chicken,2680,NBS Lagos,real
+2023-03-01,chicken,2676.25,NBS Lagos,real
+2023-04-01,chicken,2692.31,NBS Lagos,real
+2023-05-01,chicken,2695.48,NBS Lagos,real
+2023-06-01,chicken,2780,NBS Lagos,real
+2023-07-01,chicken,2819.09,NBS Lagos,real
+2023-08-01,chicken,2831.11,NBS Lagos,real
+2023-09-01,chicken,2828.57,NBS Lagos,real
+2023-10-01,chicken,2898.33,NBS Lagos,real
+2023-11-01,chicken,3225,NBS Lagos,real
+2023-12-01,chicken,3366.67,NBS Lagos,real
+2024-01-01,chicken,3367.8,NBS Lagos,real
+2024-02-01,chicken,4225,NBS Lagos,real
+2024-03-01,chicken,4854.17,NBS Lagos,real
+2024-04-01,chicken,5065.38,NBS Lagos,real
+2024-05-01,chicken,5225.18,NBS Lagos,real
+2024-06-01,chicken,5635,NBS Lagos,real
+2024-07-01,chicken,5251.25,NBS Lagos,real
+2024-08-01,chicken,5721.67,NBS Lagos,real
+2024-09-01,chicken,6141.25,NBS Lagos,real
+2024-10-01,chicken,6368.75,NBS Lagos,real
+2024-11-01,chicken,6466.67,NBS Lagos,real
+2024-12-01,chicken,6561.11,NBS Lagos,real
+2025-01-01,chicken,6124.12,NBS South-West average,estimated
+2025-02-01,chicken,6109.41,NBS South-West average,estimated
+2025-03-01,chicken,6142.52,NBS South-West average,estimated
+2025-04-01,chicken,6142.52,NBS South-West average,estimated
+2025-05-01,chicken,6206.88,NBS South-West average,estimated
+2025-06-01,chicken,6267.57,NBS South-West average,estimated
+2025-07-01,chicken,6297.55,NBS South-West average,estimated
+2025-08-01,chicken,6317.23,NBS South-West average,estimated
+2025-09-01,chicken,6291.85,NBS South-West average,estimated
+2025-10-01,chicken,6306.35,NBS South-West average,estimated
+2025-11-01,chicken,6344.81,NBS South-West average,estimated
+2025-12-01,chicken,6395.38,NBS South-West average,estimated
+2026-01-01,chicken,6394.71,NBS South-West average,estimated
+2026-02-01,chicken,6395.68,NBS South-West average,estimated
+2026-03-01,chicken,6395.68,NBS South-West average,estimated
+2026-04-01,chicken,6395.81,NBS South-West average,estimated
+2026-05-01,chicken,6395.95,NBS South-West average,estimated
+2018-01-01,frozen-fish,975,NBS Lagos,real
+2018-02-01,frozen-fish,960,NBS Lagos,real
+2018-03-01,frozen-fish,1029.55,NBS Lagos,real
+2018-04-01,frozen-fish,918,NBS Lagos,real
+2018-05-01,frozen-fish,1027.93,NBS Lagos,real
+2018-06-01,frozen-fish,980.95,NBS Lagos,real
+2018-07-01,frozen-fish,927.16,NBS Lagos,real
+2018-08-01,frozen-fish,963.02,NBS Lagos,real
+2018-09-01,frozen-fish,948.33,NBS Lagos,real
+2018-10-01,frozen-fish,827.82,NBS Lagos,real
+2018-11-01,frozen-fish,826.32,NBS Lagos,real
+2018-12-01,frozen-fish,888.33,NBS Lagos,real
+2019-01-01,frozen-fish,907.16,NBS Lagos,real
+2019-02-01,frozen-fish,940.63,NBS Lagos,real
+2019-03-01,frozen-fish,931.48,NBS Lagos,real
+2019-04-01,frozen-fish,947.37,NBS Lagos,real
+2019-05-01,frozen-fish,892.73,NBS Lagos,real
+2019-06-01,frozen-fish,848.32,NBS Lagos,real
+2019-07-01,frozen-fish,803.79,NBS Lagos,real
+2019-08-01,frozen-fish,836.66,NBS Lagos,real
+2019-09-01,frozen-fish,901.5,NBS Lagos,real
+2019-10-01,frozen-fish,925,NBS Lagos,real
+2019-11-01,frozen-fish,888.64,NBS Lagos,real
+2019-12-01,frozen-fish,903.23,NBS Lagos,real
+2020-01-01,frozen-fish,847.62,NBS Lagos,real
+2020-02-01,frozen-fish,886.11,NBS Lagos,real
+2020-03-01,frozen-fish,929.94,NBS Lagos,real
+2020-04-01,frozen-fish,1012.36,NBS Lagos,real
+2020-05-01,frozen-fish,936.16,NBS Lagos,real
+2020-06-01,frozen-fish,992.5,NBS Lagos,real
+2020-07-01,frozen-fish,1011.4,NBS Lagos,real
+2020-08-01,frozen-fish,1016.67,NBS Lagos,real
+2020-09-01,frozen-fish,1089.61,NBS Lagos,real
+2020-10-01,frozen-fish,1014.71,NBS Lagos,real
+2020-11-01,frozen-fish,1075.79,NBS Lagos,real
+2020-12-01,frozen-fish,1057.63,NBS Lagos,real
+2021-01-01,frozen-fish,1063.13,NBS Lagos,real
+2021-02-01,frozen-fish,1000,NBS Lagos,real
+2021-03-01,frozen-fish,1064.71,NBS Lagos,real
+2021-04-01,frozen-fish,1095,NBS Lagos,real
+2021-05-01,frozen-fish,1121.05,NBS Lagos,real
+2021-06-01,frozen-fish,1227.21,NBS Lagos,real
+2021-07-01,frozen-fish,1236.92,NBS Lagos,real
+2021-08-01,frozen-fish,1225,NBS Lagos,real
+2021-09-01,frozen-fish,1284.06,NBS Lagos,real
+2021-10-01,frozen-fish,1233.06,NBS Lagos,real
+2021-11-01,frozen-fish,1296.88,NBS Lagos,real
+2021-12-01,frozen-fish,1280.95,NBS Lagos,real
+2022-01-01,frozen-fish,1233.82,NBS Lagos,real
+2022-02-01,frozen-fish,1240.53,NBS Lagos,real
+2022-03-01,frozen-fish,1240,NBS Lagos,real
+2022-04-01,frozen-fish,1243.29,NBS Lagos,real
+2022-05-01,frozen-fish,1300,NBS Lagos,real
+2022-06-01,frozen-fish,1325,NBS Lagos,real
+2022-07-01,frozen-fish,1350.32,NBS Lagos,real
+2022-08-01,frozen-fish,1353.33,NBS Lagos,real
+2022-09-01,frozen-fish,1353.33,NBS Lagos,real
+2022-10-01,frozen-fish,1360.75,NBS Lagos,real
+2022-11-01,frozen-fish,1384.44,NBS Lagos,real
+2022-12-01,frozen-fish,1392.86,NBS Lagos,real
+2023-01-01,frozen-fish,1398.89,NBS Lagos,real
+2023-02-01,frozen-fish,1302.68,NBS Lagos,real
+2023-03-01,frozen-fish,1346.67,NBS Lagos,real
+2023-04-01,frozen-fish,1355.91,NBS Lagos,real
+2023-05-01,frozen-fish,1361.88,NBS Lagos,real
+2023-06-01,frozen-fish,1373.65,NBS Lagos,real
+2023-07-01,frozen-fish,1427.27,NBS Lagos,real
+2023-08-01,frozen-fish,1495.24,NBS Lagos,real
+2023-09-01,frozen-fish,1505.56,NBS Lagos,real
+2023-10-01,frozen-fish,1667.59,NBS Lagos,real
+2023-11-01,frozen-fish,1800,NBS Lagos,real
+2023-12-01,frozen-fish,1900,NBS Lagos,real
+2024-01-01,frozen-fish,1905.81,NBS Lagos,real
+2024-02-01,frozen-fish,2190.69,NBS Lagos,real
+2024-03-01,frozen-fish,3810.55,NBS Lagos,real
+2024-04-01,frozen-fish,3883.04,NBS Lagos,real
+2024-05-01,frozen-fish,3615.14,NBS Lagos,real
+2024-06-01,frozen-fish,3700,NBS Lagos,real
+2024-07-01,frozen-fish,3940.72,NBS Lagos,real
+2024-08-01,frozen-fish,3843.04,NBS Lagos,real
+2024-09-01,frozen-fish,4549.68,NBS Lagos,real
+2024-10-01,frozen-fish,4567.2,NBS Lagos,real
+2024-11-01,frozen-fish,4580,NBS Lagos,real
+2024-12-01,frozen-fish,4592.22,NBS Lagos,real
+2025-01-01,frozen-fish,4575,NBS South-West average,estimated
+2025-02-01,frozen-fish,4474.33,NBS South-West average,estimated
+2025-03-01,frozen-fish,4707.74,NBS South-West average,estimated
+2025-04-01,frozen-fish,4632.67,NBS South-West average,estimated
+2025-05-01,frozen-fish,4820.21,NBS South-West average,estimated
+2025-06-01,frozen-fish,5057.6,NBS South-West average,estimated
+2025-07-01,frozen-fish,5218.1,NBS South-West average,estimated
+2025-08-01,frozen-fish,5372.31,NBS South-West average,estimated
+2025-09-01,frozen-fish,5406.7,NBS South-West average,estimated
+2025-10-01,frozen-fish,5409.13,NBS South-West average,estimated
+2025-11-01,frozen-fish,5466.3,NBS South-West average,estimated
+2025-12-01,frozen-fish,5480.83,NBS South-West average,estimated
+2026-01-01,frozen-fish,5476.65,NBS South-West average,estimated
+2026-02-01,frozen-fish,5478.51,NBS South-West average,estimated
+2026-03-01,frozen-fish,5484.36,NBS South-West average,estimated
+2026-04-01,frozen-fish,5539.81,NBS South-West average,estimated
+2026-05-01,frozen-fish,5554.81,NBS South-West average,estimated
+2018-01-01,eggs,820.13,NBS Lagos,real
+2018-02-01,eggs,1005.75,NBS Lagos,real
+2018-03-01,eggs,1051.35,NBS Lagos,real
+2018-04-01,eggs,989.04,NBS Lagos,real
+2018-05-01,eggs,947.97,NBS Lagos,real
+2018-06-01,eggs,1018.85,NBS Lagos,real
+2018-07-01,eggs,978.09,NBS Lagos,real
+2018-08-01,eggs,1032.98,NBS Lagos,real
+2018-09-01,eggs,962.04,NBS Lagos,real
+2018-10-01,eggs,959.76,NBS Lagos,real
+2018-11-01,eggs,916.5,NBS Lagos,real
+2018-12-01,eggs,973.91,NBS Lagos,real
+2019-01-01,eggs,946.39,NBS Lagos,real
+2019-02-01,eggs,914.2,NBS Lagos,real
+2019-03-01,eggs,919.98,NBS Lagos,real
+2019-04-01,eggs,901,NBS Lagos,real
+2019-05-01,eggs,902.15,NBS Lagos,real
+2019-06-01,eggs,1015.45,NBS Lagos,real
+2019-07-01,eggs,959.82,NBS Lagos,real
+2019-08-01,eggs,958.12,NBS Lagos,real
+2019-09-01,eggs,953.92,NBS Lagos,real
+2019-10-01,eggs,954.86,NBS Lagos,real
+2019-11-01,eggs,1008.99,NBS Lagos,real
+2019-12-01,eggs,931.88,NBS Lagos,real
+2020-01-01,eggs,925.44,NBS Lagos,real
+2020-02-01,eggs,953.94,NBS Lagos,real
+2020-03-01,eggs,985.7,NBS Lagos,real
+2020-04-01,eggs,1159.89,NBS Lagos,real
+2020-05-01,eggs,1021.27,NBS Lagos,real
+2020-06-01,eggs,1025.17,NBS Lagos,real
+2020-07-01,eggs,1061.05,NBS Lagos,real
+2020-08-01,eggs,1066.17,NBS Lagos,real
+2020-09-01,eggs,1142.04,NBS Lagos,real
+2020-10-01,eggs,1155.88,NBS Lagos,real
+2020-11-01,eggs,1088.73,NBS Lagos,real
+2020-12-01,eggs,1101.48,NBS Lagos,real
+2021-01-01,eggs,1124.61,NBS Lagos,real
+2021-02-01,eggs,1105.38,NBS Lagos,real
+2021-03-01,eggs,1134.2,NBS Lagos,real
+2021-04-01,eggs,1164.79,NBS Lagos,real
+2021-05-01,eggs,1189.19,NBS Lagos,real
+2021-06-01,eggs,1253.78,NBS Lagos,real
+2021-07-01,eggs,1387.05,NBS Lagos,real
+2021-08-01,eggs,1419.86,NBS Lagos,real
+2021-09-01,eggs,1435.23,NBS Lagos,real
+2021-10-01,eggs,1506.99,NBS Lagos,real
+2021-11-01,eggs,1517.37,NBS Lagos,real
+2021-12-01,eggs,1565.08,NBS Lagos,real
+2022-01-01,eggs,1601.08,NBS Lagos,real
+2022-02-01,eggs,1641.41,NBS Lagos,real
+2022-03-01,eggs,1660.77,NBS Lagos,real
+2022-04-01,eggs,1672.95,NBS Lagos,real
+2022-05-01,eggs,1681.81,NBS Lagos,real
+2022-06-01,eggs,1722.28,NBS Lagos,real
+2022-07-01,eggs,1740.2,NBS Lagos,real
+2022-08-01,eggs,1744.73,NBS Lagos,real
+2022-09-01,eggs,1763.72,NBS Lagos,real
+2022-10-01,eggs,1769.68,NBS Lagos,real
+2022-11-01,eggs,1815.14,NBS Lagos,real
+2022-12-01,eggs,1823.59,NBS Lagos,real
+2023-01-01,eggs,1845.3,NBS Lagos,real
+2023-02-01,eggs,1877.43,NBS Lagos,real
+2023-03-01,eggs,1900.78,NBS Lagos,real
+2023-04-01,eggs,1998.48,NBS Lagos,real
+2023-05-01,eggs,2160.83,NBS Lagos,real
+2023-06-01,eggs,2180.18,NBS Lagos,real
+2023-07-01,eggs,2246.04,NBS Lagos,real
+2023-08-01,eggs,2251.7,NBS Lagos,real
+2023-09-01,eggs,2275.87,NBS Lagos,real
+2023-10-01,eggs,2327.95,NBS Lagos,real
+2023-11-01,eggs,2768.46,NBS Lagos,real
+2023-12-01,eggs,2938.25,NBS Lagos,real
+2024-01-01,eggs,2960.89,NBS Lagos,real
+2024-02-01,eggs,3124.42,NBS Lagos,real
+2024-03-01,eggs,3691.83,NBS Lagos,real
+2024-04-01,eggs,3833.38,NBS Lagos,real
+2024-05-01,eggs,4256.31,NBS Lagos,real
+2024-06-01,eggs,4399.67,NBS Lagos,real
+2024-07-01,eggs,4845.2,NBS Lagos,real
+2024-08-01,eggs,4868.68,NBS Lagos,real
+2024-09-01,eggs,4958.38,NBS Lagos,real
+2024-10-01,eggs,5085.56,NBS Lagos,real
+2024-11-01,eggs,5166.84,NBS Lagos,real
+2024-12-01,eggs,5945.97,NBS Lagos,real
+2025-01-01,eggs,6241.15,NBS South-West average,estimated
+2025-02-01,eggs,6405.34,NBS South-West average,estimated
+2025-03-01,eggs,6804.67,NBS South-West average,estimated
+2025-04-01,eggs,6734.81,NBS South-West average,estimated
+2025-05-01,eggs,6873.18,NBS South-West average,estimated
+2025-06-01,eggs,6856.67,NBS South-West average,estimated
+2025-07-01,eggs,7194.02,NBS South-West average,estimated
+2025-08-01,eggs,6288.04,NBS South-West average,estimated
+2025-09-01,eggs,6257.44,NBS South-West average,estimated
+2025-10-01,eggs,6255.3,NBS South-West average,estimated
+2025-11-01,eggs,6205.78,NBS South-West average,estimated
+2025-12-01,eggs,6200.74,NBS South-West average,estimated
+2026-01-01,eggs,6153.1,NBS South-West average,estimated
+2026-02-01,eggs,6164.44,NBS South-West average,estimated
+2026-03-01,eggs,6369.81,NBS South-West average,estimated
+2026-04-01,eggs,6389.68,NBS South-West average,estimated
+2026-05-01,eggs,6390.38,NBS South-West average,estimated
+2018-01-01,vegetable-oil,550,NBS Lagos,real
+2018-02-01,vegetable-oil,554,NBS Lagos,real
+2018-03-01,vegetable-oil,528.67,NBS Lagos,real
+2018-04-01,vegetable-oil,528.67,NBS Lagos,real
+2018-05-01,vegetable-oil,566.67,NBS Lagos,real
+2018-06-01,vegetable-oil,530.3,NBS Lagos,real
+2018-07-01,vegetable-oil,523.08,NBS Lagos,real
+2018-08-01,vegetable-oil,522.81,NBS Lagos,real
+2018-09-01,vegetable-oil,537.04,NBS Lagos,real
+2018-10-01,vegetable-oil,509.8,NBS Lagos,real
+2018-11-01,vegetable-oil,529.63,NBS Lagos,real
+2018-12-01,vegetable-oil,511.11,NBS Lagos,real
+2019-01-01,vegetable-oil,532.4,NBS Lagos,real
+2019-02-01,vegetable-oil,500.17,NBS Lagos,real
+2019-03-01,vegetable-oil,488.07,NBS Lagos,real
+2019-04-01,vegetable-oil,509.8,NBS Lagos,real
+2019-05-01,vegetable-oil,533.33,NBS Lagos,real
+2019-06-01,vegetable-oil,519.3,NBS Lagos,real
+2019-07-01,vegetable-oil,520.63,NBS Lagos,real
+2019-08-01,vegetable-oil,533.33,NBS Lagos,real
+2019-09-01,vegetable-oil,540,NBS Lagos,real
+2019-10-01,vegetable-oil,530.16,NBS Lagos,real
+2019-11-01,vegetable-oil,568.42,NBS Lagos,real
+2019-12-01,vegetable-oil,563.7,NBS Lagos,real
+2020-01-01,vegetable-oil,557.89,NBS Lagos,real
+2020-02-01,vegetable-oil,546.67,NBS Lagos,real
+2020-03-01,vegetable-oil,552.38,NBS Lagos,real
+2020-04-01,vegetable-oil,590.99,NBS Lagos,real
+2020-05-01,vegetable-oil,590.48,NBS Lagos,real
+2020-06-01,vegetable-oil,581.48,NBS Lagos,real
+2020-07-01,vegetable-oil,585.44,NBS Lagos,real
+2020-08-01,vegetable-oil,620.51,NBS Lagos,real
+2020-09-01,vegetable-oil,627.41,NBS Lagos,real
+2020-10-01,vegetable-oil,630.7,NBS Lagos,real
+2020-11-01,vegetable-oil,723.33,NBS Lagos,real
+2020-12-01,vegetable-oil,757.78,NBS Lagos,real
+2021-01-01,vegetable-oil,753.33,NBS Lagos,real
+2021-02-01,vegetable-oil,784.81,NBS Lagos,real
+2021-03-01,vegetable-oil,715.87,NBS Lagos,real
+2021-04-01,vegetable-oil,748.15,NBS Lagos,real
+2021-05-01,vegetable-oil,755.56,NBS Lagos,real
+2021-06-01,vegetable-oil,836.67,NBS Lagos,real
+2021-07-01,vegetable-oil,918.89,NBS Lagos,real
+2021-08-01,vegetable-oil,930.48,NBS Lagos,real
+2021-09-01,vegetable-oil,925.93,NBS Lagos,real
+2021-10-01,vegetable-oil,950,NBS Lagos,real
+2021-11-01,vegetable-oil,1025,NBS Lagos,real
+2021-12-01,vegetable-oil,1078.21,NBS Lagos,real
+2022-01-01,vegetable-oil,1066.67,NBS Lagos,real
+2022-02-01,vegetable-oil,1068.81,NBS Lagos,real
+2022-03-01,vegetable-oil,1070,NBS Lagos,real
+2022-04-01,vegetable-oil,1073.33,NBS Lagos,real
+2022-05-01,vegetable-oil,1077.84,NBS Lagos,real
+2022-06-01,vegetable-oil,1086,NBS Lagos,real
+2022-07-01,vegetable-oil,1090.7,NBS Lagos,real
+2022-08-01,vegetable-oil,1093.33,NBS Lagos,real
+2022-09-01,vegetable-oil,1096.19,NBS Lagos,real
+2022-10-01,vegetable-oil,1109,NBS Lagos,real
+2022-11-01,vegetable-oil,1333.33,NBS Lagos,real
+2022-12-01,vegetable-oil,1334.78,NBS Lagos,real
+2023-01-01,vegetable-oil,1339.33,NBS Lagos,real
+2023-02-01,vegetable-oil,1391.11,NBS Lagos,real
+2023-03-01,vegetable-oil,1379.17,NBS Lagos,real
+2023-04-01,vegetable-oil,1400,NBS Lagos,real
+2023-05-01,vegetable-oil,1380.95,NBS Lagos,real
+2023-06-01,vegetable-oil,1485.71,NBS Lagos,real
+2023-07-01,vegetable-oil,1544.44,NBS Lagos,real
+2023-08-01,vegetable-oil,1558.33,NBS Lagos,real
+2023-09-01,vegetable-oil,1567.78,NBS Lagos,real
+2023-10-01,vegetable-oil,1604.76,NBS Lagos,real
+2023-11-01,vegetable-oil,1808.44,NBS Lagos,real
+2023-12-01,vegetable-oil,1816.3,NBS Lagos,real
+2024-01-01,vegetable-oil,1853.36,NBS Lagos,real
+2024-02-01,vegetable-oil,2323.18,NBS Lagos,real
+2024-03-01,vegetable-oil,2476.62,NBS Lagos,real
+2024-04-01,vegetable-oil,2568.89,NBS Lagos,real
+2024-05-01,vegetable-oil,2719.28,NBS Lagos,real
+2024-06-01,vegetable-oil,3362.22,NBS Lagos,real
+2024-07-01,vegetable-oil,3250,NBS Lagos,real
+2024-08-01,vegetable-oil,3293.94,NBS Lagos,real
+2024-09-01,vegetable-oil,3322.94,NBS Lagos,real
+2024-10-01,vegetable-oil,3482.05,NBS Lagos,real
+2024-11-01,vegetable-oil,3500,NBS Lagos,real
+2024-12-01,vegetable-oil,3926.67,NBS Lagos,real
+2025-01-01,vegetable-oil,5173.6,NBS South-West average,estimated
+2025-02-01,vegetable-oil,5460.93,NBS South-West average,estimated
+2025-03-01,vegetable-oil,6195.59,NBS South-West average,estimated
+2025-04-01,vegetable-oil,6552.85,NBS South-West average,estimated
+2025-05-01,vegetable-oil,6426.67,NBS Lagos,real
+2025-06-01,vegetable-oil,6440,NBS Lagos,real
+2025-07-01,vegetable-oil,6440,NBS Lagos,real
+2025-08-01,vegetable-oil,5680.48,NBS South-West average,estimated
+2025-09-01,vegetable-oil,5649.3,NBS South-West average,estimated
+2025-10-01,vegetable-oil,5656.39,NBS South-West average,estimated
+2025-11-01,vegetable-oil,5629.21,NBS South-West average,estimated
+2025-12-01,vegetable-oil,5628.82,NBS South-West average,estimated
+2026-01-01,vegetable-oil,5617.64,NBS South-West average,estimated
+2026-02-01,vegetable-oil,5612.76,NBS South-West average,estimated
+2026-03-01,vegetable-oil,5615.1,NBS South-West average,estimated
+2026-04-01,vegetable-oil,5614.66,NBS South-West average,estimated
+2026-05-01,vegetable-oil,5640.96,NBS South-West average,estimated
+2018-01-01,palm-oil,466.67,NBS Lagos,real
+2018-02-01,palm-oil,519.3,NBS Lagos,real
+2018-03-01,palm-oil,490.91,NBS Lagos,real
+2018-04-01,palm-oil,450,NBS Lagos,real
+2018-05-01,palm-oil,455.56,NBS Lagos,real
+2018-06-01,palm-oil,500,NBS Lagos,real
+2018-07-01,palm-oil,482.67,NBS Lagos,real
+2018-08-01,palm-oil,501.75,NBS Lagos,real
+2018-09-01,palm-oil,505.26,NBS Lagos,real
+2018-10-01,palm-oil,498.04,NBS Lagos,real
+2018-11-01,palm-oil,501.75,NBS Lagos,real
+2018-12-01,palm-oil,516.08,NBS Lagos,real
+2019-01-01,palm-oil,444.44,NBS Lagos,real
+2019-02-01,palm-oil,412.35,NBS Lagos,real
+2019-03-01,palm-oil,403.94,NBS Lagos,real
+2019-04-01,palm-oil,462.96,NBS Lagos,real
+2019-05-01,palm-oil,473.02,NBS Lagos,real
+2019-06-01,palm-oil,447.72,NBS Lagos,real
+2019-07-01,palm-oil,440,NBS Lagos,real
+2019-08-01,palm-oil,475.06,NBS Lagos,real
+2019-09-01,palm-oil,480,NBS Lagos,real
+2019-10-01,palm-oil,466.67,NBS Lagos,real
+2019-11-01,palm-oil,480.7,NBS Lagos,real
+2019-12-01,palm-oil,514.81,NBS Lagos,real
+2020-01-01,palm-oil,496.3,NBS Lagos,real
+2020-02-01,palm-oil,486.27,NBS Lagos,real
+2020-03-01,palm-oil,461.9,NBS Lagos,real
+2020-04-01,palm-oil,489.73,NBS Lagos,real
+2020-05-01,palm-oil,483.33,NBS Lagos,real
+2020-06-01,palm-oil,504.67,NBS Lagos,real
+2020-07-01,palm-oil,503.33,NBS Lagos,real
+2020-08-01,palm-oil,510.83,NBS Lagos,real
+2020-09-01,palm-oil,516.67,NBS Lagos,real
+2020-10-01,palm-oil,532.55,NBS Lagos,real
+2020-11-01,palm-oil,662.96,NBS Lagos,real
+2020-12-01,palm-oil,681.48,NBS Lagos,real
+2021-01-01,palm-oil,656.67,NBS Lagos,real
+2021-02-01,palm-oil,668.07,NBS Lagos,real
+2021-03-01,palm-oil,654.55,NBS Lagos,real
+2021-04-01,palm-oil,673.33,NBS Lagos,real
+2021-05-01,palm-oil,679.82,NBS Lagos,real
+2021-06-01,palm-oil,720.64,NBS Lagos,real
+2021-07-01,palm-oil,810,NBS Lagos,real
+2021-08-01,palm-oil,831.11,NBS Lagos,real
+2021-09-01,palm-oil,811.76,NBS Lagos,real
+2021-10-01,palm-oil,851.33,NBS Lagos,real
+2021-11-01,palm-oil,977.78,NBS Lagos,real
+2021-12-01,palm-oil,985.34,NBS Lagos,real
+2022-01-01,palm-oil,959.26,NBS Lagos,real
+2022-02-01,palm-oil,960.62,NBS Lagos,real
+2022-03-01,palm-oil,970,NBS Lagos,real
+2022-04-01,palm-oil,973.67,NBS Lagos,real
+2022-05-01,palm-oil,975,NBS Lagos,real
+2022-06-01,palm-oil,980.55,NBS Lagos,real
+2022-07-01,palm-oil,986.32,NBS Lagos,real
+2022-08-01,palm-oil,990.67,NBS Lagos,real
+2022-09-01,palm-oil,1005.56,NBS Lagos,real
+2022-10-01,palm-oil,1012.94,NBS Lagos,real
+2022-11-01,palm-oil,1282.35,NBS Lagos,real
+2022-12-01,palm-oil,1286.67,NBS Lagos,real
+2023-01-01,palm-oil,1289.17,NBS Lagos,real
+2023-02-01,palm-oil,1279.56,NBS Lagos,real
+2023-03-01,palm-oil,1287.65,NBS Lagos,real
+2023-04-01,palm-oil,1270.37,NBS Lagos,real
+2023-05-01,palm-oil,1284.85,NBS Lagos,real
+2023-06-01,palm-oil,1296.67,NBS Lagos,real
+2023-07-01,palm-oil,1309.09,NBS Lagos,real
+2023-08-01,palm-oil,1294.07,NBS Lagos,real
+2023-09-01,palm-oil,1299.65,NBS Lagos,real
+2023-10-01,palm-oil,1398.15,NBS Lagos,real
+2023-11-01,palm-oil,1315,NBS Lagos,real
+2023-12-01,palm-oil,1420.74,NBS Lagos,real
+2024-01-01,palm-oil,1417.25,NBS Lagos,real
+2024-02-01,palm-oil,1906.67,NBS Lagos,real
+2024-03-01,palm-oil,1936.11,NBS Lagos,real
+2024-04-01,palm-oil,2076.79,NBS Lagos,real
+2024-05-01,palm-oil,1813.85,NBS Lagos,real
+2024-06-01,palm-oil,2648.89,NBS Lagos,real
+2024-07-01,palm-oil,1954.17,NBS Lagos,real
+2024-08-01,palm-oil,2000,NBS Lagos,real
+2024-09-01,palm-oil,2126.84,NBS Lagos,real
+2024-10-01,palm-oil,2161.9,NBS Lagos,real
+2024-11-01,palm-oil,2180,NBS Lagos,real
+2024-12-01,palm-oil,2326.67,NBS Lagos,real
+2025-01-01,palm-oil,3148.73,NBS South-West average,estimated
+2025-02-01,palm-oil,3152.61,NBS South-West average,estimated
+2025-03-01,palm-oil,3463.17,NBS South-West average,estimated
+2025-04-01,palm-oil,3300.92,NBS South-West average,estimated
+2025-05-01,palm-oil,2843.34,NBS South-West average,estimated
+2025-06-01,palm-oil,3035.8,NBS South-West average,estimated
+2025-07-01,palm-oil,3213.88,NBS South-West average,estimated
+2025-08-01,palm-oil,3145.04,NBS South-West average,estimated
+2025-09-01,palm-oil,3124.58,NBS South-West average,estimated
+2025-10-01,palm-oil,3129.02,NBS South-West average,estimated
+2025-11-01,palm-oil,3034.45,NBS South-West average,estimated
+2025-12-01,palm-oil,3020.2,NBS South-West average,estimated
+2026-01-01,palm-oil,2975.04,NBS South-West average,estimated
+2026-02-01,palm-oil,2980.77,NBS South-West average,estimated
+2026-03-01,palm-oil,2981.82,NBS South-West average,estimated
+2026-04-01,palm-oil,2992.78,NBS South-West average,estimated
+2026-05-01,palm-oil,2996.29,NBS South-West average,estimated
+2018-01-01,sugar,301.2,Estimated,estimated
+2018-02-01,sugar,288.12,Estimated,estimated
+2018-03-01,sugar,297.95,Estimated,estimated
+2018-04-01,sugar,282.96,Estimated,estimated
+2018-05-01,sugar,293.84,Estimated,estimated
+2018-06-01,sugar,287.41,Estimated,estimated
+2018-07-01,sugar,283.38,Estimated,estimated
+2018-08-01,sugar,276.12,Estimated,estimated
+2018-09-01,sugar,265.8,Estimated,estimated
+2018-10-01,sugar,286.23,Estimated,estimated
+2018-11-01,sugar,273.92,Estimated,estimated
+2018-12-01,sugar,270.44,Estimated,estimated
+2019-01-01,sugar,283.76,Estimated,estimated
+2019-02-01,sugar,288.72,Estimated,estimated
+2019-03-01,sugar,290.3,Estimated,estimated
+2019-04-01,sugar,276.12,Estimated,estimated
+2019-05-01,sugar,281.73,Estimated,estimated
+2019-06-01,sugar,279.34,Estimated,estimated
+2019-07-01,sugar,278.56,Estimated,estimated
+2019-08-01,sugar,282.14,Estimated,estimated
+2019-09-01,sugar,276.35,Estimated,estimated
+2019-10-01,sugar,285.53,Estimated,estimated
+2019-11-01,sugar,291.33,Estimated,estimated
+2019-12-01,sugar,273.04,National Sugar Development Council via BusinessDay,real
+2020-01-01,sugar,271.91,Estimated,estimated
+2020-02-01,sugar,272.7,Estimated,estimated
+2020-03-01,sugar,300.21,Estimated,estimated
+2020-04-01,sugar,311.58,Estimated,estimated
+2020-05-01,sugar,312.37,Estimated,estimated
+2020-06-01,sugar,311.58,Estimated,estimated
+2020-07-01,sugar,313.71,Estimated,estimated
+2020-08-01,sugar,326.07,Estimated,estimated
+2020-09-01,sugar,325.53,Estimated,estimated
+2020-10-01,sugar,322.8,Estimated,estimated
+2020-11-01,sugar,324.61,Estimated,estimated
+2020-12-01,sugar,305.1,Estimated,estimated
+2021-01-01,sugar,327.3,Estimated,estimated
+2021-02-01,sugar,322.76,Estimated,estimated
+2021-03-01,sugar,330.52,Estimated,estimated
+2021-04-01,sugar,341.43,Estimated,estimated
+2021-05-01,sugar,363.04,Estimated,estimated
+2021-06-01,sugar,358.19,Estimated,estimated
+2021-07-01,sugar,383.45,Estimated,estimated
+2021-08-01,sugar,407.28,Estimated,estimated
+2021-09-01,sugar,421.49,Estimated,estimated
+2021-10-01,sugar,445.09,Estimated,estimated
+2021-11-01,sugar,459.34,Estimated,estimated
+2021-12-01,sugar,466.56,Estimated,estimated
+2022-01-01,sugar,488.86,Estimated,estimated
+2022-02-01,sugar,493.8,Estimated,estimated
+2022-03-01,sugar,495.31,Estimated,estimated
+2022-04-01,sugar,496.46,Estimated,estimated
+2022-05-01,sugar,498.19,Estimated,estimated
+2022-06-01,sugar,503.65,Estimated,estimated
+2022-07-01,sugar,512.86,Estimated,estimated
+2022-08-01,sugar,517.04,Estimated,estimated
+2022-09-01,sugar,494.19,Estimated,estimated
+2022-10-01,sugar,522.09,Estimated,estimated
+2022-11-01,sugar,629.44,Estimated,estimated
+2022-12-01,sugar,631.2,National Sugar Development Council via BusinessDay,real
+2023-01-01,sugar,625,National Sugar Development Council via BusinessDay,real
+2023-02-01,sugar,629.17,Estimated,estimated
+2023-03-01,sugar,675.96,Estimated,estimated
+2023-04-01,sugar,704.49,Estimated,estimated
+2023-05-01,sugar,690.72,Estimated,estimated
+2023-06-01,sugar,724.78,Estimated,estimated
+2023-07-01,sugar,770.97,Estimated,estimated
+2023-08-01,sugar,798.05,Estimated,estimated
+2023-09-01,sugar,863.17,Estimated,estimated
+2023-10-01,sugar,930.71,Estimated,estimated
+2023-11-01,sugar,1090.35,Estimated,estimated
+2023-12-01,sugar,1200,National Sugar Development Council via BusinessDay,real
+2024-01-01,sugar,1400,National Sugar Development Council via BusinessDay,real
+2024-02-01,sugar,1240,BusinessDay (Feb 2024),real
+2024-03-01,sugar,1323.47,Estimated,estimated
+2024-04-01,sugar,1427.93,Estimated,estimated
+2024-05-01,sugar,1405.67,Estimated,estimated
+2024-06-01,sugar,1376.78,Estimated,estimated
+2024-07-01,sugar,1773.45,Estimated,estimated
+2024-08-01,sugar,1756.36,Estimated,estimated
+2024-09-01,sugar,1923.45,Estimated,estimated
+2024-10-01,sugar,1931.76,Estimated,estimated
+2024-11-01,sugar,1932.89,Estimated,estimated
+2024-12-01,sugar,2048.62,Estimated,estimated
+2025-01-01,sugar,2021.99,Estimated,estimated
+2025-02-01,sugar,2058,Estimated,estimated
+2025-03-01,sugar,2214.08,Estimated,estimated
+2025-04-01,sugar,2201.51,Estimated,estimated
+2025-05-01,sugar,2239.39,Estimated,estimated
+2025-06-01,sugar,2266.64,Estimated,estimated
+2025-07-01,sugar,2275.87,Estimated,estimated
+2025-08-01,sugar,2089.1,Estimated,estimated
+2025-09-01,sugar,2099.62,Estimated,estimated
+2025-10-01,sugar,2101.7,Estimated,estimated
+2025-11-01,sugar,2152.2,Estimated,estimated
+2025-12-01,sugar,2154.11,Estimated,estimated
+2026-01-01,sugar,2151.38,Estimated,estimated
+2026-02-01,sugar,2153.5,Estimated,estimated
+2026-03-01,sugar,2153.5,Estimated,estimated
+2026-04-01,sugar,2158.54,Estimated,estimated
+2026-05-01,sugar,2160.17,Estimated,estimated
+2018-01-01,powdered-milk,1186.75,Estimated,estimated
+2018-02-01,powdered-milk,1142.33,Estimated,estimated
+2018-03-01,powdered-milk,1139.82,Estimated,estimated
+2018-04-01,powdered-milk,1169.73,Estimated,estimated
+2018-05-01,powdered-milk,1228.7,Estimated,estimated
+2018-06-01,powdered-milk,1162.23,Estimated,estimated
+2018-07-01,powdered-milk,1201.73,Estimated,estimated
+2018-08-01,powdered-milk,1189.03,Estimated,estimated
+2018-09-01,powdered-milk,1211.38,Estimated,estimated
+2018-10-01,powdered-milk,1204.73,Estimated,estimated
+2018-11-01,powdered-milk,1201.73,Estimated,estimated
+2018-12-01,powdered-milk,1199.63,Estimated,estimated
+2019-01-01,powdered-milk,1318.61,Estimated,estimated
+2019-02-01,powdered-milk,1247.46,Estimated,estimated
+2019-03-01,powdered-milk,1204.43,Estimated,estimated
+2019-04-01,powdered-milk,1217.68,Estimated,estimated
+2019-05-01,powdered-milk,1221.57,Estimated,estimated
+2019-06-01,powdered-milk,1174.04,Estimated,estimated
+2019-07-01,powdered-milk,1094.62,Estimated,estimated
+2019-08-01,powdered-milk,1230.98,Estimated,estimated
+2019-09-01,powdered-milk,1204.07,Estimated,estimated
+2019-10-01,powdered-milk,1156.42,Estimated,estimated
+2019-11-01,powdered-milk,1192.38,Estimated,estimated
+2019-12-01,powdered-milk,1175.9,Estimated,estimated
+2020-01-01,powdered-milk,1168.77,Estimated,estimated
+2020-02-01,powdered-milk,1175.42,Estimated,estimated
+2020-03-01,powdered-milk,1182.73,Estimated,estimated
+2020-04-01,powdered-milk,1224.21,Estimated,estimated
+2020-05-01,powdered-milk,1212.04,Estimated,estimated
+2020-06-01,powdered-milk,1213,Nairametrics Lagos market survey (Jun 2020),real
+2020-07-01,powdered-milk,1244.68,Estimated,estimated
+2020-08-01,powdered-milk,1268.75,Estimated,estimated
+2020-09-01,powdered-milk,1270.78,Estimated,estimated
+2020-10-01,powdered-milk,1282.98,Estimated,estimated
+2020-11-01,powdered-milk,1296.24,Estimated,estimated
+2020-12-01,powdered-milk,1238,Nairametrics Lagos market survey (Dec 2020),real
+2021-01-01,powdered-milk,1286.59,Estimated,estimated
+2021-02-01,powdered-milk,1317.38,Estimated,estimated
+2021-03-01,powdered-milk,1289.33,Estimated,estimated
+2021-04-01,powdered-milk,1381.96,Estimated,estimated
+2021-05-01,powdered-milk,1285.33,Estimated,estimated
+2021-06-01,powdered-milk,1380.1,Estimated,estimated
+2021-07-01,powdered-milk,1380.43,Estimated,estimated
+2021-08-01,powdered-milk,1410.34,Estimated,estimated
+2021-09-01,powdered-milk,1407.24,Estimated,estimated
+2021-10-01,powdered-milk,1384.26,Estimated,estimated
+2021-11-01,powdered-milk,1480.41,Estimated,estimated
+2021-12-01,powdered-milk,1523.08,Estimated,estimated
+2022-01-01,powdered-milk,1457.4,Estimated,estimated
+2022-02-01,powdered-milk,1498.26,Estimated,estimated
+2022-03-01,powdered-milk,1508.22,Estimated,estimated
+2022-04-01,powdered-milk,1515.85,Estimated,estimated
+2022-05-01,powdered-milk,1509.22,Estimated,estimated
+2022-06-01,powdered-milk,1504.89,Estimated,estimated
+2022-07-01,powdered-milk,1544.5,Estimated,estimated
+2022-08-01,powdered-milk,1726.83,Estimated,estimated
+2022-09-01,powdered-milk,1692.47,Estimated,estimated
+2022-10-01,powdered-milk,1821.18,Estimated,estimated
+2022-11-01,powdered-milk,1840.65,Estimated,estimated
+2022-12-01,powdered-milk,1837.34,Estimated,estimated
+2023-01-01,powdered-milk,1840.15,Estimated,estimated
+2023-02-01,powdered-milk,1835.22,Estimated,estimated
+2023-03-01,powdered-milk,1899.16,Estimated,estimated
+2023-04-01,powdered-milk,2039.64,Estimated,estimated
+2023-05-01,powdered-milk,2027.26,Estimated,estimated
+2023-06-01,powdered-milk,2112.22,Estimated,estimated
+2023-07-01,powdered-milk,2305.67,Estimated,estimated
+2023-08-01,powdered-milk,2342.54,Estimated,estimated
+2023-09-01,powdered-milk,2410.84,Estimated,estimated
+2023-10-01,powdered-milk,2408.28,Estimated,estimated
+2023-11-01,powdered-milk,2279.46,Estimated,estimated
+2023-12-01,powdered-milk,2279.45,Estimated,estimated
+2024-01-01,powdered-milk,2280.38,Estimated,estimated
+2024-02-01,powdered-milk,2318.15,Estimated,estimated
+2024-03-01,powdered-milk,2960.47,Estimated,estimated
+2024-04-01,powdered-milk,2975.21,Estimated,estimated
+2024-05-01,powdered-milk,3055.61,Estimated,estimated
+2024-06-01,powdered-milk,2750.36,Estimated,estimated
+2024-07-01,powdered-milk,2727.73,Estimated,estimated
+2024-08-01,powdered-milk,3174.48,Estimated,estimated
+2024-09-01,powdered-milk,3178.5,Estimated,estimated
+2024-10-01,powdered-milk,3261.26,Estimated,estimated
+2024-11-01,powdered-milk,3341.62,Estimated,estimated
+2024-12-01,powdered-milk,3435.96,Estimated,estimated
+2025-01-01,powdered-milk,4053.45,Estimated,estimated
+2025-02-01,powdered-milk,3849.58,Estimated,estimated
+2025-03-01,powdered-milk,4155.25,Estimated,estimated
+2025-04-01,powdered-milk,4091.62,Estimated,estimated
+2025-05-01,powdered-milk,4201.24,Estimated,estimated
+2025-06-01,powdered-milk,4423.46,Estimated,estimated
+2025-07-01,powdered-milk,4513.78,Estimated,estimated
+2025-08-01,powdered-milk,4345.32,Estimated,estimated
+2025-09-01,powdered-milk,4240.08,Estimated,estimated
+2025-10-01,powdered-milk,4210.32,Estimated,estimated
+2025-11-01,powdered-milk,4204,Nairametrics Lagos market survey (Nov 2025),estimated
+2025-12-01,powdered-milk,4202.69,Estimated,estimated
+2026-01-01,powdered-milk,4213.68,Estimated,estimated
+2026-02-01,powdered-milk,4215.87,Estimated,estimated
+2026-03-01,powdered-milk,4218.42,Estimated,estimated
+2026-04-01,powdered-milk,4248.42,Estimated,estimated
+2026-05-01,powdered-milk,4248.94,Estimated,estimated

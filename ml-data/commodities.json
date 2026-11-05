@@ -5,7 +5,7 @@
     "category": "GRAINS",
     "unit": "1kg",
     "description": "Locally milled rice from northern states such as Kebbi and Ebonyi. Price follows harvest size and transport cost to Lagos.",
-    "latestPrice": 1900
+    "latestPrice": 1659
   },
   {
     "name": "Rice (Imported)",
@@ -13,7 +13,7 @@
     "category": "GRAINS",
     "unit": "1kg",
     "description": "Foreign parboiled rice sold in Lagos markets. Its price moves closely with the dollar exchange rate.",
-    "latestPrice": 2400
+    "latestPrice": 1956
   },
   {
     "name": "Maize (White)",
@@ -21,7 +21,7 @@
     "category": "GRAINS",
     "unit": "1kg",
     "description": "Dry white maize grain used for pap, flour and animal feed. Price drops after harvest and rises in the lean months.",
-    "latestPrice": 900
+    "latestPrice": 970
   },
   {
     "name": "Sliced Bread",
@@ -29,7 +29,7 @@
     "category": "GRAINS",
     "unit": "500g loaf",
     "description": "Factory-baked bread. Wheat is imported, so the exchange rate and energy costs matter most.",
-    "latestPrice": 1600
+    "latestPrice": 2178
   },
   {
     "name": "Spaghetti",
@@ -37,7 +37,7 @@
     "category": "GRAINS",
     "unit": "500g pack",
     "description": "Packaged pasta made from imported wheat. Price follows the exchange rate and factory costs.",
-    "latestPrice": 1300
+    "latestPrice": 1086
   },
   {
     "name": "Beans (Brown)",
@@ -45,7 +45,7 @@
     "category": "LEGUMES",
     "unit": "1kg",
     "description": "Brown beans (Oloyin) from the north. Supply depends on harvest and the long trip to Lagos.",
-    "latestPrice": 2600
+    "latestPrice": 1869
   },
   {
     "name": "Beans (White)",
@@ -53,7 +53,7 @@
     "category": "LEGUMES",
     "unit": "1kg",
     "description": "White beans (Ife Brown and similar) from the north. Price tracks harvest size and transport.",
-    "latestPrice": 2200
+    "latestPrice": 1661
   },
   {
     "name": "Yam",
@@ -61,7 +61,7 @@
     "category": "TUBERS",
     "unit": "1kg",
     "description": "Yam tubers from the middle belt. Prices peak mid-year and fall once new yam arrives from August.",
-    "latestPrice": 1500
+    "latestPrice": 2477
   },
   {
     "name": "Irish Potato",
@@ -69,7 +69,7 @@
     "category": "TUBERS",
     "unit": "1kg",
     "description": "Potatoes grown mainly around Jos. Price depends on supply from the plateau and transport.",
-    "latestPrice": 1800
+    "latestPrice": 2762
   },
   {
     "name": "Sweet Potato",
@@ -77,7 +77,7 @@
     "category": "TUBERS",
     "unit": "1kg",
     "description": "Sweet potato from southwestern and northern farms. Cheap and fairly steady through the year.",
-    "latestPrice": 900
+    "latestPrice": 840
   },
   {
     "name": "Garri (White)",
@@ -85,7 +85,7 @@
     "category": "TUBERS",
     "unit": "1kg",
     "description": "Fermented cassava granules, a staple across Lagos. Price follows cassava supply.",
-    "latestPrice": 1300
+    "latestPrice": 821
   },
   {
     "name": "Garri (Yellow)",
@@ -93,7 +93,7 @@
     "category": "TUBERS",
     "unit": "1kg",
     "description": "Cassava granules fried with palm oil. Moves with cassava and palm oil supply.",
-    "latestPrice": 1400
+    "latestPrice": 924
   },
   {
     "name": "Tomato",
@@ -101,7 +101,7 @@
     "category": "VEGETABLES",
     "unit": "1kg",
     "description": "Fresh tomatoes trucked from Kano, Kaduna and Jos. Fragile and seasonal, so price swings a lot.",
-    "latestPrice": 2200
+    "latestPrice": 1975
   },
   {
     "name": "Onion",
@@ -109,7 +109,7 @@
     "category": "VEGETABLES",
     "unit": "1kg",
     "description": "Red onions from the north, mostly Sokoto and Kano. Price rises when stored stock runs low.",
-    "latestPrice": 1600
+    "latestPrice": 1150
   },
   {
     "name": "Fresh Pepper",
@@ -117,7 +117,7 @@
     "category": "VEGETABLES",
     "unit": "1kg",
     "description": "Tatashe and rodo peppers from farms around Lagos and the north. Very sensitive to season and transport.",
-    "latestPrice": 2500
+    "latestPrice": 4261
   },
   {
     "name": "Carrot",
@@ -125,7 +125,7 @@
     "category": "VEGETABLES",
     "unit": "1kg",
     "description": "Carrots grown on the Jos plateau. Price follows supply and the cost of moving it south.",
-    "latestPrice": 1500
+    "latestPrice": 2377
   },
   {
     "name": "Plantain (Unripe)",
@@ -133,7 +133,7 @@
     "category": "FRUITS",
     "unit": "1kg",
     "description": "Unripe plantain from the southwest and south-south. Fairly steady, with small seasonal moves.",
-    "latestPrice": 1400
+    "latestPrice": 2432
   },
   {
     "name": "Beef (Boneless)",
@@ -141,7 +141,7 @@
     "category": "PROTEIN",
     "unit": "1kg",
     "description": "Boneless cow meat from Lagos abattoirs. Cattle come from the north, so transport and general inflation matter.",
-    "latestPrice": 8500
+    "latestPrice": 6529
   },
   {
     "name": "Whole Chicken",
@@ -149,7 +149,7 @@
     "category": "PROTEIN",
     "unit": "1kg",
     "description": "Frozen or fresh whole chicken. Feed is largely imported, and demand jumps at Christmas.",
-    "latestPrice": 7500
+    "latestPrice": 6396
   },
   {
     "name": "Frozen Fish (Mackerel)",
@@ -157,7 +157,7 @@
     "category": "PROTEIN",
     "unit": "1kg",
     "description": "Imported frozen mackerel (Titus). Price follows the exchange rate and import costs.",
-    "latestPrice": 5500
+    "latestPrice": 5555
   },
   {
     "name": "Eggs",
@@ -165,7 +165,7 @@
     "category": "PROTEIN",
     "unit": "crate of 30",
     "description": "Table eggs from poultry farms around Lagos and Ogun. Feed costs drive the price, with a bump in December.",
-    "latestPrice": 6000
+    "latestPrice": 6390
   },
   {
     "name": "Vegetable Oil",
@@ -173,7 +173,7 @@
     "category": "OILS",
     "unit": "1 litre",
     "description": "Refined cooking oil. Raw materials are partly imported, so the exchange rate has a strong effect.",
-    "latestPrice": 3200
+    "latestPrice": 5641
   },
   {
     "name": "Palm Oil",
@@ -181,7 +181,7 @@
     "category": "OILS",
     "unit": "1 litre",
     "description": "Red palm oil from the south. Output is seasonal and transport adds to the cost.",
-    "latestPrice": 2800
+    "latestPrice": 2996
   },
   {
     "name": "Sugar",
@@ -189,7 +189,7 @@
     "category": "OTHERS",
     "unit": "1kg",
     "description": "Granulated sugar, mostly refined from imported raw sugar. Follows the exchange rate closely.",
-    "latestPrice": 1900
+    "latestPrice": 2160
   },
   {
     "name": "Powdered Milk",
@@ -197,6 +197,6 @@
     "category": "OTHERS",
     "unit": "400g tin",
     "description": "Imported milk powder in tins. Price is driven by the dollar and import costs.",
-    "latestPrice": 3500
+    "latestPrice": 4249
   }
 ]

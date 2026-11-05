@@ -1,6 +1,11 @@
 // Pipeline step 4: builds model inputs, runs the model and saves the predictions.
 import type { IndicatorKey, Prisma } from '@prisma/client';
-import { MODEL_HISTORY_MONTHS } from '../../constants';
+import {
+  DB_TRANSACTION_MAX_WAIT_MS,
+  DB_TRANSACTION_TIMEOUT_MS,
+  MODEL_HISTORY_MONTHS,
+  PREDICTION_SAVE_BATCH_SIZE,
+} from '../../constants';
 import {
   addMonths,
   calculatePercentChange,
@@ -14,6 +19,9 @@ import { forecastWithFallback } from '../model';
 import type { ForecastInput } from '../model/ModelProvider';
 import { getLatestPricePeriod } from './ingestPrices';
 import type { StepResult } from './logStep';
+
+// The fields of a prediction that are the same whether it is created or updated.
+type PredictionData = Omit<Prisma.PredictionUncheckedCreateInput, 'commodityId' | 'targetPeriod'>;
 
 const INDICATOR_KEYS: IndicatorKey[] = [
   'USD_NGN',
@@ -73,7 +81,7 @@ export async function generatePredictionsForPeriod(basePeriod: Date): Promise<nu
   const commodityBySlug = new Map(commodities.map((commodity) => [commodity.slug, commodity]));
   const inputBySlug = new Map(inputs.map((input) => [input.commoditySlug, input]));
 
-  const operations: Prisma.PrismaPromise<unknown>[] = [];
+  const saves: { commodityId: number; data: PredictionData }[] = [];
   for (const output of outputs) {
     const commodity = commodityBySlug.get(output.commoditySlug);
     const input = inputBySlug.get(output.commoditySlug);
@@ -97,21 +105,30 @@ export async function generatePredictionsForPeriod(basePeriod: Date): Promise<nu
       modelVersion: output.modelVersion,
       status: 'ACTIVE' as const,
     };
-    operations.push(
-      prisma.prediction.upsert({
-        where: { commodityId_targetPeriod: { commodityId: commodity.id, targetPeriod } },
-        create: { commodityId: commodity.id, targetPeriod, ...data },
-        update: data,
-      }),
-      // Older predictions for this commodity are superseded.
-      prisma.prediction.updateMany({
-        where: { commodityId: commodity.id, targetPeriod: { lt: targetPeriod }, status: 'ACTIVE' },
-        data: { status: 'SUPERSEDED' },
-      }),
-    );
+    saves.push({ commodityId: commodity.id, data });
   }
 
-  await prisma.$transaction(operations);
+  // Save in small batches: each commodity's two writes stay together, but no transaction runs long
+  for (let start = 0; start < saves.length; start += PREDICTION_SAVE_BATCH_SIZE) {
+    const batch = saves.slice(start, start + PREDICTION_SAVE_BATCH_SIZE);
+    await prisma.$transaction(
+      async (tx) => {
+        for (const { commodityId, data } of batch) {
+          await tx.prediction.upsert({
+            where: { commodityId_targetPeriod: { commodityId, targetPeriod } },
+            create: { commodityId, targetPeriod, ...data },
+            update: data,
+          });
+          // Older predictions for this commodity are superseded.
+          await tx.prediction.updateMany({
+            where: { commodityId, targetPeriod: { lt: targetPeriod }, status: 'ACTIVE' },
+            data: { status: 'SUPERSEDED' },
+          });
+        }
+      },
+      { timeout: DB_TRANSACTION_TIMEOUT_MS, maxWait: DB_TRANSACTION_MAX_WAIT_MS },
+    );
+  }
   return outputs.length;
 }
 

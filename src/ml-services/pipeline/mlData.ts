@@ -1,4 +1,4 @@
-// Reads the mock NBS-style files in ml-data/ for the seed and the ingest steps.
+// Reads the Lagos price and indicator files in ml-data/ for the seed and the ingest steps.
 import fs from 'node:fs';
 import path from 'node:path';
 import { parse } from 'csv-parse/sync';
